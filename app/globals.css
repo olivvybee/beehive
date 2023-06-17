@@ -82,7 +82,7 @@ a {
 
   &:hover,
   &:focus {
-    color: var(--red);
+    color: var(--green);
     border-color: unset;
     border-image: var(--rainbow) 1 1;
   }

@@ -1,0 +1,35 @@
+.header {
+  background-color: var(--background-accent);
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.headerContents {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .headerContents {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
