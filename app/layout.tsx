@@ -1,4 +1,5 @@
 import './globals.css';
+import styles from './layout.module.css';
 
 import { Header } from '@/components/Header';
 
@@ -16,7 +17,9 @@ export default function RootLayout({
       <body>
         <Header />
 
-        {children}
+        <main id="main-content" className={styles.mainContent}>
+          {children}
+        </main>
       </body>
     </html>
   );
