@@ -7,7 +7,7 @@ import styles from './page.module.css';
 const Homepage = () => (
   <>
     <InlineImage
-      src="/images/avatar.jpg"
+      src="/img/avatar.jpg"
       alt="A photo of Liv, who is white and has shoulder length green hair and a septum piercing. She's wearing a yellow dress covered in bees."
       imageWidth={128}
       imageHeight={128}
