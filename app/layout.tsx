@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import { Header } from '@/components/Header';
 
 export const metadata = {
-  title: 'The Gay Beehive',
+  title: "Liv's Beehive",
 };
 
 export default function RootLayout({

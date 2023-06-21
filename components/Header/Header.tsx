@@ -7,13 +7,14 @@ export const Header = () => (
       <Link href="/">
         <h1 className={styles.branding}>
           <img src="/logo.svg" height={48} width={48} role="presentation" />
-          The Gay Beehive
+          Liv's Beehive
         </h1>
       </Link>
 
       <div className={styles.links}>
         <Link href="/blog">Blog</Link>
-        <Link href="/projects">Projects</Link>
+        <Link href="/code">Code</Link>
+        <Link href="/crafts">Crafts</Link>
         <Link href="/links">Links</Link>
       </div>
     </div>
