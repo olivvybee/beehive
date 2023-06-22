@@ -18,12 +18,9 @@ const Homepage = () => (
         software engineer from the south east of the UK.
       </p>
       <p>
-        I'm{' '}
-        <a href="https://en.wikipedia.org/wiki/Non-binary_gender#Agender">
-          agender
-        </a>{' '}
-        and my pronouns are <strong>she/her</strong>. I tend to refer to myself
-        as a trans woman, although it's a bit more complicated than that.
+        I'm <a href="https://www.lgbtqia.wiki/wiki/Agender">agender</a> and my
+        pronouns are <strong>she/her</strong>. I tend to refer to myself as a
+        trans woman, although it's a bit more complicated than that.
       </p>
     </InlineImage>
     <p>
