@@ -29,7 +29,7 @@ const BlogIndex = async () => {
         {Object.entries(groupedPosts)
           .reverse()
           .map(([year, posts]) => (
-            <div>
+            <div key={year}>
               <h3 className={styles.year}>{year}</h3>
               <ul className={styles.yearList}>
                 {posts.map((post) => {
