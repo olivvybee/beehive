@@ -1,7 +1,6 @@
 .header {
   background-color: var(--background-accent);
   padding: 16px;
-  margin-bottom: 32px;
 }
 
 .headerContents {

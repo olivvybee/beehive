@@ -1,8 +1,18 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .mainContent {
   font-size: var(--font-size);
   line-height: var(--line-height);
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 0 16px;
+}
+
+.contentSpacer {
+  flex: 1;
 }
