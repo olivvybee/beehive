@@ -150,38 +150,33 @@ blockquote {
 ul {
   padding-left: 1.25rem;
   list-style-type: none;
+}
 
-  li {
-    position: relative;
+li {
+  position: relative;
+}
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: -1.25rem;
-      top: calc((var(--font-size) * var(--line-height) * 0.5) - 5px);
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--rainbow-vertical);
-    }
-  }
+li::before {
+  margin-bottom: var(--content-spacing);
+  content: '';
+  position: absolute;
+  left: -1.25rem;
+  top: calc((var(--font-size) * var(--line-height) * 0.5) - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rainbow-vertical);
 }
 
 ol {
   padding-left: 1.75rem;
 }
 
-li {
-  margin-bottom: var(--content-spacing);
+li ul,
+li ol {
+  margin-top: 1rem;
+}
 
-  ul,
-  ol {
-    margin-top: 1rem;
-  }
-
-  li {
-    &:not(:last-of-type) {
-      margin-bottom: 1rem;
-    }
-  }
+li li:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
