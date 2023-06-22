@@ -33,20 +33,22 @@ const BlogIndex = async () => {
               <h3 className={styles.year}>{year}</h3>
               <ul className={styles.yearList}>
                 {posts.map((post) => {
-                  const dateFormat: Intl.DateTimeFormatOptions = {
-                    month: 'short',
-                    day: 'numeric',
-                  } as const;
+                  const date = new Date(post.meta.date);
 
-                  const date = new Date(post.meta.date)
-                    .toLocaleDateString('en-GB', dateFormat)
-                    .replace(',', '');
+                  const month = date
+                    .toLocaleDateString('en-GB', { month: 'short' })
+                    .replace('Sept', 'Sep');
+                  const day = date.toLocaleDateString('en-GB', {
+                    day: '2-digit',
+                  });
 
                   const url = slugToUrl(post.slug);
 
                   return (
                     <li key={url} className={styles.post}>
-                      <span className={styles.date}>{date}</span>
+                      <span className={styles.date}>
+                        {month} {day}
+                      </span>
                       <Link href="/blog/[...slug]" as={url}>
                         {post.meta.title}
                       </Link>
