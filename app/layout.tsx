@@ -34,8 +34,6 @@ export default function RootLayout({
           {children}
         </main>
 
-        <div className={styles.contentSpacer} />
-
         <Footer />
       </body>
     </html>

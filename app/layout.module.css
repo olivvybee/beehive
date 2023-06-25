@@ -8,6 +8,7 @@
 .mainContent {
   font-size: var(--font-size);
   line-height: var(--line-height);
+  flex: 1;
   width: 100%;
   max-width: calc(var(--content-width) + 32px);
   margin: 0 auto;
