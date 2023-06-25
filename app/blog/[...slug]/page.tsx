@@ -4,6 +4,8 @@ import { baseOpenGraph } from '@/constants/metadata';
 
 import { getAllPosts } from '../getAllPosts';
 import { getPostBySlug } from '../getPost';
+import { getPostText } from '../getPostText';
+import { slugToFilename } from '../postFilename';
 
 import styles from './page.module.css';
 
@@ -56,7 +58,16 @@ export const generateMetadata = async ({
 }: BlogPostProps): Promise<Metadata> => {
   const { meta } = await getPostBySlug(params.slug);
 
-  const { title, description, date } = meta;
+  const filename = `./app/blog/posts/${slugToFilename(params.slug)}`;
+  const postText = getPostText(filename);
+  const firstParagraph = postText.split('\n\n')[0];
+  const excerpt = firstParagraph
+    .split(' ')
+    .slice(0, 50)
+    .join(' ')
+    .replaceAll('\n', ' ');
+
+  const { title, description = excerpt, date } = meta;
 
   return {
     title,
@@ -65,6 +76,7 @@ export const generateMetadata = async ({
       ...baseOpenGraph,
       type: 'article',
       title: { absolute: title },
+      description,
       publishedTime: date,
       authors: ['Liv Asch'],
     },
