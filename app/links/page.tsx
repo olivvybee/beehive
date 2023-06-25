@@ -18,7 +18,7 @@ const links = [
   },
   {
     name: 'Mastodon',
-    url: 'https://tech.lgbt/olivvybee',
+    url: 'https://tech.lgbt/@olivvybee',
     icon: IoLogoMastodon,
   },
   {
