@@ -5,6 +5,7 @@ import styles from './layout.module.css';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { baseOpenGraph } from '@/constants/metadata';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://beehive.gay'),
@@ -14,11 +15,8 @@ export const metadata: Metadata = {
   },
   authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
   openGraph: {
-    type: 'website',
+    ...baseOpenGraph,
     title: { template: "%s - Liv's Beehive", default: "Liv's Beehive" },
-    siteName: "Liv's Beehive",
-    locale: 'en-GB',
-    url: 'https://beehive.gay',
   },
 };
 
