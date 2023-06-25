@@ -7,6 +7,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://beehive.gay'),
   title: {
     template: "%s - Liv's Beehive",
     default: "Liv's Beehive",

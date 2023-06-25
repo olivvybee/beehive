@@ -1,8 +1,11 @@
 import { Metadata } from 'next';
 
+import { baseOpenGraph } from '@/constants/metadata';
+
 export const metadata: Metadata = {
   title: 'Crafts',
   openGraph: {
+    ...baseOpenGraph,
     title: 'Crafts',
   },
 };

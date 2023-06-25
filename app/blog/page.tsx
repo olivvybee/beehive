@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+import { baseOpenGraph } from '@/constants/metadata';
+
 import { getAllPosts } from './getAllPosts';
 
 import styles from './page.module.css';
@@ -8,6 +10,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Blog',
   openGraph: {
+    ...baseOpenGraph,
     title: 'Blog',
   },
 };

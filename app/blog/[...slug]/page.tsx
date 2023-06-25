@@ -1,4 +1,6 @@
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
+
+import { baseOpenGraph } from '@/constants/metadata';
 
 import { getAllPosts } from '../getAllPosts';
 import { getPostBySlug } from '../getPost';
@@ -60,6 +62,7 @@ export const generateMetadata = async ({
     title,
     description,
     openGraph: {
+      ...baseOpenGraph,
       type: 'article',
       title: { absolute: title },
       publishedTime: date,
