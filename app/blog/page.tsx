@@ -35,7 +35,11 @@ const BlogIndex = async () => {
 
       <p>
         Sometimes I remember I have a blog and write things. Follow along using
-        the <Link href="/atom.xml">RSS feed</Link>.
+        the{' '}
+        <Link href="/atom.xml" prefetch={false}>
+          RSS feed
+        </Link>
+        .
       </p>
 
       <div className={styles.wrapper}>

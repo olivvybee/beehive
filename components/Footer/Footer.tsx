@@ -11,7 +11,9 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <span>© 2013-{year} Liv Asch</span>
 
-        <Link href="/atom.xml">RSS</Link>
+        <Link href="/atom.xml" prefetch={false}>
+          RSS
+        </Link>
 
         <BackToTopLink />
       </div>
