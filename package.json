@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && yarn generate-rss",
     "start": "next start",
     "lint": "next lint",
+    "generate-rss": "ts-node -P ./scripts/tsconfig.json ./scripts/generateRSS.ts"
   },
   "dependencies": {
     "@types/node": "20.3.1",
