@@ -14,8 +14,8 @@ const Homepage = () => (
       imageClassName={styles.avatar}
       align="center">
       <p>
-        Welcome to Liv's Beehive! This is the personal site of Liv Asch, a
-        software engineer from the south east of the UK.
+        Hi, I'm Liv, and welcome to my beehive! Around the internet, I'm known
+        as olivvybee.
       </p>
       <p>
         I'm <a href="https://www.lgbtqia.wiki/wiki/Agender">agender</a> and my
@@ -24,11 +24,11 @@ const Homepage = () => (
       </p>
     </InlineImage>
     <p>
-      Currently I'm a full stack engineer at the Lego Group, specifically
-      working on the My Account section of{' '}
-      <a href="https://lego.com">lego.com</a>. If you've seen some changes to
-      the order history, order tracking, or wishlist pages recently, that might
-      have been me!
+      I'm a software engineer from the south east of the UK. Currently I'm a
+      full stack engineer at the Lego Group, specifically working on the My
+      Account section of <a href="https://lego.com">lego.com</a>. If you've seen
+      some changes to the order history, order tracking, or wishlist pages
+      recently, that might have been me!
     </p>
     <p>
       Most of my programming is done in <a href="https://reactjs.org">React</a>{' '}
