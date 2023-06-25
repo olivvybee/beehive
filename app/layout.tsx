@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     template: "%s - Liv's Beehive",
     default: "Liv's Beehive",
   },
+  description: 'The personal website of Liv (olivvybee).',
   authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
   openGraph: {
     ...baseOpenGraph,

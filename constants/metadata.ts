@@ -7,4 +7,5 @@ export const baseOpenGraph: OpenGraph = {
   locale: 'en-GB',
   type: 'website',
   images: [{ url: '/apple-icon.png' }],
+  description: 'The personal website of Liv (olivvybee).',
 };
