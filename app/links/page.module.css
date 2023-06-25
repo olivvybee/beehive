@@ -12,12 +12,7 @@
 }
 
 .linkItem {
-  color: var(--text-color);
   background-color: var(--background-highlight);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
 }
 
 .linkItem::before {
@@ -26,8 +21,9 @@
 
 .link {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding: 16px;
   gap: 8px;
   color: var(--text-color);
 }
