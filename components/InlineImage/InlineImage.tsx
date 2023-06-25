@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import Image from 'next/image';
 
 import styles from './InlineImage.module.css';
 
@@ -34,7 +33,7 @@ export const InlineImage = ({
 
   return (
     <div className={className}>
-      <Image
+      <img
         className={imageClassName}
         src={src}
         alt={alt}
