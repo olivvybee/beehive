@@ -49,9 +49,7 @@ const BlogIndex = async () => {
                       <span className={styles.date}>
                         {month} {day}
                       </span>
-                      <Link href="/blog/[...slug]" as={url}>
-                        {post.meta.title}
-                      </Link>
+                      <Link href={url}>{post.meta.title}</Link>
                     </li>
                   );
                 })}
