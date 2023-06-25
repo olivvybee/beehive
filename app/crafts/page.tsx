@@ -1,3 +1,12 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Crafts',
+  openGraph: {
+    title: 'Crafts',
+  },
+};
+
 const CraftsPage = () => (
   <>
     <h2>Crafts</h2>

@@ -2,6 +2,8 @@ interface PostMeta {
   title: string;
   date: string;
   tags?: string[];
+  heroImage?: string;
+  description?: string;
 }
 
 interface Post {

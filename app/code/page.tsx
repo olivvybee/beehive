@@ -1,3 +1,12 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Code',
+  openGraph: {
+    title: 'Code',
+  },
+};
+
 const CodePage = () => (
   <>
     <h2>Code</h2>

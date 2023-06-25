@@ -1,11 +1,24 @@
+import { Metadata } from 'next';
+
 import './globals.css';
 import styles from './layout.module.css';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-export const metadata = {
-  title: "Liv's Beehive",
+export const metadata: Metadata = {
+  title: {
+    template: "%s - Liv's Beehive",
+    default: "Liv's Beehive",
+  },
+  authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
+  openGraph: {
+    type: 'website',
+    title: { template: "%s - Liv's Beehive", default: "Liv's Beehive" },
+    siteName: "Liv's Beehive",
+    locale: 'en-GB',
+    url: 'https://beehive.gay',
+  },
 };
 
 export default function RootLayout({

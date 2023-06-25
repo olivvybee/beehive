@@ -1,7 +1,16 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
 import { getAllPosts } from './getAllPosts';
 
 import styles from './page.module.css';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  openGraph: {
+    title: 'Blog',
+  },
+};
 
 const BlogIndex = async () => {
   const posts = await getAllPosts();

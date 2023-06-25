@@ -9,6 +9,14 @@ import { FaEtsy } from 'react-icons/fa6';
 import { SiKofi } from 'react-icons/si';
 
 import styles from './page.module.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Links',
+  openGraph: {
+    title: 'Links',
+  },
+};
 
 const links = [
   {
