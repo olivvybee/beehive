@@ -1,6 +1,7 @@
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 
 import { baseOpenGraph } from '@/constants/metadata';
+import { Markdown } from '@/components/Markdown';
 
 import { getAllPosts } from '../getAllPosts';
 import { getPostBySlug } from '../getPost';
@@ -17,7 +18,7 @@ interface BlogPostProps {
 }
 
 const BlogPost = async ({ params }: BlogPostProps) => {
-  const { Content, meta } = await getPostBySlug(params.slug);
+  const { content, meta } = await getPostBySlug(params.slug);
 
   const dateFormat: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -38,7 +39,7 @@ const BlogPost = async ({ params }: BlogPostProps) => {
       </div>
 
       <div>
-        <Content />
+        <Markdown>{content}</Markdown>
       </div>
     </article>
   );

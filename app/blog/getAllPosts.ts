@@ -5,7 +5,7 @@ export const getAllPosts = async () => {
   const posts = await Promise.all(
     fs
       .readdirSync('./app/blog/posts')
-      .filter((filename) => filename.endsWith('.mdx'))
+      .filter((filename) => filename.endsWith('.md'))
       .map((filename) => getPostByFilename(filename))
   );
 

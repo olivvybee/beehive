@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'How To Win At Letterpress',
-  date: '2012-12-23T00:20:00Z',
-  tags: ['Games', 'iOS'],
-};
+---
+title: 'How To Win At Letterpress'
+date: 2012-12-23T00:20:00Z
+tags: ['Games', 'iOS']
+---
 
 [Letterpress](https://itunes.apple.com/gb/app/letterpress-word-game/id526619424?mt=8&at=10l7rn)
 is the fun new word game from Loren Brichter, of Tweetie fame. Since you've

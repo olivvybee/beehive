@@ -1,6 +1,7 @@
-export const meta = {
-
-title: 'Alt text in CSS content', date: '2020-11-25T16:30:00.000Z' }
+---
+title: 'Alt text in CSS content'
+date: 2020-11-25T16:30:00.000Z
+---
 
 The CSS `content` property is used with `::before` or `::after` to add
 additional content dynamically. For example, it could be used to add an asterisk

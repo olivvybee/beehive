@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Exceptions When Validating Forms in web2py',
-  date: '2015-11-16T17:00:00',
-};
+---
+title: 'Exceptions When Validating Forms in web2py'
+date: 2015-11-16T17:00:00
+---
 
 Finding the source of this problem was incredibly difficult. I'm hoping that
 this post will serve me in the future when I inevitably come across this problem

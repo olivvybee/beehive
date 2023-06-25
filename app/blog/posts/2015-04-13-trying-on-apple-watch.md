@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Trying on Apple Watch',
-  date: '2015-04-13T17:00:00Z',
-};
+---
+title: 'Trying on Apple Watch'
+date: 2015-04-13T17:00:00Z
+---
 
 This past Sunday, I took a trip to the nearest Apple Store for an Apple Watch
 try-on appointment. Obviously, spending about a minute and a half with each

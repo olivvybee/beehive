@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'How to Set up Netlify CMS Previews with Next.js',
-  date: '2020-09-08T20:53:19.085Z',
-};
+---
+title: 'How to Set up Netlify CMS Previews with Next.js'
+date: 2020-09-08T20:53:19.085Z
+---
 
 > **Update: 25 November 2020**
 >

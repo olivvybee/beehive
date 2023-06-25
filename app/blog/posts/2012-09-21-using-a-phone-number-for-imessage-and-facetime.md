@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'How to Use a Phone Number for iMessage on iPad and iPod touch',
-  date: '2012-09-21T16:43:00Z',
-  tags: ['Tutorials', 'iOS'],
-};
+---
+title: 'How to Use a Phone Number for iMessage on iPad and iPod touch'
+date: 2012-09-21T16:43:00Z
+tags: ['Tutorials', 'iOS']
+---
 
 One of the main features of iOS 6 on the iPad and iPod touch is the ability to
 use a phone number for iMessage and FaceTime. Unfortunately it's not the most

@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Review: Logitech Slim Combo for 10.5-inch iPad Pro',
-  date: '2017-06-20T17:00:00Z',
-};
+---
+title: 'Review: Logitech Slim Combo for 10.5-inch iPad Pro'
+date: 2017-06-20T17:00:00Z
+---
 
 On the surface, Logitech's new Slim Combo keyboard case for the new 10.5-inch
 iPad Pro seems like it should be a better and more practical version of their

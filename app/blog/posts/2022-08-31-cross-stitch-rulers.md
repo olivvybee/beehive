@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Cross Stitch Rulers',
-  date: '2022-08-31T18:00:00Z',
-  hero: '/img/2022-08-31-cross-stitch-rulers/hero.jpg',
-};
+---
+title: 'Cross Stitch Rulers'
+date: 2022-08-31T18:00:00Z
+hero: '/img/2022-08-31-cross-stitch-rulers/hero.jpg'
+---
 
 I always use a grid for my cross stitch to make counting easier. Since I always
 do all the stitches of one colour before moving on to the next colour, there

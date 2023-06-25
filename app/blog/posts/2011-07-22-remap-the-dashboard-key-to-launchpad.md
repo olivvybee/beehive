@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Remap The Dashboard Key To Launchpad',
-  date: '2011-07-22T12:48:00Z',
-  tags: ['Tutorials', 'OS X'],
-};
+---
+title: 'Remap The Dashboard Key To Launchpad'
+date: 2011-07-22T12:48:00Z
+tags: ['Tutorials', 'OS X']
+---
 
 In Lion, Dashboard is given its own space, which is easily opened with a swipe.
 That means (to me, anyway) that the Dashboard key on the keyboard (F4) is

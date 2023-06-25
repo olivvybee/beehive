@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'iOS Development: Remove Old Notifications From Notification Center',
-  date: '2012-02-29T17:00:00Z',
-};
+---
+title: 'iOS Development: Remove Old Notifications From Notification Center'
+date: 2012-02-29T17:00:00Z
+---
 
 There are many things I dislike. One of them is stale notifications clogging up
 Notification Center on my iPhone and iPad. When I open an app from a

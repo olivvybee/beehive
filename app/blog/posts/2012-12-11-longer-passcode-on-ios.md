@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Longer Passcode on iOS Devices',
-  date: '2012-12-11T21:15:00Z',
-  tags: ['Tutorials', 'iOS'],
-};
+---
+title: 'Longer Passcode on iOS Devices'
+date: 2012-12-11T21:15:00Z
+tags: ['Tutorials', 'iOS']
+---
 
 Use a passcode to keep your iPhone or iPad safe, but think four digit codes
 aren't long enough? Since iOS 5, there has been an option to swap the 4-digit

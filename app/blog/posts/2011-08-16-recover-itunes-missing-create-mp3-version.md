@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Recover iTunes\' Missing "Create MP3 Version"',
-  date: '2011-08-16T12:49:00Z',
-  tags: ['Tutorials', 'OS X'],
-};
+---
+title: Recover iTunes' Missing "Create MP3 Version"
+date: 2011-08-16T12:49:00Z
+tags: ['Tutorials', 'OS X']
+---
 
 Around the time version 10 was released, the option in iTunes to "Create MP3
 Version" seemingly disappeared for a lot of people. It turns out, it hasn't been

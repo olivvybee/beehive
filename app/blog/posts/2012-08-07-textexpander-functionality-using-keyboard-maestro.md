@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'TextExpander Functionality Using Keyboard Maestro',
-  date: '2012-08-07T17:00:00Z',
-};
+---
+title: 'TextExpander Functionality Using Keyboard Maestro'
+date: 2012-08-07T17:00:00Z
+---
 
 [Keyboard Maestro](http://www.keyboardmaestro.com/main/) is extremely powerful,
 but sometimes it’s also really useful for simple things, too. Setting up

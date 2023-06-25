@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'I Made a Thing: Playlist Abandoner',
-  date: '2017-01-12T17:00:00Z',
-};
+---
+title: 'I Made a Thing: Playlist Abandoner'
+date: 2017-01-12T17:00:00Z
+---
 
 I've written a tiny browser extension for Safari and Chrome called
 [Playlist Abandoner](https://github.com/olivvysaur/PlaylistAbandoner). It does

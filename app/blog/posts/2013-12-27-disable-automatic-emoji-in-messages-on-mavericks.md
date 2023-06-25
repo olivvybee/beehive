@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Disable Automatic Emoji in Messages on Mavericks',
-  date: '2013-12-27T12:46:00Z',
-  tags: ['Tutorials', 'OS X'],
-};
+---
+title: 'Disable Automatic Emoji in Messages on Mavericks'
+date: 2013-12-27T12:46:00Z
+tags: ['Tutorials', 'OS X']
+---
 
 Version 8.0 of Messages.app, shipped with OS X Mavericks, has a new feature
 which automatically inserts Emoji symbols when you type common text emoticons,

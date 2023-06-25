@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { baseOpenGraph } from '@/constants/metadata';
 
+import { Post } from './types';
 import { getAllPosts } from './getAllPosts';
 
 import styles from './page.module.css';

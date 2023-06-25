@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'I Made A Thing: EmojiBoard',
-  date: '2013-12-29T13:23:00Z',
-};
+---
+title: 'I Made A Thing: EmojiBoard'
+date: 2013-12-29T13:23:00Z
+---
 
 > **Note**: EmojiBoard is no longer under active development, and has not been
 > updated with new Emoji since 2013. It is also no longer being hosted on my

@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Access iTunes Radio Outside the US',
-  date: '2013-10-20T22:23:00Z',
-  tags: ['Tutorials', 'OS X'],
-};
+---
+title: 'Access iTunes Radio Outside the US'
+date: 2013-10-20T22:23:00Z
+tags: ['Tutorials', 'OS X']
+---
 
 With the release of iOS 7, Apple introduced
 [iTunes Radio](http://www.apple.com/itunes/itunes-radio/), a service similar to

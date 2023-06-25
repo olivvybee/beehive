@@ -1,8 +1,5 @@
 export const filenameToSlug = (filename: string) => {
-  const slugSegments = filename
-    .replace('./', '')
-    .replace('.mdx', '')
-    .split('-');
+  const slugSegments = filename.replace('./', '').replace('.md', '').split('-');
 
   const dateSegments = slugSegments.slice(0, 3);
   const nameSegment = slugSegments.slice(3).join('-');
@@ -10,4 +7,4 @@ export const filenameToSlug = (filename: string) => {
   return [...dateSegments, nameSegment];
 };
 
-export const slugToFilename = (slug: string[]) => `${slug.join('-')}.mdx`;
+export const slugToFilename = (slug: string[]) => `${slug.join('-')}.md`;

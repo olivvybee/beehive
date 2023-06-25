@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'How to Force Reset and Shutdown iOS Devices',
-  date: '2012-06-21T12:50:00Z',
-  tags: ['Tutorials', 'iOS'],
-};
+---
+title: 'How to Force Reset and Shutdown iOS Devices'
+date: 2012-06-21T12:50:00Z
+tags: ['Tutorials', 'iOS']
+---
 
 Is your iPhone, iPod touch or iPad having problems and needs to be restarted?
 Read on to find out how to force your device to either restart or just shut

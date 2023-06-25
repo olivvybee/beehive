@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Lego Build Diary: 10303 Loop Coaster',
-  date: '2022-08-29T20:00:00Z',
-};
+---
+title: 'Lego Build Diary: 10303 Loop Coaster'
+date: 2022-08-29T20:00:00Z
+---
 
 When Lego announced a replacement for the retired
 [10261 Roller Coaster](https://www.lego.com/en-gb/product/roller-coaster-10261)

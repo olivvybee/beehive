@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Review: iZettle Card Reader',
-  date: '2012-07-14T17:00:00Z',
-};
+---
+title: 'Review: iZettle Card Reader'
+date: 2012-07-14T17:00:00Z
+---
 
 I recently received my [iZettle](https://www.izettle.com/gb) card reader as part
 of their beta program. Anyone can sign up to the program, but I thought I'd

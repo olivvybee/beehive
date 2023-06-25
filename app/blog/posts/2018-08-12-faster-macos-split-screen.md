@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Quick Tip: Enter macOS Split Screen Faster',
-  date: '2018-08-12T17:00:00Z',
-};
+---
+title: 'Quick Tip: Enter macOS Split Screen Faster'
+date: 2018-08-12T17:00:00Z
+---
 
 In macOS 10.11 El Capitan, the full screen feature gained the ability to display
 two apps side by side in split view. The most common way I've seen people

@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'On to the Next(.js) Thing',
-  date: '2020-09-06T19:27:06.666Z',
-};
+---
+title: 'On to the Next(.js) Thing'
+date: 2020-09-06T19:27:06.666Z
+---
 
 > **Update: 25 November 2020**
 >

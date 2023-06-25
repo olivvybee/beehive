@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Stone and Pounds in PCalc',
-  date: '2014-09-28T17:00:00Z',
-};
+---
+title: 'Stone and Pounds in PCalc'
+date: 2014-09-28T17:00:00Z
+---
 
 Since updating to iOS 8, I've been using the Health app for tracking things such
 as steps walked and weight.

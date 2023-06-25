@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Should I get… Threes!?',
-  date: '2014-02-08T17:00:00Z',
-};
+---
+title: 'Should I get... Threes!?'
+date: 2014-02-08T17:00:00Z
+---
 
 The popular new game on the App Store at the moment is
 [Threes!](https://itunes.apple.com/gb/app/threes!/id779157948?mt=8&at=10l7rn&ct=thr).

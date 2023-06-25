@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Nostalgia is Not a Feature',
-  date: '2016-10-30T17:00:00Z',
-};
+---
+title: 'Nostalgia is Not a Feature'
+date: 2016-10-30T17:00:00Z
+---
 
 On Thursday, Apple unveiled the latest MacBook Pro, with a fancy new multi-touch
 screen sitting above the keyboard in place of the function keys. And of course,

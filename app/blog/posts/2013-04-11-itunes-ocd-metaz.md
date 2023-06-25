@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Keep iTunes OCD at Bay with MetaZ',
-  date: '2013-04-11T23:17:00Z',
-  tags: ['Tutorials', 'OS X'],
-};
+---
+title: 'Keep iTunes OCD at Bay with MetaZ'
+date: 2013-04-11T23:17:00Z
+tags: ['Tutorials', 'OS X']
+---
 
 If you're anything like me, you like your iTunes library to look neat and tidy,
 and to contain all the information it's supposed to, even if your content didn't

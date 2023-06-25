@@ -1,8 +1,8 @@
-export const meta = {
-  title: 'Fantastical is the best calendar app for iPhone',
-  date: '2014-01-16T17:00:00Z',
-  link: 'http://thesweetsetup.com/apps/best-calendar-app-iphone/',
-};
+---
+title: 'Fantastical is the best calendar app for iPhone'
+date: 2014-01-16T17:00:00Z
+link: 'http://thesweetsetup.com/apps/best-calendar-app-iphone/'
+---
 
 [Steven Owens, on The Sweet Setup](https://thesweetsetup.com/apps/best-calendar-app-iphone/):
 

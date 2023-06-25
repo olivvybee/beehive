@@ -1,7 +1,7 @@
-export const meta = {
-  title: 'Yes, macOS Picture-in-Picture Works With YouTube',
-  date: '2016-09-21T17:00:00Z',
-};
+---
+title: 'Yes, macOS Picture-in-Picture Works With YouTube'
+date: 2016-09-21T17:00:00Z
+---
 
 > **Update 17th January 2017**
 >
