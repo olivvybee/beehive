@@ -150,10 +150,12 @@ blockquote {
 ul {
   padding-left: 1.25rem;
   list-style-type: none;
+  margin-bottom: var(--content-spacing);
 }
 
 li {
   position: relative;
+  margin-bottom: calc(var(--content-spacing) / 2);
 }
 
 li::before {
