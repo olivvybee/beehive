@@ -28,8 +28,19 @@
   margin: 0;
 }
 
-.links {
+.linkList {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+}
+
+.link::before {
+  display: none;
 }

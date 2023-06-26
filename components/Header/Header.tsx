@@ -13,12 +13,22 @@ export const Header = () => (
         </h1>
       </Link>
 
-      <div className={styles.links}>
-        <Link href="/blog">Blog</Link>
-        <Link href="/code">Code</Link>
-        <Link href="/crafts">Crafts</Link>
-        <Link href="/links">Links</Link>
-      </div>
+      <nav className={styles.links}>
+        <ul className={styles.linkList}>
+          <li className={styles.link}>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li className={styles.link}>
+            <Link href="/code">Code</Link>
+          </li>
+          <li className={styles.link}>
+            <Link href="/crafts">Crafts</Link>
+          </li>
+          <li className={styles.link}>
+            <Link href="/links">Links</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 );
