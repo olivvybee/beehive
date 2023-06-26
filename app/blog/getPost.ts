@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { Post } from './types';
 import { filenameToSlug, slugToFilename } from './postFilename';
 
-export const getPostByFilename = async (filename: string): Promise<Post> => {
+export const getPostByFilename = (filename: string): Post => {
   const rawText = fs.readFileSync(`./app/blog/posts/${filename}`);
   const { content, data } = matter(rawText);
 
@@ -23,7 +23,7 @@ export const getPostByFilename = async (filename: string): Promise<Post> => {
   };
 };
 
-export const getPostBySlug = async (slug: string[]) => {
+export const getPostBySlug = (slug: string[]) => {
   const filename = slugToFilename(slug);
   return getPostByFilename(filename);
 };
