@@ -8,6 +8,7 @@ import { getPostBySlug } from '../getPost';
 import { getPostText } from '../getPostText';
 import { slugToFilename } from '../postFilename';
 
+import './postElements.css';
 import styles from './page.module.css';
 
 interface BlogPostProps {
