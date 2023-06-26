@@ -28,3 +28,7 @@
   width: 80px;
   flex-shrink: 0;
 }
+
+.dateSeparator {
+  display: none;
+}
