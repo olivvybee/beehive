@@ -1,0 +1,15 @@
+.preview {
+  margin-bottom: var(--content-spacing);
+  background-color: var(--text-color);
+  padding: 8px;
+}
+
+.meta {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.metaName {
+  font-weight: bold;
+}
