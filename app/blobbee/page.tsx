@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     ...baseOpenGraph,
     title: 'Blobbee',
     description: 'An emoji pack of cute little bees',
-    images: ['/img/blobbee/preview.png'],
+    images: ['/img/blobbee/meta.png'],
   },
 };
 
