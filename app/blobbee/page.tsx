@@ -27,7 +27,11 @@ const BlobbeePage = () => (
       .
     </p>
 
-    <img className={styles.preview} src="/img/blobbee/preview.png" />
+    <img
+      src="/img/blobbee/preview.png"
+      alt="A grid of bee emojis making the same expression as blobcat, in the heavy outline style of neofox."
+      className={styles.preview}
+    />
 
     <p>
       Feel free to use them on mastodon, discord, or anywhere else, and{' '}

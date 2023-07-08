@@ -1,7 +1,5 @@
 .preview {
   margin-bottom: var(--content-spacing);
-  background-color: var(--text-color);
-  padding: 8px;
 }
 
 .meta {
