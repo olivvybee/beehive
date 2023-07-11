@@ -6,6 +6,11 @@ const nextConfig = {
       destination: '/blog/:year/:month/:day/:slug',
       permanent: true,
     },
+    {
+      source: '/.well-known/host-meta',
+      destination: 'https://fedi.beehive.gay/.well-known/host-meta',
+      permanent: true,
+    },
   ],
 };
 
