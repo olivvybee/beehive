@@ -7,8 +7,8 @@ const nextConfig = {
       permanent: true,
     },
     {
-      source: '/.well-known/host-meta',
-      destination: 'https://fedi.beehive.gay/.well-known/host-meta',
+      source: '/.well-known/:path*',
+      destination: 'https://fedi.beehive.gay/.well-known/:path*',
       permanent: true,
     },
   ],
