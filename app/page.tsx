@@ -44,9 +44,9 @@ const Homepage = () => (
     </p>
     <p>
       Online, the best place to find me to see what I'm up to or have a chat is
-      on mastodon, where I'm{' '}
-      <a href="https://tech.lgbt/@olivvybee" rel="me">
-        @olivvybee@tech.lgbt
+      on the fediverse, where I'm{' '}
+      <a href="https://fedi.beehive.gay/@olivvybee" rel="me">
+        @olivvybee@fedi.beehive.gay
       </a>
       . Other, more specific places are listed on the{' '}
       <Link href="/links">links page</Link>.

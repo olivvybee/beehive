@@ -34,8 +34,8 @@ const BlobbeePage = () => (
     />
 
     <p>
-      Feel free to use them on mastodon, discord, or anywhere else, and{' '}
-      <a rel="me" href="https://tech.lgbt/@olivvybee">
+      Feel free to use them on fedi, discord, or anywhere else, and{' '}
+      <a rel="me" href="https://fedi.beehive.gay/@olivvybee">
         let me know
       </a>{' '}
       any more I can add (no guarantees).

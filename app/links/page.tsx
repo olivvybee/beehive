@@ -28,8 +28,8 @@ const links = [
     icon: IoNewspaper,
   },
   {
-    name: 'Mastodon',
-    url: 'https://tech.lgbt/@olivvybee',
+    name: 'Fediverse',
+    url: 'https://fedi.beehive.gay/@olivvybee',
     icon: IoLogoMastodon,
   },
   {
