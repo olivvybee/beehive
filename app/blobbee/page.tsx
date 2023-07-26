@@ -49,7 +49,7 @@ const BlobbeePage = () => (
 
     <div className={styles.meta}>
       <span className={styles.metaName}>Last updated</span>
-      <span>2023-07-08</span>
+      <span>2023-07-26</span>
 
       <span className={styles.metaName}>License</span>
       <span>
