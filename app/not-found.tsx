@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import styles from './not-found.module.css';
+import { Link } from '@/components/Link';
 
 const NotFound = () => (
   <>

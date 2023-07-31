@@ -1,5 +1,4 @@
-import Link from 'next/link';
-
+import { Link } from '@/components/Link';
 import { InlineImage } from '@/components/InlineImage';
 
 import styles from './page.module.css';

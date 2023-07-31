@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/Link';
 
 import { BackToTopLink } from '../BackToTopLink';
 import styles from './Footer.module.css';
@@ -11,9 +11,7 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <span>© 2013-{year} Liv Asch</span>
 
-        <Link href="/atom.xml" prefetch={false}>
-          RSS
-        </Link>
+        <Link href="/atom.xml">RSS</Link>
 
         <BackToTopLink />
       </div>

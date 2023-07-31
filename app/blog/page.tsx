@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/components/Link';
 
 import { baseOpenGraph } from '@/constants/metadata';
 
@@ -35,11 +35,7 @@ const BlogIndex = async () => {
 
       <p>
         Sometimes I remember I have a blog and write things. Follow along using
-        the{' '}
-        <Link href="/atom.xml" prefetch={false}>
-          RSS feed
-        </Link>
-        .
+        the <Link href="/atom.xml">RSS feed</Link>.
       </p>
 
       <div className={styles.wrapper}>
@@ -67,9 +63,7 @@ const BlogIndex = async () => {
                         {month} {day}
                       </span>
                       <span className={styles.dateSeparator}>: </span>
-                      <Link href={url} prefetch={false}>
-                        {post.meta.title}
-                      </Link>
+                      <Link href={url}>{post.meta.title}</Link>
                     </li>
                   );
                 })}
