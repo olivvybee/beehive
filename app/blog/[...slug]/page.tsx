@@ -5,11 +5,10 @@ import { Markdown } from '@/components/Markdown';
 
 import { getAllPosts } from '../getAllPosts';
 import { getPostBySlug } from '../getPost';
-import { getPostText } from '../getPostText';
-import { slugToFilename } from '../postFilename';
 
 import './postElements.css';
 import styles from './page.module.css';
+import removeMarkdown from 'remove-markdown';
 
 interface BlogPostProps {
   params: {
@@ -58,7 +57,8 @@ export const dynamicParams = false;
 export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
   const { content, meta } = getPostBySlug(params.slug);
 
-  const firstParagraph = content.split('\n\n')[0];
+  const rawContent = removeMarkdown(content);
+  const firstParagraph = rawContent.split('\n\n')[0];
   const excerpt = firstParagraph
     .split(' ')
     .slice(0, 50)
