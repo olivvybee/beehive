@@ -66,7 +66,7 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
     .replaceAll('\n', ' ')
     .trim();
 
-  const { title, description = excerpt, date } = meta;
+  const { title, description = excerpt, date, hero } = meta;
 
   return {
     title,
@@ -78,6 +78,7 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
       description,
       publishedTime: date,
       authors: ['Liv Asch'],
+      images: hero ? [hero] : undefined,
     },
   };
 };

@@ -2,7 +2,7 @@ export interface PostMeta {
   title: string;
   date: string;
   tags?: string[];
-  heroImage?: string;
+  hero?: string;
   description?: string;
 }
 
