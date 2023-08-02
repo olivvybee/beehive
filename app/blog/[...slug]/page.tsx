@@ -68,6 +68,8 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
 
   const { title, description = excerpt, date, hero } = meta;
 
+  const images = hero ? { images: [hero] } : {};
+
   return {
     title,
     description,
@@ -78,7 +80,7 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
       description,
       publishedTime: date,
       authors: ['Liv Asch'],
-      images: hero ? [hero] : undefined,
+      ...images,
     },
   };
 };
