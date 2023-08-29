@@ -19,7 +19,8 @@ There are still a few cases I need to test, and I'll update this post once I do.
 ## In regular driving mode (D)
 
 - The brake lights illuminate when you press the brake pedal.
-- _Yet to be determined:_ What happens if you lift off the accelerator?
+- When you lift off the accelerator without pressing the brake pedal, the brake
+  lights do **not** illuminate.
 
 ## In regenerative braking mode (B)
 
@@ -41,5 +42,4 @@ There are still a few cases I need to test, and I'll update this post once I do.
 
 ## When the car is in park (P)
 
-- _Yet to be determined:_ Do the brake lights stay on if you manually engage
-  park?
+- When you manually engage park, the brake lights turn off.
