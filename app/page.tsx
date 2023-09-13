@@ -23,11 +23,15 @@ const Homepage = () => (
       </p>
     </InlineImage>
     <p>
-      I'm a software engineer from the south east of the UK. Currently I'm a
-      full stack engineer at the Lego Group, specifically working on the My
-      Account section of <a href="https://lego.com">lego.com</a>. If you've seen
-      some changes to the order history, order tracking, or wishlist pages
-      recently, that might have been me!
+      I'm a software engineer from the south east of the UK. Currently I'm
+      working as a senior frontend engineer.
+    </p>
+    <p>
+      Previously I was a full stack engineer at the Lego Group, specifically
+      working on the My Account section of{' '}
+      <a href="https://lego.com">lego.com</a>. If you saw some changes to the
+      order history, order tracking, or wishlist pages in 2022 or 2023, that
+      might have been me!
     </p>
     <p>
       Most of my programming is done in <a href="https://reactjs.org">React</a>{' '}
