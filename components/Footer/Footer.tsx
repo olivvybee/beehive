@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <span>© 2013-{year} Liv Asch</span>
+        <span>© 2011-{year} Liv Asch</span>
 
         <Link href="/atom.xml">RSS</Link>
 
