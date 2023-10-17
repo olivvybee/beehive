@@ -20,7 +20,7 @@ const BlobbeePage = () => (
     <h2>Blobbee</h2>
 
     <p>
-      Blobbee is an emoji pack based on{' '}
+      Blobbee is an emoji pack loosely based on{' '}
       <a href="https://volpeon.ink/projects/emojis/neofox/">
         Neofox by Volpeon
       </a>
@@ -29,7 +29,7 @@ const BlobbeePage = () => (
 
     <img
       src="/img/blobbee/preview.png"
-      alt="A grid of bee emojis making the same expression as blobcat, in the heavy outline style of neofox."
+      alt="A grid of bee emojis making the same expressions as blobcat, in the heavy outline style of neofox."
       className={styles.preview}
     />
 
@@ -42,22 +42,24 @@ const BlobbeePage = () => (
     </p>
 
     <p>
-      <a href="/assets/blobbee.zip" download={true}>
-        Download (.zip)
+      <a href="/assets/blobbee_and_friends.zip" download={true}>
+        Download Blobbee + Friends (.zip)
+      </a>{' '}
+      (License:{' '}
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        CC BY-NC-SA 4.0
       </a>
+      )
     </p>
 
-    <div className={styles.meta}>
-      <span className={styles.metaName}>Last updated</span>
-      <span>2023-07-26</span>
-
-      <span className={styles.metaName}>License</span>
-      <span>
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-          CC BY-NC-SA 4.0
-        </a>
-      </span>
-    </div>
+    <p>
+      <a href="/assets/blobbee.zip" download={true}>
+        Download Blobbee only (.zip)
+      </a>{' '}
+      (License:{' '}
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+      )
+    </p>
   </article>
 );
 
