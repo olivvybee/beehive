@@ -63,9 +63,9 @@ would completely block me from running the watch face locally for testing.
 It turns out that in the layers panel in Watch Face Studio, you can switch
 between "Normal" and "Always On" modes. So I went back to Affinity Designer and
 created a second version of the image where the speech bubbles were inverted and
-the characters were a little smaller. Then I switched to always-on" mode,
-deleted the copy of the images and components that were duplicated from normal
-mode, and replaced them with the new inverted version.
+the characters were a little smaller. Then I switched to always-on mode, deleted
+the copy of the images and components that were duplicated from normal mode, and
+replaced them with the new inverted version.
 
 ![A screenshot of Watch Face Studio with the same watch face as before, but the speech bubbles now use white text on a black background.](/img/2023-11-21/always-on-first-attempt.png)
 
