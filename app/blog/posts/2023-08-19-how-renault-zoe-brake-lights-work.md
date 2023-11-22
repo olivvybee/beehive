@@ -1,6 +1,9 @@
 ---
 title: 'How Renault Zoe Brake Lights Work'
 date: 2023-08-19T18:00:00Z
+description:
+  'I tested all the ways my electric car uses its brake lights in different
+  conditions.'
 ---
 
 I recently bought a Renault Zoe electric car and when I saw the

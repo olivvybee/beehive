@@ -1,6 +1,8 @@
 ---
 title: 'Lego Build Diary: 10303 Loop Coaster'
 date: 2022-08-29T20:00:00Z
+description:
+  'An archive of a thread where I live-posted building the Lego Loop Coaster.'
 ---
 
 When Lego announced a replacement for the retired
