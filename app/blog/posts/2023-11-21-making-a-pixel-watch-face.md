@@ -1,6 +1,7 @@
 ---
 title: 'Making a Pixel Watch Face'
 date: 2023-11-21T15:00:00Z
+hero: '/img/2023-11-21/hero.jpg'
 ---
 
 Last week I saw
