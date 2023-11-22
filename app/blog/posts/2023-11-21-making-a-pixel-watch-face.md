@@ -2,6 +2,9 @@
 title: 'Making a Pixel Watch Face'
 date: 2023-11-21T15:00:00Z
 hero: '/img/2023-11-21/hero.jpg'
+description:
+  'A record of my journey to turn the "what a week, huh?" meme into a watch face
+  for the Pixel Watch.'
 ---
 
 Last week I saw
