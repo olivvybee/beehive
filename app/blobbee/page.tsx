@@ -77,6 +77,35 @@ const BlobbeePage = () => (
       </a>
       )
     </p>
+
+    <h3>Changelog</h3>
+
+    <ul>
+      <li>
+        2023-12-05
+        <ul>
+          <li>
+            Added <code>blobbee_laugh</code>, <code>blobbee_santa</code>,{' '}
+            <code>blobbee_scream</code>, and <code>blobee_sweat_smile</code>
+          </li>
+          <li>
+            Adjusted the faces of <code>blobbee_pleased</code>,{' '}
+            <code>blobbee_sad</code>,<code>blobbee_woozy</code>, and{' '}
+            <code>blobbee_smug</code> to be more readable at small sizes
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        2023-10-17
+        <ul>
+          <li>Separated into two downloads with separate licenses</li>
+          <li>
+            Added <code>blobbee_party</code>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </article>
 );
 
