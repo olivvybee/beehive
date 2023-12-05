@@ -42,6 +42,32 @@ const BlobbeePage = () => (
     </p>
 
     <p>
+      <a href="/assets/blobbee.zip" download={true}>
+        Download Blobbee only (.zip)
+      </a>{' '}
+      (License:{' '}
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+      )
+    </p>
+
+    <h3>Blobbee and Friends</h3>
+
+    <p>
+      There's also a smaller pack called Blobbee and Friends which uses{' '}
+      <a href="https://volpeon.ink/projects/emojis/neofox/">Neofox</a>,{' '}
+      <a href="https://volpeon.ink/projects/emojis/neocat/">Neocat</a>, and{' '}
+      <a href="https://volpeon.ink/projects/emojis/bunhd/">BunHD</a> by Volpeon,
+      and is therefore licensed differently to reflect the licenses of those
+      emojis.
+    </p>
+
+    <img
+      src="/img/blobbee/preview_friends.png"
+      alt="A grid of bee emojis hugging various other emoji animals, including a fox, a cat, and a bunny."
+      className={styles.preview}
+    />
+
+    <p>
       <a href="/assets/blobbee_and_friends.zip" download={true}>
         Download Blobbee + Friends (.zip)
       </a>{' '}
@@ -49,15 +75,6 @@ const BlobbeePage = () => (
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         CC BY-NC-SA 4.0
       </a>
-      )
-    </p>
-
-    <p>
-      <a href="/assets/blobbee.zip" download={true}>
-        Download Blobbee only (.zip)
-      </a>{' '}
-      (License:{' '}
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
       )
     </p>
   </article>
