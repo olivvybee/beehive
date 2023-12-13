@@ -18,7 +18,7 @@ const Homepage = () => (
       </p>
       <p>
         I'm <a href="https://www.lgbtqia.wiki/wiki/Agender">agender</a> and my
-        pronouns are <strong>they/she</strong>. I tend to refer to myself as a
+        pronouns are <strong>she/they</strong>. I tend to refer to myself as a
         trans woman, although it's a bit more complicated than that.
       </p>
     </InlineImage>
