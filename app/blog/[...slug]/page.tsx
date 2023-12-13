@@ -82,5 +82,11 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
       authors: ['Liv Asch'],
       ...images,
     },
+    twitter: {
+      card: hero ? 'summary_large_image' : 'summary',
+      title,
+      description,
+      images: hero ? [hero] : undefined,
+    },
   };
 };

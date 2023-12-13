@@ -1,6 +1,7 @@
 ---
 title: 'Alt text in CSS content'
 date: 2020-11-25T16:30:00.000Z
+description: 'An overview of new CSS syntax for accessibility.'
 ---
 
 The CSS `content` property is used with `::before` or `::after` to add

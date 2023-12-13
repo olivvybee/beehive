@@ -2,6 +2,8 @@
 title: 'Cross Stitch Rulers'
 date: 2022-08-31T18:00:00Z
 hero: '/img/2022-08-31-cross-stitch-rulers/hero.jpg'
+description:
+  'My custom designed 3D printed tools for making cross stitch easier.'
 ---
 
 I always use a grid for my cross stitch to make counting easier. Since I always

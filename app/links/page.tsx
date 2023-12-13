@@ -49,7 +49,7 @@ const links = [
   },
   {
     name: 'Buy me a coffee',
-    url: 'https://ko-fi/olivvybee',
+    url: 'https://ko-fi.com/olivvybee',
     icon: SiKofi,
   },
 ];
