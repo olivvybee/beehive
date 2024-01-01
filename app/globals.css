@@ -163,7 +163,7 @@ li {
   margin-bottom: calc(var(--content-spacing) / 2);
 }
 
-li::before {
+ul li::before {
   margin-bottom: var(--content-spacing);
   content: '';
   position: absolute;
