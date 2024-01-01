@@ -23,7 +23,7 @@ I wanted to write this post now to summarise my first full year of board gaming,
 from 1st January 2023 to 31st December.
 
 For the first few months of the year I was playing with my partner at the time,
-exclsuively playing everything two player.
+exclusively playing everything two player.
 
 One of the highlights was playing through the second half of the
 [Gloomhaven: Jaws of the Lion](https://boardgamegeek.com/boardgame/291457/gloomhaven-jaws-lion)
