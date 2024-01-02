@@ -49,6 +49,20 @@ sheets to play on.
 
 ![A game in progress where an iPad has an abstract tube map drawn in various colours connecting stations represented by symbols. Next to the iPad are cards with the different symbols on.](/img/2024-01-01/roll-and-write.jpeg)
 
+Around August I met [my current partner 🦊](https://theresnotime.co.uk) and so
+multiplayer was back on the table (pun very much intended)! One of our favourite
+games to play is
+[Artisans of Splendent Vale](https://boardgamegeek.com/boardgame/342062/artisans-splendent-vale),
+which is a co-op adventure campaign game that plays similarly to D&D, but each
+character has an entire book with their dialogue and choices for what to do.
+I've always wanted to try playing D&D, but I feel like I don't have the
+imagination for it, so this is a nice compromise – it's less flexible than a
+"proper" D&D campaign, because there's no room for emergent storytelling, but I
+don't have to feel quite so self conscious because I don't have to improvise.
+The combat is also fun without being punishing.
+
+![A combat scene from Artisans of Splendent Vale, where an enemy spider is riding on the back of a bigger enemy spider.](/img/2024-01-01/artisans.jpeg)
+
 In late September, I learned about
 [Solotober](https://boardgamegeek.com/geeklist/321894/solotober-2023), an annual
 challenge to play a solo board game each day in October and share your thoughts
@@ -90,7 +104,7 @@ couple of hundred games available. It's a great way to try games to see if you
 like them before spending money on them. This was how I discovered games like
 [Wingspan](https://boardgamegeek.com/boardgame/266192/wingspan),
 [Everdell](https://boardgamegeek.com/boardgame/199792/everdell), and
-[Dog Park](https://boardgamegeek.com/boardgame/331401/dog-park).
+[Dunc Imperium](https://boardgamegeek.com/boardgame/316554/dune-imperium).
 
 Being a nerd for tracking data, I use [an app](https://www.bgstatsapp.com) to
 track every time I play a board game. As a nice summary of just how many board
@@ -131,9 +145,7 @@ Here's a breakdown of the top 10 most played games from the image:
    villains. Each hero has unique cards that are very thematic and make a lot of
    sense in context. Played 5 times.
 9. [Artisans of Splendent Vale](https://boardgamegeek.com/boardgame/342062/artisans-splendent-vale)
-   is a co-op adventure game that plays similarly to D&D, but each character has
-   an entire book with their dialogue and choices for what to do. There's also
-   combat that takes place on a map in a book of action scenes. Played 5 times.
+   – described above. Played 5 times.
 10. [Arkham Horror: The Card Game](https://boardgamegeek.com/boardgame/205637/arkham-horror-card-game)
     is similar to Marvel Champions but instead of superheroes, you play as
     investigators hunting for clues to Lovecraftian horrors. Played 5 times.
