@@ -1,7 +1,7 @@
 ---
 title: 'A Year of Board Games'
 date: 2024-01-01T23:45:00Z
-hero: '/img/2024-01-01/hero.png'
+hero: '/img/2024-01-01/hero.jpg'
 description: 'Reminiscing about my first full year of board gaming.'
 ---
 
@@ -111,7 +111,7 @@ track every time I play a board game. As a nice summary of just how many board
 games I played in 2023, here's a year in review (which I had to make by hand
 because I don't know of a tool that will generate something like this).
 
-![A year in review image styled similar to the ones created by steam. 80 games played; 195 plays; 72 new games; 153 hours; 159 days played](/img/2024-01-01/year-in-review.jpg)
+![A year in review image styled similar to the ones created by steam. 80 games played; 195 plays; 61 new games; 153 hours; 159 days played](/img/2024-01-01/year-in-review.jpg)
 
 Here's a breakdown of the top 10 most played games from the image:
 
