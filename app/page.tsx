@@ -7,7 +7,7 @@ const Homepage = () => (
   <>
     <InlineImage
       src="/img/avatar.jpg"
-      alt="A photo of Liv, who is white and has shoulder length green hair and a septum piercing. She's wearing a yellow dress covered in bees."
+      alt="A photo of Liv, who is white and has shoulder length teal hair, a septum piercing, and a nose ring. She's wearing a purple dress covered in bees."
       imageWidth={128}
       imageHeight={128}
       imageClassName={styles.avatar}
