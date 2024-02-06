@@ -82,6 +82,14 @@ const BlobbeePage = () => (
 
     <ul>
       <li>
+        2024-02-06
+        <ul>
+          <li>
+            Added <code>blobbee_mouse_hug</code> to the Friends pack.
+          </li>
+        </ul>
+      </li>
+      <li>
         2023-12-05
         <ul>
           <li>
