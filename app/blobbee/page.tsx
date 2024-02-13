@@ -35,7 +35,7 @@ const BlobbeePage = () => (
 
     <p>
       Feel free to use them on fedi, discord, or anywhere else, and{' '}
-      <a rel="me" href="https://fedi.beehive.gay/@olivvybee">
+      <a rel="me" href="https://meow.woem.cat/@olivvybee">
         let me know
       </a>{' '}
       any more I can add (no guarantees).

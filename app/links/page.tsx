@@ -29,7 +29,7 @@ const links = [
   },
   {
     name: 'Fediverse',
-    url: 'https://fedi.beehive.gay/@olivvybee',
+    url: 'https://meow.woem.cat/@olivvybee',
     icon: IoLogoMastodon,
   },
   {
