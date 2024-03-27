@@ -55,8 +55,8 @@ const Homepage = () => (
     <p>
       Online, the best place to find me to see what I'm up to or have a chat is
       on the fediverse, where I'm{' '}
-      <a href="https://meow.woem.cat/@olivvybee" rel="me">
-        @olivvybee@meow.woem.cat
+      <a href="https://honeycomb.engineer/@olivvybee" rel="me">
+        @olivvybee@honeycomb.engineer
       </a>
       . Other, more specific places are listed on the{' '}
       <Link href="/links">links page</Link>.
