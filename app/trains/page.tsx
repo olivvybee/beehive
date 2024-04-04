@@ -1,7 +1,11 @@
 import { Metadata } from 'next';
+
+import { baseOpenGraph } from '@/constants/metadata';
+
 import { TrainsMap } from './TrainsMap';
 import { loadRoutes } from './loadRoutes';
-import { baseOpenGraph } from '@/constants/metadata';
+import { OperatorsKey } from './OperatorKey';
+import { TrainsMapContextProvider } from './TrainsMapContext';
 
 const _metadata = {
   title: 'Train map',
@@ -20,10 +24,12 @@ const TrainsPage = () => {
   const routes = loadRoutes();
 
   return (
-    <>
+    <TrainsMapContextProvider>
       <h2>Train map</h2>
 
       <TrainsMap routes={routes} />
+
+      <OperatorsKey />
 
       <p>
         This is a hopefully fairly up to date map of all the train routes I have
@@ -34,7 +40,7 @@ const TrainsPage = () => {
         knowing which parts of the network I have used and where the tracks are
         on a map.
       </p>
-    </>
+    </TrainsMapContextProvider>
   );
 };
 

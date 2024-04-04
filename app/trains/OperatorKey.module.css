@@ -1,0 +1,62 @@
+.operatorsKey {
+  margin: 32px 0;
+}
+
+.heading {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.item::before {
+  display: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.dimmed {
+  opacity: 0.5;
+}
+
+.helperText {
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

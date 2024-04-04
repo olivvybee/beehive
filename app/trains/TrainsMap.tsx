@@ -1,10 +1,13 @@
 'use client';
 
-import Map, { Source, Layer } from 'react-map-gl/maplibre';
+import { useContext, useEffect } from 'react';
+import Map, { useMap, Source, Layer } from 'react-map-gl/maplibre';
 
-import 'maplibre-gl/dist/maplibre-gl.css';
 import { Route } from './Route';
 import { getBounds } from './getBounds';
+import { trainsMapContext } from './TrainsMapContext';
+
+import 'maplibre-gl/dist/maplibre-gl.css';
 
 interface TrainsMapProps {
   routes: Route[];
@@ -17,20 +20,34 @@ export const TrainsMap = ({
   routes,
   useOperatorColours = true,
 }: TrainsMapProps) => {
-  const bounds = getBounds(routes);
+  const { selectedOperator } = useContext(trainsMapContext);
+  const { trainMap } = useMap();
+
+  const visibleRoutes = selectedOperator
+    ? routes.filter((route) => route.operator.id === selectedOperator.id)
+    : routes;
+
+  const bounds = getBounds(visibleRoutes);
+
+  useEffect(() => {
+    if (trainMap) {
+      trainMap.fitBounds(bounds, { padding: 64 });
+    }
+  }, [bounds]);
 
   return (
     <Map
+      id="trainMap"
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
       mapStyle="https://api.protomaps.com/styles/v2/black.json?key=049cfdd8e69e2fe8"
       attributionControl={false}
       initialViewState={{
         bounds,
         fitBoundsOptions: {
-          padding: 32,
+          padding: 64,
         },
       }}>
-      {routes.map((route) => (
+      {visibleRoutes.map((route) => (
         <Source key={route.id} id={route.id} type="geojson" data={route.data}>
           <Layer
             type="line"
