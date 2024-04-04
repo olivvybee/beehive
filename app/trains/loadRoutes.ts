@@ -2,30 +2,38 @@ import fs from 'fs';
 import { FeatureCollection } from 'geojson';
 
 import { Route } from './Route';
+import { OPERATORS, OTHER_OPERATOR } from './operators';
 
 const ROUTES_DIR = './app/trains/routes';
 
 export const loadRoutes = (): Route[] => {
-  const routeFiles = fs
+  const operatorDirs = fs
     .readdirSync(ROUTES_DIR)
-    .filter((filename) => filename.endsWith('.geojson'));
+    .filter((name) => fs.lstatSync(`${ROUTES_DIR}/${name}`).isDirectory());
 
-  const routes = routeFiles.map((filename) => {
-    const id = filename
-      .toLowerCase()
-      .replace('.geojson', '')
-      .replaceAll(' ', '-');
+  const routes = operatorDirs.flatMap((operatorId) => {
+    const operator =
+      OPERATORS.find((operator) => operator.id === operatorId) ||
+      OTHER_OPERATOR;
 
-    const path = `${ROUTES_DIR}/${filename}`;
-    const contents = fs.readFileSync(path, 'utf-8');
-    const data = JSON.parse(contents) as FeatureCollection;
+    const routeFiles = fs
+      .readdirSync(`${ROUTES_DIR}/${operatorId}`)
+      .filter((filename) => filename.endsWith('.geojson'));
 
-    const colour =
-      data.features[0].properties?.colour ||
-      data.features[0].properties?.color ||
-      'white';
+    const operatorRoutes = routeFiles.map((filename) => {
+      const id = filename
+        .toLowerCase()
+        .replace('.geojson', '')
+        .replaceAll(' ', '-');
 
-    return { id, colour, data };
+      const path = `${ROUTES_DIR}/${operatorId}/${filename}`;
+      const contents = fs.readFileSync(path, 'utf-8');
+      const data = JSON.parse(contents) as FeatureCollection;
+
+      return { id, operator, data };
+    });
+
+    return operatorRoutes;
   });
 
   return routes;

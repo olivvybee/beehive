@@ -11,7 +11,7 @@ interface TrainsMapProps {
   useOperatorColours?: boolean;
 }
 
-const DEFAULT_COLOUR = 'white';
+const DEFAULT_COLOUR = 'rgb(255, 255, 255)';
 
 export const TrainsMap = ({
   routes,
@@ -36,7 +36,7 @@ export const TrainsMap = ({
             type="line"
             paint={{
               'line-color': useOperatorColours
-                ? route.colour || DEFAULT_COLOUR
+                ? route.operator.colour
                 : DEFAULT_COLOUR,
               'line-width': 2,
               'line-opacity': 0.8,
