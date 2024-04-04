@@ -1,6 +1,20 @@
+import { Metadata } from 'next';
 import { TrainsMap } from './TrainsMap';
-import { getBounds } from './getBounds';
 import { loadRoutes } from './loadRoutes';
+import { baseOpenGraph } from '@/constants/metadata';
+
+const _metadata = {
+  title: 'Train map',
+  description: "A map of all the train routes I've taken.",
+};
+
+export const metadata: Metadata = {
+  ..._metadata,
+  openGraph: {
+    ...baseOpenGraph,
+    ..._metadata,
+  },
+};
 
 const TrainsPage = () => {
   const routes = loadRoutes();
