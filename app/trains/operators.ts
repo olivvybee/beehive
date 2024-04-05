@@ -6,6 +6,7 @@ export interface Operator {
 
 export const OPERATORS: Operator[] = [
   { id: 'dlr', name: 'DLR', colour: 'rgb(77, 169, 167)' },
+  { id: 'edi-trams', name: 'Edinburgh Trams', colour: 'rgb(128, 35, 27)' },
   { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(105, 80, 161)' },
   { id: 'lner', name: 'LNER', colour: 'rgb(189, 44, 52)' },
   { id: 'northern', name: 'Northern', colour: 'rgb(64, 59, 163)' },
