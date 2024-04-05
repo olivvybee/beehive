@@ -46,6 +46,12 @@
   cursor: pointer;
 }
 
+.permalink {
+  font-size: 0.7rem;
+  color: #999999;
+  text-decoration: dotted;
+}
+
 .dimmed {
   opacity: 0.5;
 }

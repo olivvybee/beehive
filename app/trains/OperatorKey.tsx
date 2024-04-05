@@ -2,6 +2,8 @@
 
 import { useContext } from 'react';
 import classNames from 'classnames';
+import { usePathname } from 'next/navigation';
+import { FaLink } from 'react-icons/fa';
 
 import { OPERATORS, Operator } from './operators';
 import { trainsMapContext } from './TrainsMapContext';
@@ -37,7 +39,11 @@ export const OperatorsKey = () => {
 
       <p className={styles.helperText}>
         Click an operator to show just that operator's routes. Click again to
-        show all routes.
+        show all routes. Copy the permalink url (
+        <span className={styles.permalink}>
+          <FaLink />
+        </span>
+        ) to link to a specific operator map.
       </p>
     </div>
   );
@@ -53,14 +59,25 @@ const OperatorsKeyItem = ({
   operator,
   isDimmed,
   onClick,
-}: OperatorsKeyItemProps) => (
-  <li className={classNames(styles.item, { [styles.dimmed]: isDimmed })}>
-    <div
-      className={styles.swatch}
-      style={{ backgroundColor: operator.colour }}
-    />
-    <button className={styles.button} onClick={onClick}>
-      {operator.name}
-    </button>
-  </li>
-);
+}: OperatorsKeyItemProps) => {
+  const pathname = usePathname();
+
+  const permalinkUrl = `${pathname}?operator=${operator.id}`;
+
+  return (
+    <li className={classNames(styles.item, { [styles.dimmed]: isDimmed })}>
+      <div
+        className={styles.swatch}
+        style={{ backgroundColor: operator.colour }}
+      />
+
+      <button className={styles.button} onClick={onClick}>
+        {operator.name}
+      </button>
+
+      <a href={permalinkUrl} className={styles.permalink}>
+        <FaLink />
+      </a>
+    </li>
+  );
+};
