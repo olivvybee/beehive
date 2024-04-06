@@ -4,13 +4,12 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
   font-size: 0.9rem;
 }
 
@@ -27,11 +26,6 @@
   margin: 0;
 }
 
-.swatch {
-  width: 16px;
-  height: 16px;
-}
-
 .button {
   appearance: none;
   -webkit-appearance: none;
@@ -40,26 +34,10 @@
   color: var(--text-color);
   font-size: 0.9rem;
   cursor: pointer;
-  text-align: left;
 }
 
 .permalink {
   font-size: 0.7rem;
   color: #999999;
   text-decoration: dotted;
-}
-
-.dimmed {
-  opacity: 0.5;
-}
-
-.helperText {
-  font-size: 0.9rem;
-  color: #999999;
-}
-
-@media screen and (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }

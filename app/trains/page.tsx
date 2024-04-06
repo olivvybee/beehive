@@ -6,6 +6,9 @@ import { TrainsMap } from './TrainsMap';
 import { loadRoutes } from './loadRoutes';
 import { OperatorsKey } from './OperatorKey';
 import { TrainsMapContextProvider } from './TrainsMapContext';
+import { PresetChooser } from './PresetChooser';
+
+import styles from './page.module.css';
 
 const _metadata = {
   title: 'Train map',
@@ -29,7 +32,10 @@ const TrainsPage = () => {
 
       <TrainsMap routes={routes} />
 
-      <OperatorsKey />
+      <div className={styles.keyAndPresets}>
+        <OperatorsKey />
+        <PresetChooser />
+      </div>
 
       <p>
         This is a hopefully fairly up to date map of all the train routes I have
