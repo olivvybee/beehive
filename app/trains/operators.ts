@@ -10,6 +10,7 @@ export const OPERATORS: Operator[] = [
   { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(105, 80, 161)' },
   { id: 'lner', name: 'LNER', colour: 'rgb(189, 44, 52)' },
   { id: 'northern', name: 'Northern', colour: 'rgb(64, 59, 163)' },
+  { id: 'overground', name: 'London Overground', colour: 'rgb(246, 128, 39)' },
   { id: 'renfe', name: 'Renfe', colour: 'rgb(118, 21, 91)' },
   { id: 'southern', name: 'Southern', colour: 'rgb(56, 120, 95)' },
   { id: 'thameslink', name: 'Thameslink', colour: 'rgb(207, 49, 131)' },
