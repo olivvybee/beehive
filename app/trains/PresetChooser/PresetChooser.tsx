@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useMap } from 'react-map-gl/maplibre';
 import { FaLink } from 'react-icons/fa';
 
-import { PRESETS, Preset } from './presets';
+import { PRESETS, Preset } from '../constants/presets';
 
 import styles from './PresetChooser.module.css';
 

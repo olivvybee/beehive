@@ -1,5 +1,5 @@
 import type { FeatureCollection } from 'geojson';
-import { Operator } from './operators';
+import { Operator } from './constants/operators';
 
 export interface Route {
   id: string;

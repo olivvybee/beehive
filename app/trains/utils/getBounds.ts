@@ -1,7 +1,7 @@
 import { LineString } from 'geojson';
 import { LngLatBounds } from 'maplibre-gl';
 
-import { Route } from './Route';
+import { Route } from '../Route';
 
 export const getBounds = (routes: Route[]): LngLatBounds => {
   const lines = routes.flatMap((route) =>

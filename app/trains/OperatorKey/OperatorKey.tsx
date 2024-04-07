@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
 import { FaLink } from 'react-icons/fa';
 
-import { OPERATORS, Operator } from './operators';
-import { trainsMapContext } from './TrainsMapContext';
+import { OPERATORS, Operator } from '../constants/operators';
+import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './OperatorKey.module.css';
 

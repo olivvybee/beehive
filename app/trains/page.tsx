@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import { baseOpenGraph } from '@/constants/metadata';
 
 import { TrainsMap } from './TrainsMap';
-import { loadRoutes } from './loadRoutes';
-import { OperatorsKey } from './OperatorKey';
+import { loadRoutes } from './utils/loadRoutes';
+import { OperatorsKey } from './OperatorKey/OperatorKey';
 import { TrainsMapContextProvider } from './TrainsMapContext';
-import { PresetChooser } from './PresetChooser';
+import { PresetChooser } from './PresetChooser/PresetChooser';
 
 import styles from './page.module.css';
 

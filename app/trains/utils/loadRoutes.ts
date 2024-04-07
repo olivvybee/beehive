@@ -1,8 +1,8 @@
 import fs from 'fs';
 import { FeatureCollection } from 'geojson';
 
-import { Route } from './Route';
-import { OPERATORS, OTHER_OPERATOR } from './operators';
+import { Route } from '../Route';
+import { OPERATORS, OTHER_OPERATOR } from '../constants/operators';
 
 const ROUTES_DIR = './app/trains/routes';
 

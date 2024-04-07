@@ -4,7 +4,7 @@ import { useContext, useEffect } from 'react';
 import Map, { useMap, Source, Layer } from 'react-map-gl/maplibre';
 
 import { Route } from './Route';
-import { getBounds } from './getBounds';
+import { getBounds } from './utils/getBounds';
 import { trainsMapContext } from './TrainsMapContext';
 
 import 'maplibre-gl/dist/maplibre-gl.css';

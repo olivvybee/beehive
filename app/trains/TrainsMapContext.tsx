@@ -4,7 +4,7 @@ import { createContext, PropsWithChildren, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MapProvider } from 'react-map-gl/maplibre';
 
-import { Operator, OPERATORS } from './operators';
+import { Operator, OPERATORS } from './constants/operators';
 
 interface TrainsMapContext {
   selectedOperator?: Operator;
