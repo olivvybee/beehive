@@ -21,6 +21,7 @@
   background-color: var(--background-accent);
   border-radius: 8px;
   padding: 16px;
+  border-color: transparent;
 }
 
 .projectImage {

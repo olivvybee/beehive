@@ -26,4 +26,5 @@
   padding: 16px;
   gap: 8px;
   color: var(--text-color);
+  border-color: transparent;
 }

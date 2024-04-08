@@ -3,6 +3,10 @@
   padding: 16px;
 }
 
+.header a {
+  border-color: transparent;
+}
+
 .headerContents {
   max-width: var(--content-width);
   margin: 0 auto;
