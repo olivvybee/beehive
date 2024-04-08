@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { baseOpenGraph } from '@/constants/metadata';
+import { baseOpenGraph } from '@/utils/metadata';
 import { Markdown } from '@/components/Markdown';
 
 import { getAllPosts } from '../getAllPosts';

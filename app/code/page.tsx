@@ -1,14 +1,10 @@
-import { Metadata } from 'next';
+import { buildMetadata } from '@/utils/metadata';
 
-import { baseOpenGraph } from '@/constants/metadata';
-
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Code',
-  openGraph: {
-    ...baseOpenGraph,
-    title: 'Code',
-  },
-};
+  description:
+    'Code projects made by a bee who happens to be a software engineer.',
+});
 
 const CodePage = () => (
   <>

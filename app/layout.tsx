@@ -1,26 +1,11 @@
-import { Metadata } from 'next';
-
 import './globals.css';
 import styles from './layout.module.css';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { baseOpenGraph } from '@/constants/metadata';
+import { metadataTemplate } from '@/utils/metadata';
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://beehive.gay'),
-  title: {
-    template: "%s - Liv's Beehive",
-    default: "Liv's Beehive",
-  },
-  description:
-    "Hi, I'm Liv, and welcome to my beehive! Around the internet, I'm known as olivvybee.",
-  authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
-  openGraph: {
-    ...baseOpenGraph,
-    title: { template: "%s - Liv's Beehive", default: "Liv's Beehive" },
-  },
-};
+export const metadata = metadataTemplate;
 
 export default function RootLayout({
   children,

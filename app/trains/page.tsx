@@ -1,6 +1,4 @@
-import { Metadata } from 'next';
-
-import { baseOpenGraph } from '@/constants/metadata';
+import { buildMetadata } from '@/utils/metadata';
 
 import { TrainsMap } from './TrainsMap';
 import { loadRoutes } from './utils/loadRoutes';
@@ -10,18 +8,10 @@ import { PresetChooser } from './PresetChooser/PresetChooser';
 
 import styles from './page.module.css';
 
-const _metadata = {
+export const metadata = buildMetadata({
   title: 'Train map',
   description: "A map of all the train routes I've taken.",
-};
-
-export const metadata: Metadata = {
-  ..._metadata,
-  openGraph: {
-    ...baseOpenGraph,
-    ..._metadata,
-  },
-};
+});
 
 const TrainsPage = () => {
   const routes = loadRoutes();

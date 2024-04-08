@@ -1,19 +1,12 @@
-import { Metadata } from 'next';
-
-import { baseOpenGraph } from '@/constants/metadata';
+import { buildMetadata } from '@/utils/metadata';
 
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Blobbee',
   description: 'An emoji pack of cute little bees',
-  openGraph: {
-    ...baseOpenGraph,
-    title: 'Blobbee',
-    description: 'An emoji pack of cute little bees',
-    images: ['/img/blobbee/meta.png'],
-  },
-};
+  images: ['/img/blobbee/meta.png'],
+});
 
 const BlobbeePage = () => (
   <article>

@@ -1,20 +1,17 @@
-import { Metadata } from 'next';
 import { Link } from '@/components/Link';
 
-import { baseOpenGraph } from '@/constants/metadata';
+import { buildMetadata } from '@/utils/metadata';
 
 import { Post } from './types';
 import { getAllPosts } from './getAllPosts';
 
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Blog',
-  openGraph: {
-    ...baseOpenGraph,
-    title: 'Blog',
-  },
-};
+  description:
+    'Thoughts and ramblings from a bee who happens to be a software engineer.',
+});
 
 const BlogIndex = async () => {
   const posts = await getAllPosts();

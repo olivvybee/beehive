@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { Link } from '@/components/Link';
 import {
   IoLogoGithub,
@@ -9,17 +8,14 @@ import {
 import { FaEtsy } from 'react-icons/fa6';
 import { SiKofi } from 'react-icons/si';
 
-import { baseOpenGraph } from '@/constants/metadata';
+import { buildMetadata } from '@/utils/metadata';
 
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Links',
-  openGraph: {
-    ...baseOpenGraph,
-    title: 'Links',
-  },
-};
+  description: 'Places to find olivvybee around the internet.',
+});
 
 const links = [
   {
