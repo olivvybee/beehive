@@ -48,6 +48,7 @@
   font-size: 0.7rem;
   color: #999999;
   text-decoration: dotted;
+  border-color: transparent;
 }
 
 .dimmed {
