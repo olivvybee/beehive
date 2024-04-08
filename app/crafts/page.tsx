@@ -20,6 +20,10 @@ const CraftsPage = () => (
       times to learn to crochet, but my fingers are stubborn and refuse to do
       what they need to do.
     </p>
+    <p>
+      I've also created a set of bee emojis called{' '}
+      <Link href="/crafts/blobbee">blobbee</Link>.
+    </p>
   </>
 );
 
