@@ -53,8 +53,8 @@ const Homepage = () => (
       <Link href="/crafts">crafts page</Link>.
     </p>
     <p>
-      Online, the best place to find me to see what I'm up to or have a chat is
-      on the fediverse, where I'm{' '}
+      The best place to find me to see what I'm up to or have a chat is on the
+      fediverse, where I'm{' '}
       <a href="https://honeycomb.engineer/@olivvybee" rel="me">
         @olivvybee@honeycomb.engineer
       </a>
