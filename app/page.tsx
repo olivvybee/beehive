@@ -2,6 +2,7 @@ import { Link } from '@/components/Link';
 import { InlineImage } from '@/components/InlineImage';
 
 import styles from './page.module.css';
+import { FEDI_URL, FEDI_USERNAME } from '@/constants';
 
 const Homepage = () => (
   <>
@@ -55,8 +56,8 @@ const Homepage = () => (
     <p>
       The best place to find me to see what I'm up to or have a chat is on the
       fediverse, where I'm{' '}
-      <a href="https://honeycomb.engineer/@olivvybee" rel="me">
-        @olivvybee@honeycomb.engineer
+      <a href={FEDI_URL} rel="me">
+        {FEDI_USERNAME}
       </a>
       . Other, more specific places are listed on the{' '}
       <Link href="/links">links page</Link>.

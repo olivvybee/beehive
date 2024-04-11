@@ -11,6 +11,7 @@ import { SiKofi } from 'react-icons/si';
 import { buildMetadata } from '@/utils/metadata';
 
 import styles from './page.module.css';
+import { FEDI_URL } from '@/constants';
 
 export const metadata = buildMetadata({
   title: 'Links',
@@ -25,7 +26,7 @@ const links = [
   },
   {
     name: 'Fediverse',
-    url: 'https://honeycomb.engineer/@olivvybee',
+    url: FEDI_URL,
     icon: IoLogoMastodon,
   },
   {
