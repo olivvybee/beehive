@@ -60,7 +60,11 @@ const BlogIndex = async () => {
                         {month} {day}
                       </span>
                       <span className={styles.dateSeparator}>: </span>
-                      <Link href={url}>{post.meta.title}</Link>
+                      <span>
+                        <Link className={styles.postTitle} href={url}>
+                          {post.meta.title}
+                        </Link>
+                      </span>
                     </li>
                   );
                 })}
