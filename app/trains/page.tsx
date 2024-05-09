@@ -7,13 +7,14 @@ import { TrainsMapContextProvider } from './TrainsMapContext';
 import { PresetChooser } from './PresetChooser/PresetChooser';
 
 import styles from './page.module.css';
+import { Suspense } from 'react';
 
 export const metadata = buildMetadata({
   title: 'Train map',
   description: "A map of all the train routes I've taken.",
 });
 
-const TrainsPage = () => {
+const Trains = () => {
   const routes = loadRoutes();
 
   return (
@@ -73,5 +74,11 @@ const TrainsPage = () => {
     </TrainsMapContextProvider>
   );
 };
+
+const TrainsPage = () => (
+  <Suspense>
+    <Trains />
+  </Suspense>
+);
 
 export default TrainsPage;
