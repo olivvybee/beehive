@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && yarn generate-rss",
+    "build": "next build && npm run generate-rss",
     "start": "next start",
     "lint": "next lint",
     "generate-rss": "ts-node -P ./scripts/tsconfig.json ./scripts/generateRSS.ts"
