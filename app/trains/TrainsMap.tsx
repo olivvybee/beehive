@@ -35,11 +35,16 @@ export const TrainsMap = ({
     }
   }, [bounds]);
 
+  const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
+  if (!protomapsKey) {
+    return <div>Error: No Protomaps API key present in environment</div>;
+  }
+
   return (
     <Map
       id="trainMap"
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
-      mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY}`}
+      mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
       attributionControl={false}
       initialViewState={{
         bounds,
