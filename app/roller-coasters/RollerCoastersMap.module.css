@@ -1,0 +1,17 @@
+.popup {
+  color: black;
+}
+
+.coasterName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.coasterDetails {
+  width: 100%;
+}
+
+.coasterDetails td:first-child {
+  font-weight: bold;
+  padding-right: 8px;
+}
