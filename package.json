@@ -7,7 +7,7 @@
     "build": "next build && npm run generate-rss",
     "start": "next start",
     "lint": "next lint",
-    "generate-rss": "ts-node -P ./scripts/tsconfig.json ./scripts/generateRSS.ts"
+    "generate-rss": "tsx ./scripts/generateRSS.ts"
   },
   "dependencies": {
     "@types/node": "20.3.1",
@@ -37,7 +37,7 @@
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "marked": "^5.1.0",
-    "ts-node": "^10.9.1"
+    "tsx": "^4.10.2"
   },
   "engines": {
     "node": "20.x"
