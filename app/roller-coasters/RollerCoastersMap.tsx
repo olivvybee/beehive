@@ -1,7 +1,7 @@
 'use client';
 
 import Map, { Marker } from 'react-map-gl/maplibre';
-import { Popup } from 'maplibre-gl';
+import { Point, Popup } from 'maplibre-gl';
 
 import { Coaster, ParkCoasters } from './types';
 import { getBounds } from './utils/getBounds';
@@ -11,6 +11,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import styles from './RollerCoastersMap.module.css';
 import { useContext } from 'react';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
+import { MarkerPin } from './MarkerPin';
 
 const getMarkerColour = (coaster: Coaster) => {
   if (!coaster.ridden) {
@@ -62,6 +63,17 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
           const popup = new Popup();
 
           if (typeof window !== 'undefined') {
+            popup.setOffset({
+              'top-left': [0, -5],
+              top: [0, -5],
+              'top-right': [0, -5],
+              right: [-10, -25],
+              'bottom-right': [0, -35],
+              bottom: [0, -35],
+              'bottom-left': [0, -35],
+              left: [10, -25],
+              center: [0, 0],
+            });
             popup.setMaxWidth('50%');
             popup.setHTML(`
             <div class="${styles.popup}">
@@ -94,9 +106,10 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
               key={`${park.park.name}-${coaster.name}`}
               latitude={coaster.location.lat}
               longitude={coaster.location.lng}
-              color={markerColour}
-              popup={popup}
-            />
+              anchor="bottom"
+              popup={popup}>
+              <MarkerPin colour={markerColour} />
+            </Marker>
           );
         })
       )}
