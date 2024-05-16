@@ -1,9 +1,12 @@
-import { buildMetadata } from '@/utils/metadata';
-import { loadCoasters } from './utils/loadCoasters';
 import { Suspense } from 'react';
+
+import { buildMetadata } from '@/utils/metadata';
+
+import { loadCoasters } from './utils/loadCoasters';
 import { RollerCoastersMap } from './RollerCoastersMap';
 import { ParkChooser } from './ParkChooser/ParkChooser';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
+import { PresetChooser } from './PresetChooser/PresetChooser';
 
 import styles from './page.module.css';
 
@@ -23,6 +26,7 @@ const RollerCoasters = () => {
 
       <div className={styles.parksAndPresets}>
         <ParkChooser parks={parks} />
+        <PresetChooser />
       </div>
     </RollerCoastersMapContextProvider>
   );

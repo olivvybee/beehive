@@ -1,3 +1,5 @@
+import { LngLatLike } from 'maplibre-gl';
+
 export interface Coaster {
   name: string;
   ridden: boolean;
@@ -20,4 +22,11 @@ export interface Park {
 export interface ParkCoasters {
   park: Park;
   coasters: Coaster[];
+}
+
+export interface Preset {
+  id: string;
+  name: string;
+  sw: LngLatLike;
+  ne: LngLatLike;
 }
