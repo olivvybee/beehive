@@ -46,22 +46,27 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       {parks.flatMap((park) =>
         park.coasters.map((coaster) => {
           const popup = new Popup();
-          popup.setMaxWidth('50%');
-          popup.setHTML(`
-          <div class="${styles.popup}">
-            <span class="${styles.coasterName}">${coaster.name}</span>
-            <table class="${styles.coasterDetails}">
-              <tr><td>Ridden</td> <td>${coaster.ridden ? 'Yes' : 'No'}</td></tr>
-              <tr><td>Status</td> <td>${coaster.status}</td></tr>
-              <tr><td>Opening date</td> <td>${coaster.openDate}</td></tr>
-              ${
-                coaster.closeDate
-                  ? `<tr><td>Closing date</td> <td>${coaster.closeDate}</td></tr>`
-                  : ''
-              }
-            </table>
-            <a href="${coaster.link}" target="_blank">View on RCDB</a>
-          </div>`);
+
+          if (typeof window !== 'undefined') {
+            popup.setMaxWidth('50%');
+            popup.setHTML(`
+            <div class="${styles.popup}">
+              <span class="${styles.coasterName}">${coaster.name}</span>
+              <table class="${styles.coasterDetails}">
+                <tr><td>Ridden</td> <td>${
+                  coaster.ridden ? 'Yes' : 'No'
+                }</td></tr>
+                <tr><td>Status</td> <td>${coaster.status}</td></tr>
+                <tr><td>Opening date</td> <td>${coaster.openDate}</td></tr>
+                ${
+                  coaster.closeDate
+                    ? `<tr><td>Closing date</td> <td>${coaster.closeDate}</td></tr>`
+                    : ''
+                }
+              </table>
+              <a href="${coaster.link}" target="_blank">View on RCDB</a>
+            </div>`);
+          }
 
           return (
             <Marker
