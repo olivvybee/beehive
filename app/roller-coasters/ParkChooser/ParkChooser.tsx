@@ -19,8 +19,6 @@ export const ParkChooser = ({ parks }: ParkChooserProps) => {
 
   const groups = GROUPED_PARKS.map((group) => {
     const groupParkIds = group.parks.map((park) => park.id);
-    console.log(groupParkIds);
-    console.log(parks.map((park) => park.park.id));
     const groupParks = parks.filter((park) =>
       groupParkIds.includes(park.park.id)
     );
