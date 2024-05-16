@@ -77,21 +77,28 @@ const fetchCoasters = async (themePark: string) => {
 
 const run = async (themePark: string) => {
   const result = await fetchCoasters(themePark);
-  const coasters: Coaster[] = result.map((coaster) => ({
-    name: coaster.name,
-    ridden: true,
-    previousNames: coaster.stats.formerNames?.split(',') || [],
-    status: coaster.status.state,
-    openDate: coaster.status.date.opened,
-    closeDate: coaster.status.date.closed || undefined,
-    location: {
-      lat: parseFloat(coaster.coords.lat),
-      lng: parseFloat(coaster.coords.lng),
-    },
-    link: `https://rcdb.com${coaster.link}`,
-  }));
 
-  const filename = themePark.replaceAll(' ', '-');
+  const coasters: Coaster[] = result.map((coaster) => {
+    const status = coaster.status.state.replace('Operated', 'Closed');
+
+    return {
+      name: coaster.name,
+      ridden: true,
+      previousNames: coaster.stats.formerNames?.split(',') || [],
+      status,
+      openDate: coaster.status.date.opened,
+      closeDate: coaster.status.date.closed || undefined,
+      location: {
+        lat: parseFloat(coaster.coords.lat),
+        lng: parseFloat(coaster.coords.lng),
+      },
+      link: `https://rcdb.com${coaster.link}`,
+    };
+  });
+
+  console.log(result, coasters);
+
+  const filename = themePark.toLowerCase().replaceAll(' ', '-');
   const outputPath = path.resolve(
     '.',
     'app',
