@@ -3,7 +3,7 @@
 import Map, { Marker } from 'react-map-gl/maplibre';
 import { Popup } from 'maplibre-gl';
 
-import { ParkCoasters } from './types';
+import { Coaster, ParkCoasters } from './types';
 import { getBounds } from './utils/getBounds';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -11,6 +11,17 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import styles from './RollerCoastersMap.module.css';
 import { useContext } from 'react';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
+
+const getMarkerColour = (coaster: Coaster) => {
+  if (!coaster.ridden) {
+    return 'var(--red)';
+  }
+  if (coaster.closeDate) {
+    return 'var(--purple)';
+  }
+
+  return 'var(--green)';
+};
 
 interface RollerCoastersMapProps {
   parks: ParkCoasters[];
@@ -44,6 +55,10 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       }}>
       {parks.flatMap((park) =>
         park.coasters.map((coaster) => {
+          const previousNames = coaster.previousNames.join(', ');
+          const opened = coaster.openDate.slice(0, 4);
+          const closed = coaster.closeDate?.slice(0, 4);
+
           const popup = new Popup();
 
           if (typeof window !== 'undefined') {
@@ -56,10 +71,15 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                   coaster.ridden ? 'Yes' : 'No'
                 }</td></tr>
                 <tr><td>Status</td> <td>${coaster.status}</td></tr>
-                <tr><td>Opening date</td> <td>${coaster.openDate}</td></tr>
+                <tr><td>Opened</td> <td>${opened}</td></tr>
                 ${
                   coaster.closeDate
-                    ? `<tr><td>Closing date</td> <td>${coaster.closeDate}</td></tr>`
+                    ? `<tr><td>Closed</td> <td>${closed}</td></tr>`
+                    : ''
+                }
+                ${
+                  coaster.previousNames.length
+                    ? `<tr><td>AKA</td> <td>${previousNames}</td></tr>`
                     : ''
                 }
               </table>
@@ -67,12 +87,14 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
             </div>`);
           }
 
+          const markerColour = getMarkerColour(coaster);
+
           return (
             <Marker
               key={`${park.park.name}-${coaster.name}`}
               latitude={coaster.location.lat}
               longitude={coaster.location.lng}
-              color={coaster.ridden ? '#6bb58b' : '#e7504b'}
+              color={markerColour}
               popup={popup}
             />
           );

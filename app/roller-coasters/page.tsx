@@ -7,6 +7,7 @@ import { RollerCoastersMap } from './RollerCoastersMap';
 import { ParkChooser } from './ParkChooser/ParkChooser';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
 import { PresetChooser } from './PresetChooser/PresetChooser';
+import { Key } from './Key/Key';
 
 import styles from './page.module.css';
 
@@ -24,9 +25,12 @@ const RollerCoasters = () => {
 
       <RollerCoastersMap parks={parks} />
 
-      <div className={styles.parksAndPresets}>
-        <ParkChooser parks={parks} />
-        <PresetChooser />
+      <div className={styles.mapInfo}>
+        <Key />
+        <div className={styles.parksAndPresets}>
+          <ParkChooser parks={parks} />
+          <PresetChooser />
+        </div>
       </div>
     </RollerCoastersMapContextProvider>
   );

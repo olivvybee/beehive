@@ -1,8 +1,15 @@
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .parksAndPresets {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 32px;
-  margin: 32px 0;
+  gap: 16px;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .parksAndPresets > div {
