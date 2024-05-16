@@ -34,10 +34,12 @@
     "@types/react-syntax-highlighter": "^15.5.7",
     "@types/remove-markdown": "^0.3.1",
     "@types/webpack-env": "^1.18.1",
+    "@types/yargs": "^17.0.32",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
     "marked": "^5.1.0",
-    "tsx": "^4.10.2"
+    "tsx": "^4.10.2",
+    "yargs": "^17.7.2"
   },
   "engines": {
     "node": "20.x"

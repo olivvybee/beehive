@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Dragon Challenge",
+    "ridden": true,
+    "previousNames": ["Dueling Dragons"],
+    "status": "Closed",
+    "openDate": "1999-05-28",
+    "closeDate": "2017-09-04",
+    "location": {
+      "lat": 28.473667,
+      "lng": -81.473369
+    },
+    "link": "https://rcdb.com/558.htm"
+  },
+  {
+    "name": "Flight of the Hippogriff",
+    "ridden": true,
+    "previousNames": ["Flying Unicorn"],
+    "status": "Operating",
+    "openDate": "2000-06-29",
+    "location": {
+      "lat": 28.472454,
+      "lng": -81.473803
+    },
+    "link": "https://rcdb.com/703.htm"
+  },
+  {
+    "name": "Hagrid's Magical Creatures Motorbike Adventure",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2019-06-13",
+    "location": {
+      "lat": 28.473667,
+      "lng": -81.473369
+    },
+    "link": "https://rcdb.com/15330.htm"
+  },
+  {
+    "name": "Incredible Hulk",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1999-05-28",
+    "location": {
+      "lat": 28.471169,
+      "lng": -81.468422
+    },
+    "link": "https://rcdb.com/557.htm"
+  },
+  {
+    "name": "Pteranodon Flyers",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1999-05-28",
+    "location": {
+      "lat": 28.47011,
+      "lng": -81.472804
+    },
+    "link": "https://rcdb.com/559.htm"
+  },
+  {
+    "name": "VelociCoaster",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2021-06-10",
+    "location": {
+      "lat": 28.471104,
+      "lng": -81.472689
+    },
+    "link": "https://rcdb.com/6992.htm"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Barnstormer",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1996",
+    "location": {
+      "lat": 28.420439,
+      "lng": -81.578496
+    },
+    "link": "https://rcdb.com/274.htm"
+  },
+  {
+    "name": "Big Thunder Mountain Railroad",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1980-11-15",
+    "location": {
+      "lat": 28.420473,
+      "lng": -81.584801
+    },
+    "link": "https://rcdb.com/273.htm"
+  },
+  {
+    "name": "Seven Dwarfs Mine Train",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2014-05-28",
+    "location": {
+      "lat": 28.420485,
+      "lng": -81.579769
+    },
+    "link": "https://rcdb.com/9720.htm"
+  },
+  {
+    "name": "Space Mountain",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1975-01-15",
+    "location": {
+      "lat": 28.419079,
+      "lng": -81.577296
+    },
+    "link": "https://rcdb.com/267.htm"
+  },
+  {
+    "name": "TRON Lightcycle / Run",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2023-04-04",
+    "location": {
+      "lat": 28.420559,
+      "lng": -81.576695
+    },
+    "link": "https://rcdb.com/15286.htm"
+  }
+]

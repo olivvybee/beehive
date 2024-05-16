@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Ice Breaker",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2022-02-18",
+    "location": {
+      "lat": 28.408908,
+      "lng": -81.46302
+    },
+    "link": "https://rcdb.com/17420.htm"
+  },
+  {
+    "name": "Journey to Atlantis",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1998-04-17",
+    "location": {
+      "lat": 28.413042,
+      "lng": -81.459241
+    },
+    "link": "https://rcdb.com/1904.htm"
+  },
+  {
+    "name": "Kraken",
+    "ridden": true,
+    "previousNames": ["Kraken Unleashed"],
+    "status": "Operating",
+    "openDate": "2000-06-01",
+    "location": {
+      "lat": 28.411047,
+      "lng": -81.458358
+    },
+    "link": "https://rcdb.com/581.htm"
+  },
+  {
+    "name": "Mako",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2016-06-10",
+    "location": {
+      "lat": 28.410034,
+      "lng": -81.456917
+    },
+    "link": "https://rcdb.com/12758.htm"
+  },
+  {
+    "name": "Manta",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2009-05-22",
+    "location": {
+      "lat": 28.412121,
+      "lng": -81.460778
+    },
+    "link": "https://rcdb.com/4190.htm"
+  },
+  {
+    "name": "Pipeline the Surf Coaster",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2023-05-27",
+    "location": {
+      "lat": 28.41095,
+      "lng": -81.463744
+    },
+    "link": "https://rcdb.com/20042.htm"
+  },
+  {
+    "name": "Super Grover's Box Car Derby",
+    "ridden": false,
+    "previousNames": ["Shamu Express"],
+    "status": "Operating",
+    "openDate": "2006-05-07",
+    "location": {
+      "lat": 28.406882,
+      "lng": -81.463047
+    },
+    "link": "https://rcdb.com/3340.htm"
+  }
+]

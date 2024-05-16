@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Harry Potter and the Escape from Gringotts",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2014-07-08",
+    "location": {
+      "lat": 28.480251,
+      "lng": -81.470001
+    },
+    "link": "https://rcdb.com/11887.htm"
+  },
+  {
+    "name": "Hollywood Rip, Ride, Rockit",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2009",
+    "location": {
+      "lat": 28.475211,
+      "lng": -81.469201
+    },
+    "link": "https://rcdb.com/3866.htm"
+  },
+  {
+    "name": "Revenge of the Mummy",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2004-05-21",
+    "location": {
+      "lat": 28.476864,
+      "lng": -81.470013
+    },
+    "link": "https://rcdb.com/2232.htm"
+  },
+  {
+    "name": "Trolls Trollercoaster",
+    "ridden": true,
+    "previousNames": [
+      "Woody Woodpecker's Nuthouse Coaster"
+    ],
+    "status": "SBNO",
+    "openDate": "2023-01-16",
+    "location": {
+      "lat": 28.478352,
+      "lng": -81.466293
+    },
+    "link": "https://rcdb.com/563.htm"
+  }
+]
