@@ -11,9 +11,8 @@
 
 .list {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
-  align-items: center;
+  flex-direction: column;
+  gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -41,12 +40,4 @@
 
 .itemName {
   color: var(--text-color);
-}
-
-@media screen and (max-width: 600px) {
-  .list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
 }

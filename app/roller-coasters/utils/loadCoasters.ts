@@ -1,8 +1,8 @@
 import path from 'path';
 import fs from 'fs';
 
-import { Coaster, Park, ParkCoasters } from '../types';
-import { PARKS, UNKNOWN_PARK } from '../constants/parks';
+import { Coaster, ParkCoasters } from '../types';
+import { ALL_PARKS, UNKNOWN_PARK } from '../constants/parks';
 
 const PARKS_DIR = path.resolve('.', 'app', 'roller-coasters', 'coasters');
 
@@ -13,7 +13,7 @@ export const loadCoasters = (): ParkCoasters[] => {
 
   const parks = parkFiles.map((filename) => {
     const parkId = filename.replace('.json', '');
-    const park = PARKS.find((park) => park.id === parkId) || UNKNOWN_PARK;
+    const park = ALL_PARKS.find((park) => park.id === parkId) || UNKNOWN_PARK;
 
     const filePath = path.resolve(PARKS_DIR, filename);
     const contents = fs.readFileSync(filePath, 'utf-8');

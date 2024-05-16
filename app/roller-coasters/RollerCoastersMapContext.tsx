@@ -4,7 +4,7 @@ import { PropsWithChildren, createContext, useState } from 'react';
 import { MapProvider } from 'react-map-gl/maplibre';
 import { Park, ParkCoasters } from './types';
 import { useSearchParams } from 'next/navigation';
-import { PARKS } from './constants/parks';
+import { GROUPED_PARKS } from './constants/parks';
 
 interface RollerCoastersMapContext {
   selectedPark?: Park;
@@ -24,7 +24,7 @@ export const RollerCoastersMapContextProvider = ({
   const queryParams = useSearchParams();
 
   const initialParkId = queryParams.get('park');
-  const initialPark = PARKS.find((park) => park.id === initialParkId);
+  const initialPark = GROUPED_PARKS.find((park) => park.id === initialParkId);
 
   const [selectedPark, setSelectedPark] = useState<Park | undefined>(
     initialPark

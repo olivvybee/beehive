@@ -1,18 +1,12 @@
-.mapInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.parksAndPresets {
+.keyAndParks {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 16px;
   margin: 0;
   margin-bottom: 32px;
 }
 
-.parksAndPresets > div {
+.keyAndParks > div {
   padding: 16px;
   border: 1px solid #999;
   border-radius: 8px;

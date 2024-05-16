@@ -8,18 +8,39 @@ import styles from './ParkChooser.module.css';
 import { getBounds } from '../utils/getBounds';
 import { usePathname } from 'next/navigation';
 import { FaLink } from 'react-icons/fa6';
+import { GROUPED_PARKS } from '../constants/parks';
 
 interface ParkChooserProps {
   parks: ParkCoasters[];
 }
 
 export const ParkChooser = ({ parks }: ParkChooserProps) => {
-  const maps = useMap();
+  const { rollerCoasterMap } = useMap();
+
+  const groups = GROUPED_PARKS.map((group) => {
+    const groupParkIds = group.parks.map((park) => park.id);
+    console.log(groupParkIds);
+    console.log(parks.map((park) => park.park.id));
+    const groupParks = parks.filter((park) =>
+      groupParkIds.includes(park.park.id)
+    );
+    return {
+      name: group.name,
+      parks: groupParks,
+    };
+  });
+
+  const onClickGroup = (group: { name: string; parks: ParkCoasters[] }) => {
+    if (rollerCoasterMap) {
+      const bounds = getBounds(group.parks);
+      rollerCoasterMap.fitBounds(bounds, { padding: 128 });
+    }
+  };
 
   const onClickPark = (park: ParkCoasters) => {
-    if (maps.rollerCoasterMap) {
+    if (rollerCoasterMap) {
       const bounds = getBounds([park]);
-      maps.rollerCoasterMap.fitBounds(bounds, { padding: 128 });
+      rollerCoasterMap.fitBounds(bounds, { padding: 128 });
     }
   };
 
@@ -27,22 +48,36 @@ export const ParkChooser = ({ parks }: ParkChooserProps) => {
     <div className={styles.parkChooser}>
       <h3 className={styles.heading}>Theme parks</h3>
 
-      <ul className={styles.grid}>
-        {parks.map((park) => (
-          <PresetItem
-            key={park.park.id}
-            park={park}
-            onClick={() => onClickPark(park)}
-          />
-        ))}
-      </ul>
+      {groups.map((group) => (
+        <div key={group.name}>
+          <h4 className={styles.groupName}>
+            <button
+              className={styles.button}
+              onClick={() => onClickGroup(group)}>
+              {group.name}
+            </button>
+          </h4>
+
+          <ul className={styles.grid}>
+            {group.parks.map((park) => (
+              <ParkItem
+                key={park.park.id}
+                park={park}
+                onClick={() => onClickPark(park)}
+              />
+            ))}
+          </ul>
+        </div>
+      ))}
 
       <p className={styles.helperText}>
-        Click a park to zoom to that park's coasters. Copy the permalink url (
+        {' '}
+        Click a group name to zoom in on that group. Click a park to zoom to
+        that park's coasters. Copy the permalink url (
         <span className={styles.permalink}>
           <FaLink />
         </span>
-        ) to link to a specific park view.
+        ) to link to a specific view.
       </p>
     </div>
   );
@@ -53,7 +88,7 @@ interface ParkItemProps {
   onClick: () => void;
 }
 
-export const PresetItem = ({ park, onClick }: ParkItemProps) => {
+export const ParkItem = ({ park, onClick }: ParkItemProps) => {
   const pathname = usePathname();
 
   const permalinkUrl = `${pathname}?park=${park.park.id}`;

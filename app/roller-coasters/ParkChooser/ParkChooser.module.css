@@ -3,6 +3,14 @@
   margin-bottom: 16px;
 }
 
+.groupName {
+  margin-bottom: 8px;
+}
+
+.groupName .button {
+  font-size: 1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
