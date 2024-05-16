@@ -1,7 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
-import Map, { Marker, useMap, Source, Layer } from 'react-map-gl/maplibre';
+import Map, { Marker } from 'react-map-gl/maplibre';
 import { Popup } from 'maplibre-gl';
 
 import { ParkCoasters } from './types';
@@ -10,21 +9,21 @@ import { getBounds } from './utils/getBounds';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 import styles from './RollerCoastersMap.module.css';
+import { useContext } from 'react';
+import { rollerCoastersMapContext } from './RollerCoastersMapContext';
 
 interface RollerCoastersMapProps {
   parks: ParkCoasters[];
 }
 
 export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
-  const { rollerCoasterMap } = useMap();
+  const { selectedPark } = useContext(rollerCoastersMapContext);
 
-  const bounds = getBounds(parks);
-
-  useEffect(() => {
-    if (rollerCoasterMap) {
-      rollerCoasterMap.fitBounds(bounds, { padding: 64 });
-    }
-  }, [bounds]);
+  const selectedParkData = parks.find(
+    (park) => park.park.id === selectedPark?.id
+  );
+  const parksForBounds = selectedParkData ? [selectedParkData] : parks;
+  const initialBounds = getBounds(parksForBounds);
 
   const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
   if (!protomapsKey) {
@@ -38,7 +37,7 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
       attributionControl={false}
       initialViewState={{
-        bounds,
+        bounds: initialBounds,
         fitBoundsOptions: {
           padding: 128,
         },

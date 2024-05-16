@@ -1,0 +1,19 @@
+.parksAndPresets {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.parksAndPresets > div {
+  padding: 16px;
+  border: 1px solid #999;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .parksAndPresets {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
