@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Rock 'n' Roller Coaster",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1999-07-29",
+    "location": {
+      "lat": 28.359401,
+      "lng": -81.561023
+    },
+    "link": "https://rcdb.com/560.htm"
+  },
+  {
+    "name": "Slinky Dog Dash",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2018-06-30",
+    "location": {
+      "lat": 28.356398,
+      "lng": -81.563086
+    },
+    "link": "https://rcdb.com/13377.htm"
+  }
+]

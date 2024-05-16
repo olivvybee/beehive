@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+.logButton {
+  margin-bottom: 16px;
+}
+
 .permalink {
   font-size: 0.7rem;
   color: #999999;

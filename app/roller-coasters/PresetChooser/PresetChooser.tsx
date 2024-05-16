@@ -6,6 +6,7 @@ import { PRESETS } from '../constants/presets';
 import { Preset } from '../types';
 
 import styles from './PresetChooser.module.css';
+import classNames from 'classnames';
 
 export const PresetChooser = () => {
   const { rollerCoasterMap } = useMap();
@@ -14,9 +15,26 @@ export const PresetChooser = () => {
     rollerCoasterMap?.fitBounds([preset.sw, preset.ne]);
   };
 
+  const logCurrentView = () => {
+    if (rollerCoasterMap) {
+      const bounds = rollerCoasterMap.getBounds();
+      const ne = bounds.getNorthEast();
+      const sw = bounds.getSouthWest();
+      console.log(JSON.stringify({ sw, ne }).slice(1, -1));
+    }
+  };
+
   return (
     <div className={styles.presetChooser}>
       <h3 className={styles.heading}>Interesting views</h3>
+
+      {process.env.NODE_ENV === 'development' && (
+        <button
+          className={classNames(styles.button, styles.logButton)}
+          onClick={logCurrentView}>
+          Log current view
+        </button>
+      )}
 
       <ul className={styles.grid}>
         {PRESETS.map((preset) => (

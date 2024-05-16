@@ -99,8 +99,6 @@ const run = async (themePark: string) => {
     };
   });
 
-  console.log(result, coasters);
-
   const filename = themePark.toLowerCase().replaceAll(' ', '-');
   const outputPath = path.resolve(
     '.',
