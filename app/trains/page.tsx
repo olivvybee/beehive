@@ -21,13 +21,6 @@ const Trains = () => {
     <TrainsMapContextProvider>
       <h2>Train map</h2>
 
-      <TrainsMap routes={routes} />
-
-      <div className={styles.keyAndPresets}>
-        <OperatorsKey />
-        <PresetChooser />
-      </div>
-
       <p>
         This is a hopefully fairly up to date map of all the train routes I have
         taken (and can remember).
@@ -37,6 +30,13 @@ const Trains = () => {
         knowing which parts of the network I have used and where the tracks are
         on a map.
       </p>
+
+      <TrainsMap routes={routes} />
+
+      <div className={styles.keyAndPresets}>
+        <OperatorsKey />
+        <PresetChooser />
+      </div>
 
       <h3 id="implementation">How I implemented this</h3>
 
