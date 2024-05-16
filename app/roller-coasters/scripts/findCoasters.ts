@@ -80,11 +80,14 @@ const run = async (themePark: string) => {
 
   const coasters: Coaster[] = result.map((coaster) => {
     const status = coaster.status.state.replace('Operated', 'Closed');
+    const previousNames = coaster.stats.formerNames
+      ?.split(',')
+      .map((name) => (name.endsWith(' (') ? name.slice(0, -2) : name));
 
     return {
       name: coaster.name,
       ridden: true,
-      previousNames: coaster.stats.formerNames?.split(',') || [],
+      previousNames: previousNames || [],
       status,
       openDate: coaster.status.date.opened,
       closeDate: coaster.status.date.closed || undefined,
