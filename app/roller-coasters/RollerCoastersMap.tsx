@@ -18,11 +18,6 @@ interface RollerCoastersMapProps {
 export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
   const { rollerCoasterMap } = useMap();
 
-  const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
-  if (!protomapsKey) {
-    return <div>Error: No Protomaps API key present in environment</div>;
-  }
-
   const bounds = getBounds(parks);
 
   useEffect(() => {
@@ -30,6 +25,11 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       rollerCoasterMap.fitBounds(bounds, { padding: 64 });
     }
   }, [bounds]);
+
+  const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
+  if (!protomapsKey) {
+    return <div>Error: No Protomaps API key present in environment</div>;
+  }
 
   return (
     <Map
