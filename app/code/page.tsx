@@ -15,7 +15,9 @@ const CodePage = () => (
     </p>
     <p>
       My <Link href="/trains">interactive train map</Link> shows all the train
-      lines I have travelled on.
+      lines I have travelled on, and the{' '}
+      <Link href="/roller-coasters">roller coaster map</Link> shows roller
+      coasters I've ridden.
     </p>
     <hr />
     <p>More coming soon...</p>
