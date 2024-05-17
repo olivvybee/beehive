@@ -54,9 +54,13 @@ const BlobbeePage = () => (
     <h3>Old blobbees</h3>
 
     <p>
-      I've preserved the old ("v1") blobbees for archival purposes. I don't
-      recommend using them in practice because the expressions are hard to read
-      when the images are emoji-sized.
+      Version 2.0 was a big update to the pack which changed the entire design
+      of every emoji. The old version is still available{' '}
+      <a href="https://github.com/olivvybee/blobbee/releases/tag/v1.99.3">
+        on github
+      </a>
+      , but I don't recommend using them in practice because the expressions are
+      hard to read when the images are emoji-sized.
     </p>
 
     <img
@@ -64,12 +68,6 @@ const BlobbeePage = () => (
       alt="A grid of bee emojis similar to the ones above, but with grey faces and more black outlines."
       className={styles.preview}
     />
-
-    <p>
-      <a href="/assets/blobbee-v1.zip" download={true}>
-        Download Blobbee v1 (.zip)
-      </a>
-    </p>
   </>
 );
 
