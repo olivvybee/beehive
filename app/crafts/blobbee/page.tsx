@@ -27,12 +27,10 @@ const BlobbeePage = () => (
 
     <p>
       The actual emojis are published{' '}
-      <a href="https://github.com/olivvybee/blobbee/releases/latest">
-        on github
-      </a>{' '}
-      so that I can make distinct releases with changelogs. It also allows me to
-      automate exporting the various files and metadata necessary to make
-      importing them on fedi much easier.
+      <a href="https://github.com/olivvybee/emojis">on github</a> so that I can
+      make distinct releases with changelogs. It also allows me to automate
+      exporting the various files and metadata necessary to make importing them
+      on fedi much easier.
     </p>
 
     <p>
