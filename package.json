@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build && npm run generate-rss",
     "start": "next start",
-    "lint": "next lint",
     "generate-rss": "tsx ./scripts/generateRSS.ts"
   },
   "dependencies": {
@@ -14,8 +13,6 @@
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
     "classnames": "^2.3.2",
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
     "maplibre-gl": "^4.1.2",
     "next": "^14.2.3",
     "react": "18.2.0",
