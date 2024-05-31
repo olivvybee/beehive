@@ -795,7 +795,7 @@
     "id": "BAB",
     "name": "Balcombe",
     "location": { "lat": "51.0555201604538", "lng": "-0.136933757536862" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BDK",
@@ -1347,7 +1347,7 @@
     "id": "BRK",
     "name": "Berwick (Sussex)",
     "location": { "lat": "50.8403762860459", "lng": "0.166017608785235" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BWK",
@@ -1581,7 +1581,7 @@
     "id": "BIP",
     "name": "Bishopstone (Sussex)",
     "location": { "lat": "50.7801416620368", "lng": "0.082756921439231" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BPT",
@@ -1605,7 +1605,7 @@
     "id": "BFR",
     "name": "Blackfriars",
     "location": { "lat": "51.51180819479", "lng": "-0.103332073034139" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BKH",
@@ -2073,7 +2073,7 @@
     "id": "BTN",
     "name": "Brighton",
     "location": { "lat": "50.8290032740444", "lng": "-0.141280362604851" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "BMD",
@@ -2343,7 +2343,7 @@
     "id": "BUG",
     "name": "Burgess Hill",
     "location": { "lat": "50.9536546008005", "lng": "-0.127412852764647" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BUY",
@@ -2607,7 +2607,7 @@
     "id": "CWX",
     "name": "Canary Wharf",
     "location": { "lat": "51.503578", "lng": "-0.019467" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "CNL",
@@ -3219,7 +3219,7 @@
     "id": "CTK",
     "name": "City Thameslink",
     "location": { "lat": "51.5139346019675", "lng": "-0.103589643870664" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "CLT",
@@ -3249,7 +3249,7 @@
     "id": "CLJ",
     "name": "Clapham Junction",
     "location": { "lat": "51.4641865965587", "lng": "-0.170293416365599" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "CPT",
@@ -3483,7 +3483,7 @@
     "id": "CBR",
     "name": "Cooksbridge",
     "location": { "lat": "50.9037547738731", "lng": "-0.0092027514388362" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "COE",
@@ -4125,7 +4125,7 @@
     "id": "DEP",
     "name": "Deptford",
     "location": { "lat": "51.4788463642079", "lng": "-0.026270214115525" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "DBY",
@@ -4605,7 +4605,7 @@
     "id": "ECR",
     "name": "East Croydon",
     "location": { "lat": "51.375452247008", "lng": "-0.0927797007945513" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "EDY",
@@ -4779,7 +4779,7 @@
     "id": "EDB",
     "name": "Edinburgh",
     "location": { "lat": "55.9523963079519", "lng": "-3.18822824323027" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "EGY",
@@ -5115,7 +5115,7 @@
     "id": "FMR",
     "name": "Falmer",
     "location": { "lat": "50.8621274713423", "lng": "-0.0873855066246158" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "FAL",
@@ -5175,7 +5175,7 @@
     "id": "ZFD",
     "name": "Farringdon",
     "location": { "lat": "51.5201655608346", "lng": "-0.105204669877814" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "FLD",
@@ -5631,7 +5631,7 @@
     "id": "GTW",
     "name": "Gatwick Airport",
     "location": { "lat": "51.1564892793918", "lng": "-0.161041534688098" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "GGJ",
@@ -5781,7 +5781,7 @@
     "id": "GLY",
     "name": "Glynde",
     "location": { "lat": "50.8591702144894", "lng": "0.0700772878696409" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "GOB",
@@ -5925,7 +5925,7 @@
     "id": "GRA",
     "name": "Grantham",
     "location": { "lat": "52.9064717738698", "lng": "-0.642450315227216" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "GRT",
@@ -6051,7 +6051,7 @@
     "id": "GNW",
     "name": "Greenwich",
     "location": { "lat": "51.478133366978", "lng": "-0.013339927226544" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "GEA",
@@ -6303,7 +6303,7 @@
     "id": "HMD",
     "name": "Hampden Park (Sussex)",
     "location": { "lat": "50.7964037646054", "lng": "0.279355781887921" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "HDH",
@@ -6507,7 +6507,7 @@
     "id": "HSK",
     "name": "Hassocks",
     "location": { "lat": "50.924614335082", "lng": "-0.145953060436374" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "HGS",
@@ -6633,7 +6633,7 @@
     "id": "HHE",
     "name": "Haywards Heath",
     "location": { "lat": "51.0056801393227", "lng": "-0.105077782185401" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "HAZ",
@@ -7119,7 +7119,7 @@
     "id": "HOR",
     "name": "Horley",
     "location": { "lat": "51.168773865309", "lng": "-0.161053584005946" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "HBP",
@@ -7767,7 +7767,7 @@
     "id": "KGX",
     "name": "King's Cross",
     "location": { "lat": "51.5308818372572", "lng": "-0.122925992140273" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "KGM",
@@ -7965,7 +7965,7 @@
     "id": "KBW",
     "name": "Knebworth",
     "location": { "lat": "51.8668534540605", "lng": "-0.187288791814045" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "KNI",
@@ -8235,7 +8235,7 @@
     "id": "LDS",
     "name": "Leeds",
     "location": { "lat": "53.7956274464893", "lng": "-1.54802567392696" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LEI",
@@ -8313,7 +8313,7 @@
     "id": "LWS",
     "name": "Lewes",
     "location": { "lat": "50.870630276246", "lng": "0.0113305158683365" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LEW",
@@ -8361,7 +8361,7 @@
     "id": "LHS",
     "name": "Limehouse",
     "location": { "lat": "51.5125350543271", "lng": "-0.0398028674833795" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "LCN",
@@ -8475,7 +8475,7 @@
     "id": "LST",
     "name": "Liverpool Street",
     "location": { "lat": "51.5179894594345", "lng": "-0.0814260256571922" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LSN",
@@ -8727,19 +8727,19 @@
     "id": "LBG",
     "name": "London Bridge",
     "location": { "lat": "51.5050174772731", "lng": "-0.0860920864342872" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LOF",
     "name": "London Fields",
     "location": { "lat": "51.5411513732358", "lng": "-0.057753374447073" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LRB",
     "name": "London Road (Brighton)",
     "location": { "lat": "50.8366614163988", "lng": "-0.136502344765958" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "LRD",
@@ -9213,7 +9213,7 @@
     "id": "MYB",
     "name": "Marylebone",
     "location": { "lat": "51.5225224462334", "lng": "-0.16291090658484" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "MRY",
@@ -9693,7 +9693,7 @@
     "id": "MCB",
     "name": "Moulsecoomb",
     "location": { "lat": "50.8467204578911", "lng": "-0.118841814627873" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "MFL",
@@ -9963,7 +9963,7 @@
     "id": "NCL",
     "name": "Newcastle",
     "location": { "lat": "54.9684027908736", "lng": "-1.61727998629735" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "NCO",
@@ -9981,13 +9981,13 @@
     "id": "NVH",
     "name": "Newhaven Harbour",
     "location": { "lat": "50.7897898808664", "lng": "0.0549929677578207" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "NVN",
     "name": "Newhaven Town",
     "location": { "lat": "50.794854179482", "lng": "0.0549454837075529" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "NGT",
@@ -10767,7 +10767,7 @@
     "id": "PBO",
     "name": "Peterborough",
     "location": { "lat": "52.5749740639353", "lng": "-0.249836976699539" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "PTR",
@@ -10851,7 +10851,7 @@
     "id": "PMP",
     "name": "Plumpton",
     "location": { "lat": "50.9286615707799", "lng": "-0.0601811124314792" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "PLU",
@@ -10875,7 +10875,7 @@
     "id": "PLG",
     "name": "Polegate",
     "location": { "lat": "50.8212432167366", "lng": "0.24514003551475" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "PSW",
@@ -11115,7 +11115,7 @@
     "id": "PRP",
     "name": "Preston Park",
     "location": { "lat": "50.8459424994462", "lng": "-0.155167648736818" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "PST",
@@ -12039,7 +12039,7 @@
     "id": "SEF",
     "name": "Seaford (Sussex)",
     "location": { "lat": "50.7728418110398", "lng": "0.100133665365156" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "SFL",
@@ -12147,7 +12147,7 @@
     "id": "SDE",
     "name": "Shadwell",
     "location": { "lat": "51.5112824213432", "lng": "-0.0569343732980926" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "SFR",
@@ -12345,7 +12345,7 @@
     "id": "SDC",
     "name": "Shoreditch High Street",
     "location": { "lat": "51.5233736684982", "lng": "-0.0752461831823725" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "SEH",
@@ -12681,7 +12681,7 @@
     "id": "SEE",
     "name": "Southease",
     "location": { "lat": "50.8312635479371", "lng": "0.0306412457041607" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "SIA",
@@ -13059,7 +13059,7 @@
     "id": "SVG",
     "name": "Stevenage",
     "location": { "lat": "51.9016861847805", "lng": "-0.20710946588827" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "STV",
@@ -13203,7 +13203,7 @@
     "id": "SRA",
     "name": "Stratford",
     "location": { "lat": "51.5418933693822", "lng": "-0.00339674105101297" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "SFA",
@@ -13365,7 +13365,7 @@
     "id": "SQE",
     "name": "Surrey Quays",
     "location": { "lat": "51.4931947271419", "lng": "-0.0475186638113895" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "SUO",
@@ -13737,7 +13737,7 @@
     "id": "TBD",
     "name": "Three Bridges",
     "location": { "lat": "51.116922296857", "lng": "-0.161184082771892" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "TOK",
@@ -13887,7 +13887,7 @@
     "id": "TCR",
     "name": "Tottenham Court Road",
     "location": { "lat": "51.516211", "lng": "-0.13111" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "TOM",
@@ -14187,7 +14187,7 @@
     "id": "VIC",
     "name": "Victoria",
     "location": { "lat": "51.4952560304275", "lng": "-0.144558809127037" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "VIR",
@@ -14433,7 +14433,7 @@
     "id": "WAT",
     "name": "Waterloo",
     "location": { "lat": "51.5032970946706", "lng": "-0.113108948088642" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "WLO",
@@ -14535,7 +14535,7 @@
     "id": "WGC",
     "name": "Welwyn Garden City",
     "location": { "lat": "51.8010467291572", "lng": "-0.20407048939388" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "WLW",
@@ -14877,7 +14877,7 @@
     "id": "ZLW",
     "name": "Whitechapel",
     "location": { "lat": "51.519467459104", "lng": "-0.0597571256720822" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "WCR",
@@ -15147,7 +15147,7 @@
     "id": "WVF",
     "name": "Wivelsfield",
     "location": { "lat": "50.964295186648", "lng": "-0.120790018659455" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "WIV",
@@ -15273,7 +15273,7 @@
     "id": "WWC",
     "name": "Woolwich",
     "location": { "lat": "51.491578", "lng": "0.071819" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "WWA",
@@ -15489,7 +15489,7 @@
     "id": "YRK",
     "name": "York",
     "location": { "lat": "53.9579660426758", "lng": "-1.09318220382403" },
-    "status": 0
+    "status": 2
   },
   {
     "id": "YRT",
