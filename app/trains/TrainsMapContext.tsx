@@ -4,7 +4,7 @@ import { createContext, PropsWithChildren, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MapProvider } from 'react-map-gl/maplibre';
 
-import { Operator, OPERATORS } from './constants/operators';
+import { Operator, ALL_OPERATORS } from './constants/operators';
 
 interface TrainsMapContext {
   selectedOperator?: Operator;
@@ -20,7 +20,7 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
   const queryParams = useSearchParams();
 
   const initialOperatorId = queryParams.get('operator');
-  const initialOperator = OPERATORS.find(
+  const initialOperator = ALL_OPERATORS.find(
     (operator) => operator.id === initialOperatorId
   );
 

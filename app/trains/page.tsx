@@ -35,7 +35,7 @@ const Trains = () => {
 
       <div className={styles.keyAndPresets}>
         <OperatorsKey />
-        <PresetChooser />
+        <PresetChooser routes={routes} />
       </div>
 
       <h3 id="implementation">How I implemented this</h3>

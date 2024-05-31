@@ -1,18 +1,28 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { useMap } from 'react-map-gl/maplibre';
-import { FaLink } from 'react-icons/fa';
 
-import { PRESETS, Preset } from '../constants/presets';
+import { Route } from '../Route';
+import { getBounds } from '../utils/getBounds';
+import { GROUPED_OPERATORS, GroupedOperators } from '../constants/operators';
 
 import styles from './PresetChooser.module.css';
 
-export const PresetChooser = () => {
+interface PresetChooserProps {
+  routes: Route[];
+}
+
+export const PresetChooser = ({ routes }: PresetChooserProps) => {
   const { trainMap } = useMap();
 
-  const onClickPreset = (preset: Preset) => {
-    trainMap?.fitBounds([preset.sw, preset.ne]);
+  const onClickPreset = (preset: GroupedOperators) => {
+    const matchingRoutes = routes.filter((route) =>
+      preset.operators
+        .map((operator) => operator.id)
+        .includes(route.operator.id)
+    );
+    const bounds = getBounds(matchingRoutes);
+    trainMap?.fitBounds(bounds, { padding: 128 });
   };
 
   return (
@@ -20,11 +30,11 @@ export const PresetChooser = () => {
       <h3 className={styles.heading}>Interesting views</h3>
 
       <ul className={styles.grid}>
-        {PRESETS.map((preset) => (
+        {GROUPED_OPERATORS.map((group) => (
           <PresetItem
-            key={preset.id}
-            preset={preset}
-            onClick={() => onClickPreset(preset)}
+            key={group.name}
+            preset={group}
+            onClick={() => onClickPreset(group)}
           />
         ))}
       </ul>
@@ -33,7 +43,7 @@ export const PresetChooser = () => {
 };
 
 interface PresetItemProps {
-  preset: Preset;
+  preset: GroupedOperators;
   onClick: () => void;
 }
 

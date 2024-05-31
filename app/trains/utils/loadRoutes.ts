@@ -2,7 +2,7 @@ import fs from 'fs';
 import { FeatureCollection } from 'geojson';
 
 import { Route } from '../Route';
-import { OPERATORS, OTHER_OPERATOR } from '../constants/operators';
+import { ALL_OPERATORS, OTHER_OPERATOR } from '../constants/operators';
 
 const ROUTES_DIR = './app/trains/routes';
 
@@ -13,7 +13,7 @@ export const loadRoutes = (): Route[] => {
 
   const routes = operatorDirs.flatMap((operatorId) => {
     const operator =
-      OPERATORS.find((operator) => operator.id === operatorId) ||
+      ALL_OPERATORS.find((operator) => operator.id === operatorId) ||
       OTHER_OPERATOR;
 
     const routeFiles = fs

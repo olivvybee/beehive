@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { usePathname } from 'next/navigation';
 import { FaLink } from 'react-icons/fa';
 
-import { OPERATORS, Operator } from '../constants/operators';
+import { ALL_OPERATORS, Operator } from '../constants/operators';
 import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './OperatorKey.module.css';
@@ -27,7 +27,7 @@ export const OperatorsKey = () => {
       <h3 className={styles.heading}>Key</h3>
 
       <ul className={styles.grid}>
-        {OPERATORS.map((operator) => (
+        {ALL_OPERATORS.map((operator) => (
           <OperatorsKeyItem
             key={operator.id}
             operator={operator}
