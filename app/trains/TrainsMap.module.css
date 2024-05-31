@@ -1,0 +1,17 @@
+.popup {
+  color: black;
+}
+
+.stationName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stationDetails {
+  width: 100%;
+}
+
+.stationDetails td:first-child {
+  font-weight: bold;
+  padding-right: 8px;
+}

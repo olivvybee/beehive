@@ -1,23 +1,51 @@
 'use client';
 
 import { useContext, useEffect } from 'react';
-import Map, { useMap, Source, Layer } from 'react-map-gl/maplibre';
+import Map, { useMap, Source, Layer, Marker } from 'react-map-gl/maplibre';
+import { Popup } from 'maplibre-gl';
 
 import { Route } from './Route';
 import { getBounds } from './utils/getBounds';
 import { trainsMapContext } from './TrainsMapContext';
+import { Station, StationStatus } from './Station';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
 
+import styles from './TrainsMap.module.css';
+
 interface TrainsMapProps {
   routes: Route[];
+  stations: Station[];
   useOperatorColours?: boolean;
 }
 
 const DEFAULT_COLOUR = 'rgb(255, 255, 255)';
 
+const getMarkerColour = (station: Station) => {
+  switch (station.status) {
+    case StationStatus.NotVisited:
+      return 'var(--red)';
+    case StationStatus.PassedThrough:
+      return 'var(--orange)';
+    case StationStatus.Visited:
+      return 'var(--green)';
+  }
+};
+
+const getStatusText = (station: Station) => {
+  switch (station.status) {
+    case StationStatus.NotVisited:
+      return 'Not visited';
+    case StationStatus.PassedThrough:
+      return 'Passed through';
+    case StationStatus.Visited:
+      return 'Visited';
+  }
+};
+
 export const TrainsMap = ({
   routes,
+  stations,
   useOperatorColours = true,
 }: TrainsMapProps) => {
   const { selectedOperator } = useContext(trainsMapContext);
@@ -66,6 +94,40 @@ export const TrainsMap = ({
           />
         </Source>
       ))}
+
+      {stations.map((station) => {
+        const popup = new Popup();
+
+        if (typeof window !== 'undefined') {
+          popup.setMaxWidth('50%');
+          popup.setHTML(`
+            <div class="${styles.popup}">
+              <span class="${styles.stationName}">${station.name}</span>
+              <table class="${styles.stationDetails}">
+                <tr><td>Code</td> <td>${station.id}</td></tr>
+                <tr><td>Status</td> <td>${getStatusText(station)}</td></tr>
+              </table>
+            </div>`);
+        }
+
+        return (
+          <Marker
+            key={station.id}
+            latitude={station.location.lat}
+            longitude={station.location.lng}
+            anchor="bottom"
+            popup={popup}>
+            <div
+              style={{
+                width: 16,
+                height: 16,
+                borderRadius: 16,
+                background: getMarkerColour(station),
+              }}
+            />
+          </Marker>
+        );
+      })}
     </Map>
   );
 };
