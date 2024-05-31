@@ -95,12 +95,14 @@ export const TrainsMap = ({
         </Source>
       ))}
 
-      {stations.map((station) => {
-        const popup = new Popup();
+      {stations
+        .toSorted((a, b) => a.status - b.status)
+        .map((station) => {
+          const popup = new Popup();
 
-        if (typeof window !== 'undefined') {
-          popup.setMaxWidth('50%');
-          popup.setHTML(`
+          if (typeof window !== 'undefined') {
+            popup.setMaxWidth('50%');
+            popup.setHTML(`
             <div class="${styles.popup}">
               <span class="${styles.stationName}">${station.name}</span>
               <table class="${styles.stationDetails}">
@@ -108,26 +110,26 @@ export const TrainsMap = ({
                 <tr><td>Status</td> <td>${getStatusText(station)}</td></tr>
               </table>
             </div>`);
-        }
+          }
 
-        return (
-          <Marker
-            key={station.id}
-            latitude={station.location.lat}
-            longitude={station.location.lng}
-            anchor="bottom"
-            popup={popup}>
-            <div
-              style={{
-                width: 16,
-                height: 16,
-                borderRadius: 16,
-                background: getMarkerColour(station),
-              }}
-            />
-          </Marker>
-        );
-      })}
+          return (
+            <Marker
+              key={station.id}
+              latitude={station.location.lat}
+              longitude={station.location.lng}
+              anchor="bottom"
+              popup={popup}>
+              <div
+                style={{
+                  width: 16,
+                  height: 16,
+                  borderRadius: 16,
+                  background: getMarkerColour(station),
+                }}
+              />
+            </Marker>
+          );
+        })}
     </Map>
   );
 };
