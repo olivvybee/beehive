@@ -37,7 +37,7 @@ const getStatusText = (station: Station) => {
     case StationStatus.NotVisited:
       return 'Not visited';
     case StationStatus.PassedThrough:
-      return 'Passed through';
+      return 'Stopped';
     case StationStatus.Visited:
       return 'Visited';
   }
