@@ -101,6 +101,7 @@ export const TrainsMap = ({
           const popup = new Popup();
 
           if (typeof window !== 'undefined') {
+            popup.setOffset([0, -8]);
             popup.setMaxWidth('50%');
             popup.setHTML(`
             <div class="${styles.popup}">
