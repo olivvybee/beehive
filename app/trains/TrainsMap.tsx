@@ -1,7 +1,13 @@
 'use client';
 
-import { useContext, useEffect } from 'react';
-import Map, { useMap, Source, Layer, Marker } from 'react-map-gl/maplibre';
+import { useContext, useEffect, useState } from 'react';
+import Map, {
+  useMap,
+  Source,
+  Layer,
+  Marker,
+  ViewStateChangeEvent,
+} from 'react-map-gl/maplibre';
 import { Popup } from 'maplibre-gl';
 
 import { Route } from './Route';
@@ -62,6 +68,16 @@ export const TrainsMap = ({
 
   const initialBounds = getBounds(routes);
 
+  const [markerSize, setMarkerSize] = useState<number>(8);
+
+  const onZoom = (e: ViewStateChangeEvent) => {
+    if (e.viewState.zoom >= 8.25) {
+      setMarkerSize(16);
+    } else {
+      setMarkerSize(8);
+    }
+  };
+
   useEffect(() => {
     const bounds = getBounds(visibleRoutes);
     trainMap?.fitBounds(bounds, { padding: 64 });
@@ -78,6 +94,7 @@ export const TrainsMap = ({
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
       mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
       attributionControl={false}
+      onZoom={onZoom}
       initialViewState={{
         bounds: initialBounds,
         fitBoundsOptions: {
@@ -126,9 +143,9 @@ export const TrainsMap = ({
               popup={popup}>
               <div
                 style={{
-                  width: 16,
-                  height: 16,
-                  borderRadius: 16,
+                  width: markerSize,
+                  height: markerSize,
+                  borderRadius: markerSize,
                   background: getMarkerColour(station),
                 }}
               />
