@@ -237,7 +237,7 @@
     "id": "AAP",
     "name": "Alexandra Palace",
     "location": { "lat": "51.5979224924556", "lng": "-0.120235220128854" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "AXP",
@@ -4257,7 +4257,7 @@
     "id": "DON",
     "name": "Doncaster",
     "location": { "lat": "53.5221497040669", "lng": "-1.13984532561563" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "DCH",
@@ -5289,7 +5289,7 @@
     "id": "FPK",
     "name": "Finsbury Park",
     "location": { "lat": "51.5643002449157", "lng": "-0.106284978884699" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "FIN",
@@ -6525,7 +6525,7 @@
     "id": "HAT",
     "name": "Hatfield (Herts)",
     "location": { "lat": "51.7638781481545", "lng": "-0.215588611336329" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "HFS",
@@ -9939,7 +9939,7 @@
     "id": "NNG",
     "name": "Newark North Gate",
     "location": { "lat": "53.0817576073233", "lng": "-0.7998546058664" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "NBE",
@@ -11067,7 +11067,7 @@
     "id": "PBR",
     "name": "Potters Bar",
     "location": { "lat": "51.6970659903403", "lng": "-0.192605538606053" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "PFY",
@@ -14541,7 +14541,7 @@
     "id": "WLW",
     "name": "Welwyn North",
     "location": { "lat": "51.8234960705586", "lng": "-0.192091562345001" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "WEM",

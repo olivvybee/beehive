@@ -60,6 +60,26 @@
   color: #999999;
 }
 
+.stationsCheckboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stationsGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.checkboxItem {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
 @media screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;

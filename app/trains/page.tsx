@@ -3,7 +3,7 @@ import { buildMetadata } from '@/utils/metadata';
 import { TrainsMap } from './TrainsMap';
 import { loadRoutes } from './utils/loadRoutes';
 import { loadStations } from './utils/loadStations';
-import { OperatorsKey } from './OperatorKey/OperatorKey';
+import { Key } from './Key/Key';
 import { TrainsMapContextProvider } from './TrainsMapContext';
 import { PresetChooser } from './PresetChooser/PresetChooser';
 
@@ -36,7 +36,7 @@ const Trains = () => {
       <TrainsMap routes={routes} stations={stations} />
 
       <div className={styles.keyAndPresets}>
-        <OperatorsKey />
+        <Key />
         <PresetChooser routes={routes} />
       </div>
 

@@ -48,12 +48,17 @@ export const TrainsMap = ({
   stations,
   useOperatorColours = true,
 }: TrainsMapProps) => {
-  const { selectedOperator } = useContext(trainsMapContext);
+  const { selectedOperator, stationsFilter } = useContext(trainsMapContext);
   const { trainMap } = useMap();
 
   const visibleRoutes = selectedOperator
     ? routes.filter((route) => route.operator.id === selectedOperator.id)
     : routes;
+
+  const visibleStations =
+    stationsFilter !== undefined
+      ? stations.filter((station) => station.status >= stationsFilter)
+      : [];
 
   const bounds = getBounds(visibleRoutes);
 
@@ -95,7 +100,7 @@ export const TrainsMap = ({
         </Source>
       ))}
 
-      {stations
+      {visibleStations
         .toSorted((a, b) => a.status - b.status)
         .map((station) => {
           const popup = new Popup();
