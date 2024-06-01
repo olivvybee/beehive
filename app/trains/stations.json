@@ -1377,7 +1377,7 @@
     "id": "BET",
     "name": "Bethnal Green Rail",
     "location": { "lat": "51.5239156627757", "lng": "-0.0595680464428894" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "BYC",
@@ -2571,7 +2571,7 @@
     "id": "CBH",
     "name": "Cambridge Heath",
     "location": { "lat": "51.5319710950389", "lng": "-0.0572790666047599" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "CMB",
@@ -2601,7 +2601,7 @@
     "id": "ZCW",
     "name": "Canada Water",
     "location": { "lat": "51.4979884652777", "lng": "-0.0497198367270248" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "CWX",
@@ -11685,7 +11685,7 @@
     "id": "ROE",
     "name": "Rotherhithe",
     "location": { "lat": "51.5008148899235", "lng": "-0.0520485787878795" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "RNR",
@@ -14343,7 +14343,7 @@
     "id": "WPE",
     "name": "Wapping",
     "location": { "lat": "51.5043864413741", "lng": "-0.0559308982729535" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "WBL",
