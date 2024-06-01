@@ -279,7 +279,7 @@
     "id": "ALM",
     "name": "Alnmouth",
     "location": { "lat": "55.3927786386397", "lng": "-1.63663783937358" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "ALR",
@@ -3993,7 +3993,7 @@
     "id": "DAR",
     "name": "Darlington",
     "location": { "lat": "54.5204487638895", "lng": "-1.5473239913848" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "DAN",
@@ -4539,7 +4539,7 @@
     "id": "DHM",
     "name": "Durham",
     "location": { "lat": "54.7793912284615", "lng": "-1.58175210120156" },
-    "status": 0
+    "status": 1
   },
   {
     "id": "DUR",
@@ -7119,7 +7119,7 @@
     "id": "HOR",
     "name": "Horley",
     "location": { "lat": "51.168773865309", "lng": "-0.161053584005946" },
-    "status": 1
+    "status": 0
   },
   {
     "id": "HBP",
