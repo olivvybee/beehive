@@ -1,39 +1,87 @@
 'use client';
 
-import { useContext, useEffect } from 'react';
-import Map, { useMap, Source, Layer } from 'react-map-gl/maplibre';
+import { useContext, useEffect, useState } from 'react';
+import Map, {
+  useMap,
+  Source,
+  Layer,
+  Marker,
+  ViewStateChangeEvent,
+} from 'react-map-gl/maplibre';
+import { Popup } from 'maplibre-gl';
 
 import { Route } from './Route';
 import { getBounds } from './utils/getBounds';
 import { trainsMapContext } from './TrainsMapContext';
+import { Station, StationStatus } from './Station';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
 
+import styles from './TrainsMap.module.css';
+
 interface TrainsMapProps {
   routes: Route[];
+  stations: Station[];
   useOperatorColours?: boolean;
 }
 
 const DEFAULT_COLOUR = 'rgb(255, 255, 255)';
 
+const getMarkerColour = (station: Station) => {
+  switch (station.status) {
+    case StationStatus.NotVisited:
+      return 'var(--red)';
+    case StationStatus.PassedThrough:
+      return 'var(--orange)';
+    case StationStatus.Visited:
+      return 'var(--green)';
+  }
+};
+
+const getStatusText = (station: Station) => {
+  switch (station.status) {
+    case StationStatus.NotVisited:
+      return 'Not visited';
+    case StationStatus.PassedThrough:
+      return 'Stopped';
+    case StationStatus.Visited:
+      return 'Visited';
+  }
+};
+
 export const TrainsMap = ({
   routes,
+  stations,
   useOperatorColours = true,
 }: TrainsMapProps) => {
-  const { selectedOperator } = useContext(trainsMapContext);
+  const { selectedOperator, stationsFilter } = useContext(trainsMapContext);
   const { trainMap } = useMap();
 
   const visibleRoutes = selectedOperator
     ? routes.filter((route) => route.operator.id === selectedOperator.id)
     : routes;
 
-  const bounds = getBounds(visibleRoutes);
+  const visibleStations =
+    stationsFilter !== undefined
+      ? stations.filter((station) => station.status >= stationsFilter)
+      : [];
+
+  const initialBounds = getBounds(routes);
+
+  const [markerSize, setMarkerSize] = useState<number>(8);
+
+  const onZoom = (e: ViewStateChangeEvent) => {
+    if (e.viewState.zoom >= 8.25) {
+      setMarkerSize(16);
+    } else {
+      setMarkerSize(8);
+    }
+  };
 
   useEffect(() => {
-    if (trainMap) {
-      trainMap.fitBounds(bounds, { padding: 64 });
-    }
-  }, [bounds]);
+    const bounds = getBounds(visibleRoutes);
+    trainMap?.fitBounds(bounds, { padding: 64 });
+  }, [visibleRoutes]);
 
   const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
   if (!protomapsKey) {
@@ -46,8 +94,9 @@ export const TrainsMap = ({
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
       mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
       attributionControl={false}
+      onZoom={onZoom}
       initialViewState={{
-        bounds,
+        bounds: initialBounds,
         fitBoundsOptions: {
           padding: 64,
         },
@@ -66,6 +115,43 @@ export const TrainsMap = ({
           />
         </Source>
       ))}
+
+      {visibleStations
+        .toSorted((a, b) => a.status - b.status)
+        .map((station) => {
+          const popup = new Popup();
+
+          if (typeof window !== 'undefined') {
+            popup.setOffset([0, -8]);
+            popup.setMaxWidth('50%');
+            popup.setHTML(`
+            <div class="${styles.popup}">
+              <span class="${styles.stationName}">${station.name}</span>
+              <table class="${styles.stationDetails}">
+                <tr><td>Code</td> <td>${station.id}</td></tr>
+                <tr><td>Status</td> <td>${getStatusText(station)}</td></tr>
+              </table>
+            </div>`);
+          }
+
+          return (
+            <Marker
+              key={station.id}
+              latitude={station.location.lat}
+              longitude={station.location.lng}
+              anchor="bottom"
+              popup={popup}>
+              <div
+                style={{
+                  width: markerSize,
+                  height: markerSize,
+                  borderRadius: markerSize,
+                  background: getMarkerColour(station),
+                }}
+              />
+            </Marker>
+          );
+        })}
     </Map>
   );
 };
