@@ -60,13 +60,12 @@ export const TrainsMap = ({
       ? stations.filter((station) => station.status >= stationsFilter)
       : [];
 
-  const bounds = getBounds(visibleRoutes);
+  const initialBounds = getBounds(routes);
 
   useEffect(() => {
-    if (trainMap) {
-      trainMap.fitBounds(bounds, { padding: 64 });
-    }
-  }, [bounds]);
+    const bounds = getBounds(visibleRoutes);
+    trainMap?.fitBounds(bounds, { padding: 64 });
+  }, [visibleRoutes]);
 
   const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
   if (!protomapsKey) {
@@ -80,7 +79,7 @@ export const TrainsMap = ({
       mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
       attributionControl={false}
       initialViewState={{
-        bounds,
+        bounds: initialBounds,
         fitBoundsOptions: {
           padding: 64,
         },
