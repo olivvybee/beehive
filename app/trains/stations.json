@@ -15508,5 +15508,269 @@
     "name": "Ystrad Rhondda",
     "location": { "lat": "51.6436438911633", "lng": "-3.46668525740968" },
     "status": 0
+  },
+  {
+    "id": "ABR",
+    "name": "Abbey Road (DLR)",
+    "location": { "lat": 51.53253855568744, "lng": 0.0038054644030804576 },
+    "status": 0
+  },
+  {
+    "id": "ALS",
+    "name": "All Saints (DLR)",
+    "location": { "lat": 51.511120566560834, "lng": -0.013050716316042581 },
+    "status": 1
+  },
+  {
+    "id": "BAN",
+    "name": "Bank (DLR)",
+    "location": { "lat": 51.51322866923455, "lng": -0.08831683251352478 },
+    "status": 2
+  },
+  {
+    "id": "BEC",
+    "name": "Beckton (DLR)",
+    "location": { "lat": 51.51457270909872, "lng": 0.06157427223055821 },
+    "status": 0
+  },
+  {
+    "id": "BEP",
+    "name": "Beckton Park (DLR)",
+    "location": { "lat": 51.50895832289872, "lng": 0.05498959717829969 },
+    "status": 0
+  },
+  {
+    "id": "BLA",
+    "name": "Blackwall (DLR)",
+    "location": { "lat": 51.50810320309504, "lng": -0.007070302821761628 },
+    "status": 1
+  },
+  {
+    "id": "BOC",
+    "name": "Bow Church (DLR)",
+    "location": { "lat": 51.52779844574428, "lng": -0.02105522000760114 },
+    "status": 2
+  },
+  {
+    "id": "CAN",
+    "name": "Canary Wharf (DLR)",
+    "location": { "lat": 51.50497561566429, "lng": -0.020853916316386088 },
+    "status": 2
+  },
+  {
+    "id": "CAT",
+    "name": "Canning Town (DLR)",
+    "location": { "lat": 51.5141058150565, "lng": 0.008403035530392369 },
+    "status": 1
+  },
+  {
+    "id": "CRO",
+    "name": "Crossharbour (DLR)",
+    "location": { "lat": 51.495900375378554, "lng": -0.014465195152086413 },
+    "status": 2
+  },
+  {
+    "id": "CUH",
+    "name": "Custom House (DLR)",
+    "location": { "lat": 51.50996378770588, "lng": 0.02687757814512252 },
+    "status": 0
+  },
+  {
+    "id": "CUS",
+    "name": "Cutty Sark (DLR)",
+    "location": { "lat": 51.48169857438357, "lng": -0.010756498189395038 },
+    "status": 1
+  },
+  {
+    "id": "CYP",
+    "name": "Cyprus (DLR)",
+    "location": { "lat": 51.508424254686254, "lng": 0.06398167601344062 },
+    "status": 0
+  },
+  {
+    "id": "DEB",
+    "name": "Deptford Bridge (DLR)",
+    "location": { "lat": 51.47423247670497, "lng": -0.022431846999615656 },
+    "status": 2
+  },
+  {
+    "id": "DER",
+    "name": "Devons Road (DLR)",
+    "location": { "lat": 51.52265622942569, "lng": -0.017447116315371426 },
+    "status": 1
+  },
+  {
+    "id": "EAI",
+    "name": "East India (DLR)",
+    "location": { "lat": 51.5094393115224, "lng": -0.002136829810586121 },
+    "status": 1
+  },
+  {
+    "id": "ELR",
+    "name": "Elverson Road (DLR)",
+    "location": { "lat": 51.469086539733006, "lng": -0.01670073165917588 },
+    "status": 1
+  },
+  {
+    "id": "GAR",
+    "name": "Gallion's Reach (DLR)",
+    "location": { "lat": 51.50913628976748, "lng": 0.07173842601349716 },
+    "status": 0
+  },
+  {
+    "id": "GRE",
+    "name": "Greenwich (DLR)",
+    "location": { "lat": 51.47816755254121, "lng": -0.013238139602130232 },
+    "status": 1
+  },
+  {
+    "id": "HEQ",
+    "name": "Heron Quays (DLR)",
+    "location": { "lat": 51.50297932481318, "lng": -0.021409853236905405 },
+    "status": 2
+  },
+  {
+    "id": "ISG",
+    "name": "Island Gardens (DLR)",
+    "location": { "lat": 51.48812757505052, "lng": -0.010490057231022497 },
+    "status": 1
+  },
+  {
+    "id": "KGV",
+    "name": "King George V (DLR)",
+    "location": { "lat": 51.50218699266383, "lng": 0.06246492785933596 },
+    "status": 0
+  },
+  {
+    "id": "LAP",
+    "name": "Langdon Park (DLR)",
+    "location": { "lat": 51.51518751759195, "lng": -0.014220334361860217 },
+    "status": 1
+  },
+  {
+    "id": "LEW",
+    "name": "Lewisham (DLR)",
+    "location": { "lat": 51.464912464015384, "lng": -0.012891522067733788 },
+    "status": 2
+  },
+  {
+    "id": "LIM",
+    "name": "Limehouse (DLR)",
+    "location": { "lat": 51.51242348664373, "lng": -0.03899658009571486 },
+    "status": 1
+  },
+  {
+    "id": "LCA",
+    "name": "London City Airport (DLR)",
+    "location": { "lat": 51.503478347136465, "lng": 0.04939780456302574 },
+    "status": 0
+  },
+  {
+    "id": "MUD",
+    "name": "Mudchute (DLR)",
+    "location": { "lat": 51.49140686059236, "lng": -0.015004346913612914 },
+    "status": 2
+  },
+  {
+    "id": "PDK",
+    "name": "Pontoon Dock (DLR)",
+    "location": { "lat": 51.502351628140985, "lng": 0.03336774135381756 },
+    "status": 2
+  },
+  {
+    "id": "POP",
+    "name": "Poplar (DLR)",
+    "location": { "lat": 51.5079742697647, "lng": -0.017698433503214334 },
+    "status": 2
+  },
+  {
+    "id": "PRR",
+    "name": "Prince Regent (DLR)",
+    "location": { "lat": 51.509472398880995, "lng": 0.03413135300242462 },
+    "status": 0
+  },
+  {
+    "id": "PML",
+    "name": "Pudding Mill Lane (DLR)",
+    "location": { "lat": 51.53403117673425, "lng": -0.013336902721213451 },
+    "status": 1
+  },
+  {
+    "id": "ROA",
+    "name": "Royal Albert (DLR)",
+    "location": { "lat": 51.508594712063285, "lng": 0.045963024167181926 },
+    "status": 0
+  },
+  {
+    "id": "ROV",
+    "name": "Royal Victoria (DLR)",
+    "location": { "lat": 51.509434734043374, "lng": 0.018483853002443998 },
+    "status": 0
+  },
+  {
+    "id": "SHA",
+    "name": "Shadwell (DLR)",
+    "location": { "lat": 51.5117931039252, "lng": -0.055657986797989806 },
+    "status": 2
+  },
+  {
+    "id": "SOQ",
+    "name": "South Quay (DLR)",
+    "location": { "lat": 51.500175029335914, "lng": -0.01633119837391464 },
+    "status": 2
+  },
+  {
+    "id": "STL",
+    "name": "Star Lane (DLR)",
+    "location": { "lat": 51.520769861420426, "lng": 0.004320788365005125 },
+    "status": 0
+  },
+  {
+    "id": "SHS",
+    "name": "Stratford High Street (DLR)",
+    "location": { "lat": 51.53803852865835, "lng": -0.0005691496786336025 },
+    "status": 0
+  },
+  {
+    "id": "STI",
+    "name": "Stratford International (DLR)",
+    "location": { "lat": 51.54575043258764, "lng": -0.00870741631403094 },
+    "status": 0
+  },
+  {
+    "id": "TOG",
+    "name": "Tower Gateway (DLR)",
+    "location": { "lat": 51.5107446857604, "lng": -0.07371238748087172 },
+    "status": 2
+  },
+  {
+    "id": "WEH",
+    "name": "West Ham (DLR)",
+    "location": { "lat": 51.52819319280228, "lng": 0.0051189260145831144 },
+    "status": 0
+  },
+  {
+    "id": "WIQ",
+    "name": "West India Quay (DLR)",
+    "location": { "lat": 51.50703198423951, "lng": -0.02058221816253892 },
+    "status": 2
+  },
+  {
+    "id": "WST",
+    "name": "West Silvertown (DLR)",
+    "location": { "lat": 51.50294475407055, "lng": 0.022540626101932117 },
+    "status": 1
+  },
+  {
+    "id": "WES",
+    "name": "Westferry (DLR)",
+    "location": { "lat": 51.5095455904293, "lng": -0.026809728643497965 },
+    "status": 2
+  },
+  {
+    "id": "WOA",
+    "name": "Woolwich Arsenal (DLR)",
+    "location": { "lat": 51.490647518985654, "lng": 0.06874593794448625 },
+    "status": 0
   }
 ]
