@@ -7,6 +7,10 @@
   border-color: transparent;
 }
 
+.logo {
+  image-rendering: pixelated;
+}
+
 .headerContents {
   max-width: var(--content-width);
   margin: 0 auto;

@@ -8,7 +8,13 @@ export const Header = () => (
     <div className={styles.headerContents}>
       <Link href="/">
         <h1 className={styles.branding}>
-          <Image src="/logo.png" height={48} width={48} alt="" />
+          <Image
+            className={styles.logo}
+            src="/logo.png"
+            height={48}
+            width={48}
+            alt=""
+          />
           Liv's Beehive
         </h1>
       </Link>
