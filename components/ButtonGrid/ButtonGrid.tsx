@@ -13,13 +13,19 @@ const BUTTONS: Button[] = [
   {
     id: 'beehive.gay',
     src: '/button.png',
-    alt: 'A pixel art bee and the text "beehive.gay" with a rainbow underline.',
+    alt: 'A bee and the text "beehive.gay" with a rainbow underline.',
   },
   {
     id: 'theresnotime',
     src: 'https://theresnotime.co.uk/button.png',
-    alt: 'A pixel art fox and the text "TheresNoTime" on a subtle non-binary flag background.',
+    alt: 'A fox and the text "TheresNoTime" on a subtle non-binary flag background.',
     href: 'https://theresnotime.co.uk',
+  },
+  {
+    id: 'honeycomb.engineer',
+    src: '/buttons/honeycomb-engineer.png',
+    alt: 'A rainbow beehive and the text "honeycomb.engineer".',
+    href: 'https://honeycomb.engineer',
   },
 ];
 
