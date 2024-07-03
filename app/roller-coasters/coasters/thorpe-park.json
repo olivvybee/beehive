@@ -25,7 +25,7 @@
   },
   {
     "name": "Hyperia",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2024-05-24",
