@@ -20,8 +20,12 @@ const Homepage = () => (
       </p>
       <p>
         I'm <a href="https://new.lgbtqia.wiki/wiki/Agender">agender</a> and my
-        pronouns are <strong>she/they</strong>. I tend to refer to myself as a
-        trans woman, although it's a bit more complicated than that.
+        pronouns are{' '}
+        <abbr title='For example: "She updated her website", or "They updated their website"'>
+          she/they
+        </abbr>
+        . I tend to refer to myself as a trans woman, although it's a bit more
+        complicated than that.
       </p>
     </InlineImage>
     <p>

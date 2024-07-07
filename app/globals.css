@@ -187,3 +187,19 @@ li ol {
 li li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
+
+abbr {
+  text-decoration: none;
+  transition: color 0.2s;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: dashed;
+  border-color: var(--text-color);
+  cursor: help;
+}
+
+abbr:hover,
+abbr:focus {
+  border-color: unset;
+  border-image: var(--rainbow) 1 1;
+}
