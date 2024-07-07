@@ -79,13 +79,13 @@ a {
   border-bottom-width: 1px;
   border-style: solid;
   border-color: var(--purple);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--green);
-    border-color: unset;
-    border-image: var(--rainbow) 1 1;
-  }
+a:hover,
+a:focus {
+  color: var(--green);
+  border-color: unset;
+  border-image: var(--rainbow) 1 1;
 }
 
 p:not(:last-child) {
@@ -140,16 +140,16 @@ blockquote {
   padding: 16px;
   padding-left: 32px;
   background: var(--background-highlight);
+}
 
-  &::before {
-    content: '';
-    background: var(--rainbow-vertical);
-    width: 8px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-  }
+blockquote::before {
+  content: '';
+  background: var(--rainbow-vertical);
+  width: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 ul {
