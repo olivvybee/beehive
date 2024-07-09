@@ -2,24 +2,20 @@
   position: relative;
 }
 
-.abbrPopup {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 30px;
-  width: max-content;
-  max-width: 330px;
+.popup {
+  position: relative;
+  max-width: 320px;
   background-color: var(--background-highlight);
   color: #fff;
   border: 1px solid var(--separator-color);
   border-radius: 4px;
   box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
   padding: 8px;
-  padding-left: 16px;
+  padding-left: 12px;
   font-size: 1rem;
 }
 
-.abbrPopup::before {
+.popup::before {
   content: '';
   background: var(--rainbow-vertical);
   width: 4px;
@@ -29,9 +25,4 @@
   left: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-}
-
-.abbr:hover .abbrPopup,
-.abbr:focus .abbrPopup {
-  display: block;
 }
