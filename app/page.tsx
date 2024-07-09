@@ -4,6 +4,7 @@ import { InlineImage } from '@/components/InlineImage';
 import styles from './page.module.css';
 import { FEDI_URL, FEDI_USERNAME } from '@/constants';
 import { ButtonGrid } from '@/components/ButtonGrid';
+import { Abbr } from '@/components/Abbr';
 
 const Homepage = () => (
   <>
@@ -21,9 +22,9 @@ const Homepage = () => (
       <p>
         I'm <a href="https://new.lgbtqia.wiki/wiki/Agender">agender</a> and my
         pronouns are{' '}
-        <abbr title='For example: "She updated her website", or "They updated their website"'>
+        <Abbr title='For example: "She updated her website", or "They updated their website"'>
           she/they
-        </abbr>
+        </Abbr>
         . I tend to refer to myself as a trans woman, although it's a bit more
         complicated than that.
       </p>
