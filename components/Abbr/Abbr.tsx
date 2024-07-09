@@ -31,6 +31,7 @@ export const Abbr = ({ children, title }: AbbrProps) => {
         </ArrowContainer>
       )}>
       <abbr
+        aria-label={`${children} (${title})`}
         className={styles.abbr}
         tabIndex={0}
         onMouseEnter={() => setIsPopoverOpen(true)}
