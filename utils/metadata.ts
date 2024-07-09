@@ -23,6 +23,9 @@ export const metadataTemplate: Metadata = {
   title: titleTemplate,
   description,
   authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
+  other: {
+    'fediverse:creator': '@olivvybee@honeycomb.engineer',
+  },
   openGraph: {
     ...baseOpenGraph,
     title: titleTemplate,
