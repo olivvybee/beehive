@@ -31,6 +31,27 @@ const BUTTONS: Button[] = [
     href: 'https://honeycomb.engineer',
     title: 'honeycomb.engineer',
   },
+  {
+    id: 'k4m1',
+    src: 'https://k4m1.net/button.gif',
+    alt: 'K4M1 meows @ you',
+    href: 'https://k4m1.net/',
+    title: 'K4M1',
+  },
+  {
+    id: 'taavi',
+    src: 'https://taavi.wtf/img/buttons/me/taavi.png',
+    alt: 'Taavi',
+    href: 'https://taavi.wtf/',
+    title: 'Taavi',
+  },
+  {
+    id: 'rail',
+    src: 'https://flufftech.net/button.png',
+    alt: 'The word "Rail" and a fox on a non-binary flag background.',
+    href: 'https://flufftech.net/',
+    title: 'Rail',
+  },
 ];
 
 export const ButtonGrid = () => (
