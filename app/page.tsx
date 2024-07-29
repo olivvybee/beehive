@@ -34,18 +34,10 @@ const Homepage = () => (
       frontend development now, but I started out as a full stack developer.
     </p>
     <p>
-      Currently I'm a frontend engineer at{' '}
-      <a href="https://octopus.energy">
-        Octopus Energy <span role="presentation">🐙</span>
-      </a>{' '}
-      working on tools for engineers to upgrade homes to use green energy.
-    </p>
-    <p>
-      Previously I was a full stack engineer at the Lego Group, specifically
-      working on the My Account section of{' '}
-      <a href="https://lego.com">lego.com</a>. If you saw some changes to the
-      order history, order tracking, or wishlist pages in 2022 or 2023, that
-      might have been me!
+      I used to be a full stack engineer at the Lego Group, specifically working
+      on the My Account section of <a href="https://lego.com">lego.com</a>. If
+      you saw some changes to the order history, order tracking, or wishlist
+      pages in 2022 or 2023, that might have been me!
     </p>
     <p>
       Most of my programming is done in <a href="https://reactjs.org">React</a>{' '}
