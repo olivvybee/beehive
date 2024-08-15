@@ -15,6 +15,19 @@ export const GROUPED_PARKS: GroupedParks[] = [
     ],
   },
   {
+    name: 'Spain',
+    parks: [
+      {
+        id: 'portaventura',
+        name: 'PortAventura',
+      },
+      {
+        id: 'ferrari-land',
+        name: 'Ferrari Land',
+      },
+    ],
+  },
+  {
     name: 'Florida',
     parks: [
       { id: 'magic-kingdom', name: 'Magic Kingdom' },

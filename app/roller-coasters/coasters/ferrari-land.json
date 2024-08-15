@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Junior Red Force",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2018-05-22",
+    "location": {
+      "lat": 41.084444,
+      "lng": 1.15067
+    },
+    "link": "https://rcdb.com/15992.htm"
+  },
+  {
+    "name": "Red Force",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2017-04-07",
+    "location": {
+      "lat": 41.084295,
+      "lng": 1.151329
+    },
+    "link": "https://rcdb.com/10698.htm"
+  }
+]
