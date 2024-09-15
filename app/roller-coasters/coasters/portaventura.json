@@ -1,7 +1,7 @@
 [
   {
     "name": "Diablo - Tren de la Mina",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "1995-05-02",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Furius Baco",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2007-06-05",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Uncharted: The Enigma of Penitence",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2023-06-17",
