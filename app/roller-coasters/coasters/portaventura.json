@@ -13,7 +13,7 @@
   },
   {
     "name": "Dragon Khan",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "1995-05-02",
