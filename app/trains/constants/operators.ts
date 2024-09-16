@@ -42,7 +42,10 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
   },
   {
     name: 'Spain',
-    operators: [{ id: 'renfe', name: 'Renfe', colour: 'rgb(118, 21, 91)' }],
+    operators: [
+      { id: 'renfe', name: 'Renfe', colour: 'rgb(118, 21, 91)' },
+      { id: 'portaventura', name: 'Portaventura', colour: 'rgb(225, 111, 61)' },
+    ],
   },
 ];
 
