@@ -49,7 +49,7 @@
   },
   {
     "name": "Stampida",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "1997-03-17",
