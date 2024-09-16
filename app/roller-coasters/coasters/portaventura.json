@@ -37,7 +37,7 @@
   },
   {
     "name": "Shambhala",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2012-05-12",
