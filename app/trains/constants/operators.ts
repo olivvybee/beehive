@@ -45,6 +45,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
     operators: [
       { id: 'renfe', name: 'Renfe', colour: 'rgb(118, 21, 91)' },
       { id: 'portaventura', name: 'Portaventura', colour: 'rgb(225, 111, 61)' },
+      { id: 'tmb', name: 'TMB', colour: 'rgb(187, 39, 37)' },
     ],
   },
 ];
