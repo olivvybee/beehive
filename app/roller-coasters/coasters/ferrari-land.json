@@ -13,7 +13,7 @@
   },
   {
     "name": "Red Force",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2017-04-07",
