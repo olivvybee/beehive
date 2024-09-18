@@ -5,80 +5,38 @@
       "type": "Feature",
       "properties": {
         "creator": "BRouter-1.7.0",
-        "name": "MontjuïcFunicular",
-        "track-length": "118",
-        "filtered ascend": "0",
-        "plain-ascend": "0",
-        "total-time": "9",
-        "total-energy": "5190",
-        "cost": "236",
-        "messages": [
-          [
-            "Longitude",
-            "Latitude",
-            "Elevation",
-            "Distance",
-            "CostPerKm",
-            "ElevCost",
-            "TurnCost",
-            "NodeCost",
-            "InitialCost",
-            "WayTags",
-            "NodeTags",
-            "Time",
-            "Energy"
-          ],
-          [
-            "2169249",
-            "41374870",
-            "-8192",
-            "85",
-            "2000",
-            "0",
-            "0",
-            "0",
-            "0",
-            "railway=subway",
-            "railway=unknown",
-            "6",
-            "3738"
-          ],
-          [
-            "2172227",
-            "41374810",
-            "-8192",
-            "33",
-            "2000",
-            "0",
-            "0",
-            "0",
-            "0",
-            "railway=subway",
-            "",
-            "9",
-            "5190"
-          ]
-        ],
-        "times": [
-          0,
-          6.8,
-          9.44
-        ]
+        "name": "MontjuïcFunicular"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            2.168231,
-            41.374879
+            2.163046002388001,
+            41.3687795197031
           ],
           [
-            2.169249,
-            41.37487
+            2.1654841303825383,
+            41.37063741917069
           ],
           [
-            2.169649,
-            41.374861
+            2.1663075685501103,
+            41.371329840503236
+          ],
+          [
+            2.1665301918983464,
+            41.37153917573432
+          ],
+          [
+            2.167139053344727,
+            41.37214704922192
+          ],
+          [
+            2.1682038903236394,
+            41.373191692708595
+          ],
+          [
+            2.169638872146607,
+            41.374574590849214
           ]
         ]
       }
