@@ -52,6 +52,13 @@ const BUTTONS: Button[] = [
     href: 'https://flufftech.net/',
     title: 'Rail',
   },
+  {
+    id: 'david.garden',
+    src: 'https://david.garden/wp-content/uploads/2024/09/david-site-button.png',
+    alt: '"david.garden" in the middle in pink, a plant on the left, and a dog emoji with pink hair on the right',
+    href: 'https://david.garden/',
+    title: 'david wolfpaw'
+  }
 ];
 
 export const ButtonGrid = () => (
