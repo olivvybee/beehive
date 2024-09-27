@@ -57,8 +57,15 @@ const BUTTONS: Button[] = [
     src: 'https://david.garden/wp-content/uploads/2024/09/david-site-button.png',
     alt: '"david.garden" in the middle in pink, a plant on the left, and a dog emoji with pink hair on the right',
     href: 'https://david.garden/',
-    title: 'david wolfpaw'
-  }
+    title: 'david wolfpaw',
+  },
+  {
+    id: 'eniko',
+    src: 'https://enikofox.com/enikodoesbadthingstocode.png',
+    alt: '"Eniko does bad things to code" and a girl with blurple hair.',
+    href: 'https://enikofox.com',
+    title: 'Eniko Fox',
+  },
 ];
 
 export const ButtonGrid = () => (
