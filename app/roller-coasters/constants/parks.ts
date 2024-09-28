@@ -12,6 +12,7 @@ export const GROUPED_PARKS: GroupedParks[] = [
       { id: 'thorpe-park', name: 'Thorpe Park' },
       { id: 'chessington', name: 'Chessington World of Adventures' },
       { id: 'alton-towers', name: 'Alton Towers' },
+      { id: 'legoland-windsor', name: 'Legoland Windsor' },
     ],
   },
   {

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Dragon",
+    "ridden": true,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1998",
+    "location": {
+      "lat": 51.461383,
+      "lng": -0.651436
+    },
+    "link": "https://rcdb.com/844.htm"
+  },
+  {
+    "name": "Dragon's Apprentice",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1999",
+    "location": {
+      "lat": 51.461471,
+      "lng": -0.65018
+    },
+    "link": "https://rcdb.com/845.htm"
+  },
+  {
+    "name": "DUPLO Dino Coaster",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2020-03-14",
+    "location": {
+      "lat": 51.465229,
+      "lng": -0.651401
+    },
+    "link": "https://rcdb.com/17692.htm"
+  },
+  {
+    "name": "Jungle Coaster",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Closed",
+    "openDate": "2004-03-20",
+    "closeDate": "2009",
+    "location": {
+      "lat": 51.464684,
+      "lng": -0.645948
+    },
+    "link": "https://rcdb.com/2568.htm"
+  },
+  {
+    "name": "Minifigure Speedway",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2024",
+    "location": {
+      "lat": 51.465555,
+      "lng": -0.651582
+    },
+    "link": "https://rcdb.com/21316.htm"
+  }
+]
