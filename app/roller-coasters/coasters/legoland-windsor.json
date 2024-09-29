@@ -50,7 +50,7 @@
   },
   {
     "name": "Minifigure Speedway",
-    "ridden": false,
+    "ridden": true,
     "previousNames": [],
     "status": "Operating",
     "openDate": "2024",
