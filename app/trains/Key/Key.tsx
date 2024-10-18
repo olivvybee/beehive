@@ -9,18 +9,10 @@ import { ALL_OPERATORS, Operator } from '../constants/operators';
 import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './Key.module.css';
-import { StationStatus } from '../Station';
 
 export const Key = () => {
-  const {
-    selectedOperator,
-    setSelectedOperator,
-    stationsFilter,
-    setStationsFilter,
-  } = useContext(trainsMapContext);
-
-  const showStations = stationsFilter !== undefined;
-  const showUnvisitedStations = stationsFilter === StationStatus.NotVisited;
+  const { selectedOperator, setSelectedOperator } =
+    useContext(trainsMapContext);
 
   const onClickOperator = (operator: Operator) => {
     if (selectedOperator?.id === operator.id) {
@@ -53,71 +45,6 @@ export const Key = () => {
         </span>
         ) to link to a specific operator map.
       </p>
-
-      <h3 className={styles.heading}>Stations</h3>
-
-      <div className={styles.stationsCheckboxes}>
-        <div className={styles.checkboxItem}>
-          <input
-            id="show-stations"
-            type="checkbox"
-            checked={showStations}
-            onChange={(e) =>
-              setStationsFilter(
-                e.target.checked ? StationStatus.PassedThrough : undefined
-              )
-            }
-          />
-          <label htmlFor="show-stations">Show stations</label>
-        </div>
-
-        {showStations && (
-          <div className={styles.checkboxItem}>
-            <input
-              id="show-unvisited-stations"
-              type="checkbox"
-              checked={showUnvisitedStations}
-              onChange={(e) =>
-                setStationsFilter(
-                  e.target.checked
-                    ? StationStatus.NotVisited
-                    : StationStatus.PassedThrough
-                )
-              }
-            />
-            <label htmlFor="show-unvisited-stations">
-              Show unvisited stations{' '}
-              <span className={styles.helperText}>(might be slow)</span>
-            </label>
-          </div>
-        )}
-      </div>
-
-      <ul className={classNames(styles.grid, styles.stationsGrid)}>
-        <li className={styles.item}>
-          <div
-            className={styles.swatch}
-            style={{ backgroundColor: 'var(--red)' }}
-          />
-          <span>Not visited</span>
-        </li>
-
-        <li className={styles.item}>
-          <div
-            className={styles.swatch}
-            style={{ backgroundColor: 'var(--orange)' }}
-          />
-          <span>Stopped</span>
-        </li>
-
-        <li className={styles.item}>
-          <div
-            className={styles.swatch}
-            style={{ backgroundColor: 'var(--green)' }}
-          />
-          <span>Visited</span>
-        </li>
-      </ul>
     </div>
   );
 };
