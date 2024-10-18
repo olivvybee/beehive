@@ -2,7 +2,6 @@ import { buildMetadata } from '@/utils/metadata';
 
 import { TrainsMap } from './TrainsMap';
 import { loadRoutes } from './utils/loadRoutes';
-import { loadStations } from './utils/loadStations';
 import { Key } from './Key/Key';
 import { TrainsMapContextProvider } from './TrainsMapContext';
 import { PresetChooser } from './PresetChooser/PresetChooser';
@@ -17,7 +16,6 @@ export const metadata = buildMetadata({
 
 const Trains = () => {
   const routes = loadRoutes();
-  const stations = loadStations();
 
   return (
     <TrainsMapContextProvider>
@@ -33,7 +31,7 @@ const Trains = () => {
         on a map.
       </p>
 
-      <TrainsMap routes={routes} stations={stations} />
+      <TrainsMap routes={routes} />
 
       <div className={styles.keyAndPresets}>
         <Key />
