@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Avengers Assemble: Flight Force",
+    "ridden": false,
+    "previousNames": ["Rock 'n' Roller Coaster"],
+    "status": "Operating",
+    "openDate": "2002-03-16",
+    "location": {
+      "lat": 48.86485,
+      "lng": 2.779931
+    },
+    "link": "https://rcdb.com/1444.htm"
+  },
+  {
+    "name": "Crush's Coaster",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2007-06-09",
+    "location": {
+      "lat": 48.868219,
+      "lng": 2.77767
+    },
+    "link": "https://rcdb.com/3306.htm"
+  },
+  {
+    "name": "RC Racer",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "2010-08-17",
+    "location": {
+      "lat": 48.866824,
+      "lng": 2.776475
+    },
+    "link": "https://rcdb.com/1170.htm"
+  }
+]

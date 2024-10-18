@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Big Thunder Mountain",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1992-04-12",
+    "location": {
+      "lat": 48.870544,
+      "lng": 2.775498
+    },
+    "link": "https://rcdb.com/956.htm"
+  },
+  {
+    "name": "Casey Jr., Le Petit Train du Cirque",
+    "ridden": false,
+    "previousNames": [],
+    "status": "Operating",
+    "openDate": "1994-03",
+    "location": {
+      "lat": 48.875648,
+      "lng": 2.775135
+    },
+    "link": "https://rcdb.com/1835.htm"
+  },
+  {
+    "name": "Indiana Jones et le Temple du Péril",
+    "ridden": false,
+    "previousNames": ["Indiana Jones et le Temple du Péril : à l'envers"],
+    "status": "Operating",
+    "openDate": "1993-07-30",
+    "location": {
+      "lat": 48.872032,
+      "lng": 2.771888
+    },
+    "link": "https://rcdb.com/957.htm"
+  },
+  {
+    "name": "Star Wars Hyperspace Mountain: Rebel Mission",
+    "ridden": false,
+    "previousNames": ["Space Mountain: Mission 2"],
+    "status": "Operating",
+    "openDate": "1995-06-01",
+    "location": {
+      "lat": 48.874005,
+      "lng": 2.779315
+    },
+    "link": "https://rcdb.com/959.htm"
+  }
+]

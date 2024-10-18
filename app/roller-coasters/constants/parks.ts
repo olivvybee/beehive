@@ -16,16 +16,17 @@ export const GROUPED_PARKS: GroupedParks[] = [
     ],
   },
   {
+    name: 'France',
+    parks: [
+      { id: 'disneyland-paris', name: 'Disneyland Park' },
+      { id: 'walt-disney-studios-park', name: 'Walt Disney Studios Park' },
+    ],
+  },
+  {
     name: 'Spain',
     parks: [
-      {
-        id: 'portaventura',
-        name: 'PortAventura',
-      },
-      {
-        id: 'ferrari-land',
-        name: 'Ferrari Land',
-      },
+      { id: 'portaventura', name: 'PortAventura' },
+      { id: 'ferrari-land', name: 'Ferrari Land' },
     ],
   },
   {
