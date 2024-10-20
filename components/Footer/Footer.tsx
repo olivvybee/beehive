@@ -3,18 +3,14 @@ import { Link } from '@/components/Link';
 import { BackToTopLink } from '../BackToTopLink';
 import styles from './Footer.module.css';
 
-export const Footer = () => {
-  const year = new Date().getFullYear();
+export const Footer = () => (
+  <footer className={styles.footer}>
+    <div className={styles.footerContent}>
+      <BackToTopLink />
 
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <span>© 2011-{year} Liv Asch</span>
+      <Link href="/atom.xml">RSS</Link>
 
-        <Link href="/atom.xml">RSS</Link>
-
-        <BackToTopLink />
-      </div>
-    </footer>
-  );
-};
+      <a href="https://github.com/olivvybee/beehive">Source code</a>
+    </div>
+  </footer>
+);
