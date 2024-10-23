@@ -8,6 +8,7 @@ interface Button {
   alt: string;
   href?: string;
   title?: string;
+  vertical?: boolean;
 }
 
 const BUTTONS: Button[] = [
@@ -66,6 +67,14 @@ const BUTTONS: Button[] = [
     href: 'https://enikofox.com',
     title: 'Eniko Fox',
   },
+  {
+    id: 'lf',
+    src: '/buttons/lf.png',
+    alt: 'QR code registration marks with LF in the middle. Below is the text "enter the next line" and a hand drawn laptop with a winking face made from a greater than sign and an underscore.',
+    href: 'https://lf-net.org',
+    title: 'Littlefox',
+    vertical: true,
+  },
 ];
 
 export const ButtonGrid = () => (
@@ -86,12 +95,18 @@ const ButtonGridItem = ({ button }: ButtonGridItemProps) => {
       src={button.src}
       alt={button.alt}
       title={button.title}
-      className={classNames(styles.item, styles.button)}
+      className={classNames(styles.item, styles.button, {
+        [styles.vertical]: button.vertical,
+      })}
     />
   );
 
   return button.href ? (
-    <a href={button.href} className={classNames(styles.item, styles.link)}>
+    <a
+      href={button.href}
+      className={classNames(styles.item, styles.link, {
+        [styles.vertical]: button.vertical,
+      })}>
       {image}
     </a>
   ) : (
