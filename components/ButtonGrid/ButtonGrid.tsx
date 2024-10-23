@@ -78,10 +78,18 @@ const BUTTONS: Button[] = [
 ];
 
 export const ButtonGrid = () => (
-  <div className={styles.buttonGrid}>
-    {BUTTONS.map((button) => (
-      <ButtonGridItem key={button.id} button={button} />
-    ))}
+  <div className={styles.buttonGridWrapper}>
+    <div className={styles.buttonGrid}>
+      {BUTTONS.filter((button) => !button.vertical).map((button) => (
+        <ButtonGridItem key={button.id} button={button} />
+      ))}
+    </div>
+
+    <div className={styles.buttonGrid}>
+      {BUTTONS.filter((button) => button.vertical).map((button) => (
+        <ButtonGridItem key={button.id} button={button} />
+      ))}
+    </div>
   </div>
 );
 

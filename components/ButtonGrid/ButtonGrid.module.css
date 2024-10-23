@@ -1,9 +1,14 @@
+.buttonGridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 31px;
+  gap: 8px;
+}
+
 .buttonGrid {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
   gap: 8px;
 }
