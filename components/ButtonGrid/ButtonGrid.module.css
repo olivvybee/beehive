@@ -1,15 +1,20 @@
-.buttonGridWrapper {
-  display: grid;
-  grid-template-columns: 1fr 31px;
-  gap: 8px;
-}
-
 .buttonGrid {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 8px;
   align-items: flex-start;
+}
+
+.horizontalButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 88px);
+  gap: 8px;
+  flex: 1;
+}
+
+.verticalButtons {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 

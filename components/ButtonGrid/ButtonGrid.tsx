@@ -75,17 +75,23 @@ const BUTTONS: Button[] = [
     title: 'Littlefox',
     vertical: true,
   },
+  {
+    id: 'symtrkl',
+    src: 'https://symtrkl.gay/img/88x31/symtrkl-dot-gay.png',
+    alt: '"SymTrkl dot Gay" written on top of a light pink to light blue to light pink gradient.',
+    href: 'https://symtrkl.gay',
+    title: 'SymTrkl',
+  },
 ];
 
 export const ButtonGrid = () => (
-  <div className={styles.buttonGridWrapper}>
-    <div className={styles.buttonGrid}>
+  <div className={styles.buttonGrid}>
+    <div className={styles.horizontalButtons}>
       {BUTTONS.filter((button) => !button.vertical).map((button) => (
         <ButtonGridItem key={button.id} button={button} />
       ))}
     </div>
-
-    <div className={styles.buttonGrid}>
+    <div className={styles.verticalButtons}>
       {BUTTONS.filter((button) => button.vertical).map((button) => (
         <ButtonGridItem key={button.id} button={button} />
       ))}
@@ -103,7 +109,7 @@ const ButtonGridItem = ({ button }: ButtonGridItemProps) => {
       src={button.src}
       alt={button.alt}
       title={button.title}
-      className={classNames(styles.item, styles.button, {
+      className={classNames(styles.item, {
         [styles.vertical]: button.vertical,
       })}
     />
