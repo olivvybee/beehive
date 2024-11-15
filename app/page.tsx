@@ -63,7 +63,7 @@ const Homepage = () => (
 
     <hr className={styles.divider} />
 
-    <ButtonGrid />
+    <ButtonGrid id="buttons" />
   </>
 );
 

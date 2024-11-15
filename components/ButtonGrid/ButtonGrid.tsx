@@ -84,8 +84,12 @@ const BUTTONS: Button[] = [
   },
 ];
 
-export const ButtonGrid = () => (
-  <div className={styles.buttonGrid}>
+interface ButtonGridProps {
+  id?: string;
+}
+
+export const ButtonGrid = ({ id }: ButtonGridProps) => (
+  <div id={id} className={styles.buttonGrid}>
     <div className={styles.horizontalButtons}>
       {BUTTONS.filter((button) => !button.vertical).map((button) => (
         <ButtonGridItem key={button.id} button={button} />
