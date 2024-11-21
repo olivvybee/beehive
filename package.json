@@ -17,6 +17,7 @@
     "cheerio": "^1.0.0",
     "classnames": "^2.3.2",
     "dotenv": "^16.4.5",
+    "lodash": "^4.17.21",
     "maplibre-gl": "^4.1.2",
     "next": "^14.2.3",
     "react": "18.2.0",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.14",
+    "@types/lodash": "^4.17.13",
     "@types/marked": "^5.0.0",
     "@types/react-syntax-highlighter": "^15.5.7",
     "@types/remove-markdown": "^0.3.1",

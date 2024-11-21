@@ -1,41 +1,41 @@
 'use client';
 
 import { useMap } from 'react-map-gl/maplibre';
+import _groupBy from 'lodash/groupBy';
 
-import { ParkCoasters } from '../types';
+import { Park } from '../types';
 
 import styles from './ParkChooser.module.css';
 import { getBounds } from '../utils/getBounds';
 import { usePathname } from 'next/navigation';
 import { FaLink } from 'react-icons/fa6';
-import { GROUPED_PARKS } from '../constants/parks';
 
 interface ParkChooserProps {
-  parks: ParkCoasters[];
+  parks: Park[];
 }
 
 export const ParkChooser = ({ parks }: ParkChooserProps) => {
   const { rollerCoasterMap } = useMap();
 
-  const groups = GROUPED_PARKS.map((group) => {
-    const groupParkIds = group.parks.map((park) => park.id);
-    const groupParks = parks.filter((park) =>
-      groupParkIds.includes(park.park.id)
-    );
+  const groupedParks = _groupBy(parks, 'country');
+
+  const groups = Object.entries(groupedParks).map(([country, parks]) => {
+    const groupParkIds = parks.map((park) => park.id);
+    const groupParks = parks.filter((park) => groupParkIds.includes(park.id));
     return {
-      name: group.name,
+      name: country,
       parks: groupParks,
     };
   });
 
-  const onClickGroup = (group: { name: string; parks: ParkCoasters[] }) => {
+  const onClickGroup = (group: { name: string; parks: Park[] }) => {
     if (rollerCoasterMap) {
       const bounds = getBounds(group.parks);
       rollerCoasterMap.fitBounds(bounds, { padding: 128 });
     }
   };
 
-  const onClickPark = (park: ParkCoasters) => {
+  const onClickPark = (park: Park) => {
     if (rollerCoasterMap) {
       const bounds = getBounds([park]);
       rollerCoasterMap.fitBounds(bounds, { padding: 128 });
@@ -59,7 +59,7 @@ export const ParkChooser = ({ parks }: ParkChooserProps) => {
           <ul className={styles.grid}>
             {group.parks.map((park) => (
               <ParkItem
-                key={park.park.id}
+                key={park.id}
                 park={park}
                 onClick={() => onClickPark(park)}
               />
@@ -82,14 +82,14 @@ export const ParkChooser = ({ parks }: ParkChooserProps) => {
 };
 
 interface ParkItemProps {
-  park: ParkCoasters;
+  park: Park;
   onClick: () => void;
 }
 
 export const ParkItem = ({ park, onClick }: ParkItemProps) => {
   const pathname = usePathname();
 
-  const permalinkUrl = `${pathname}?park=${park.park.id}`;
+  const permalinkUrl = `${pathname}?park=${park.id}`;
 
   return (
     <li className={styles.item}>
@@ -97,7 +97,7 @@ export const ParkItem = ({ park, onClick }: ParkItemProps) => {
         <FaLink />
       </a>
       <button className={styles.button} onClick={onClick}>
-        {park.park.name}
+        {park.name}
       </button>
     </li>
   );

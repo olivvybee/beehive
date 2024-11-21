@@ -2,21 +2,31 @@ import { Suspense } from 'react';
 
 import { buildMetadata } from '@/utils/metadata';
 
-import { loadCoasters } from './utils/loadCoasters';
 import { RollerCoastersMap } from './RollerCoastersMap';
 import { ParkChooser } from './ParkChooser/ParkChooser';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
 import { Key } from './Key/Key';
 
 import styles from './page.module.css';
+import { headers } from 'next/headers';
 
 export const metadata = buildMetadata({
   title: 'Roller coaster map',
   description: "A map of all the roller coasters I've ridden.",
 });
 
-const RollerCoasters = () => {
-  const parks = loadCoasters();
+const RollerCoasters = async () => {
+  const response = await fetch(
+    `${process.env.ROLLER_COASTER_TRACKER_API}/parks`,
+    {
+      headers: {
+        Accept: 'application/json',
+      },
+    }
+  );
+  const parks = await response.json();
+
+  console.log(JSON.stringify(parks, null, 2));
 
   return (
     <RollerCoastersMapContextProvider>

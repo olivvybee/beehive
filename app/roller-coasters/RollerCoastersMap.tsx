@@ -3,7 +3,7 @@
 import Map, { Marker } from 'react-map-gl/maplibre';
 import { Point, Popup } from 'maplibre-gl';
 
-import { Coaster, ParkCoasters } from './types';
+import { Coaster, Park } from './types';
 import { getBounds } from './utils/getBounds';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -17,7 +17,7 @@ const getMarkerColour = (coaster: Coaster) => {
   if (!coaster.ridden) {
     return 'var(--red)';
   }
-  if (coaster.closeDate) {
+  if (coaster.closed) {
     return 'var(--purple)';
   }
 
@@ -25,15 +25,13 @@ const getMarkerColour = (coaster: Coaster) => {
 };
 
 interface RollerCoastersMapProps {
-  parks: ParkCoasters[];
+  parks: Park[];
 }
 
 export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
-  const { selectedPark } = useContext(rollerCoastersMapContext);
+  const { selectedParkId } = useContext(rollerCoastersMapContext);
 
-  const selectedParkData = parks.find(
-    (park) => park.park.id === selectedPark?.id
-  );
+  const selectedParkData = parks.find((park) => park.id === selectedParkId);
   const parksForBounds = selectedParkData ? [selectedParkData] : parks;
   const initialBounds = getBounds(parksForBounds);
 
@@ -56,9 +54,8 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       }}>
       {parks.flatMap((park) =>
         park.coasters.map((coaster) => {
-          const previousNames = coaster.previousNames.join(', ');
-          const opened = coaster.openDate.slice(0, 4);
-          const closed = coaster.closeDate?.slice(0, 4);
+          const opened = coaster.opened.slice(0, 4);
+          const closed = coaster.closed?.slice(0, 4);
 
           const popup = new Popup();
 
@@ -82,20 +79,14 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                 <tr><td>Ridden</td> <td>${
                   coaster.ridden ? 'Yes' : 'No'
                 }</td></tr>
-                <tr><td>Status</td> <td>${coaster.status}</td></tr>
                 <tr><td>Opened</td> <td>${opened}</td></tr>
                 ${
-                  coaster.closeDate
+                  coaster.closed
                     ? `<tr><td>Closed</td> <td>${closed}</td></tr>`
                     : ''
                 }
-                ${
-                  coaster.previousNames.length
-                    ? `<tr><td>AKA</td> <td>${previousNames}</td></tr>`
-                    : ''
-                }
               </table>
-              <a href="${coaster.link}" target="_blank">View on RCDB</a>
+              <a href="${coaster.rcdb}" target="_blank">View on RCDB</a>
             </div>`);
           }
 
@@ -103,9 +94,9 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
 
           return (
             <Marker
-              key={`${park.park.name}-${coaster.name}`}
-              latitude={coaster.location.lat}
-              longitude={coaster.location.lng}
+              key={`${park.name}-${coaster.name}`}
+              latitude={coaster.latitude}
+              longitude={coaster.longitude}
               anchor="bottom"
               popup={popup}>
               <MarkerPin colour={markerColour} />

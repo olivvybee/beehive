@@ -3,24 +3,17 @@ import { LngLatLike } from 'maplibre-gl';
 export interface Coaster {
   name: string;
   ridden: boolean;
-  previousNames: string[];
-  status: string;
-  openDate: string;
-  closeDate?: string;
-  location: {
-    lat: number;
-    lng: number;
-  };
-  link: string;
+  opened: string;
+  closed?: string;
+  latitude: number;
+  longitude: number;
+  rcdb: string;
 }
 
 export interface Park {
   id: string;
   name: string;
-}
-
-export interface ParkCoasters {
-  park: Park;
+  country: string;
   coasters: Coaster[];
 }
 

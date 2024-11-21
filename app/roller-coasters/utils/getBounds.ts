@@ -1,12 +1,12 @@
 import { LngLatBounds } from 'maplibre-gl';
 
-import { ParkCoasters } from '../types';
+import { Park } from '../types';
 
-export const getBounds = (parks: ParkCoasters[]): LngLatBounds => {
+export const getBounds = (parks: Park[]): LngLatBounds => {
   const coasters = parks.flatMap((park) => park.coasters);
 
-  const latitudes = coasters.map((coaster) => coaster.location.lat);
-  const longitudes = coasters.map((coaster) => coaster.location.lng);
+  const latitudes = coasters.map((coaster) => coaster.latitude);
+  const longitudes = coasters.map((coaster) => coaster.longitude);
 
   const minLat = Math.min(...latitudes);
   const maxLat = Math.max(...latitudes);
