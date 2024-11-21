@@ -1,9 +1,9 @@
 import path from 'path';
 import fs from 'fs';
 
+import * as cheerio from 'cheerio';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { Coaster } from '../types';
 
 interface SearchResponseCoasterImage {
   id: number;
@@ -75,42 +75,56 @@ const fetchCoasters = async (themePark: string) => {
   );
 };
 
-const run = async (themePark: string) => {
-  const result = await fetchCoasters(themePark);
+interface NewCoaster {
+  name: string;
+  ridden: boolean;
+  opened: string;
+  closed: string | undefined;
+  latitude: number;
+  longitude: number;
+  rcdb: string;
+}
 
-  const coasters: Coaster[] = result.map((coaster) => {
-    const status = coaster.status.state.replace('Operated', 'Closed');
-    const previousNames = coaster.stats.formerNames
-      ?.split(',')
-      .map((name) => (name.endsWith(' (') ? name.slice(0, -2) : name));
+const run = async (rcdbUrl: string) => {
+  const parkPage = await fetch(rcdbUrl);
+  const text = await parkPage.text();
+  const $ = cheerio.load(text);
 
-    return {
-      name: coaster.name,
-      ridden: true,
-      previousNames: previousNames || [],
-      status,
-      openDate: coaster.status.date.opened,
-      closeDate: coaster.status.date.closed || undefined,
-      location: {
-        lat: parseFloat(coaster.coords.lat),
-        lng: parseFloat(coaster.coords.lng),
-      },
-      link: `https://rcdb.com${coaster.link}`,
-    };
-  });
+  const parkName = $('#feature h1').text();
+  const country = $('#feature > div > a').last().text();
 
-  const filename = themePark.toLowerCase().replaceAll(' ', '-');
+  const parkId = parkName.toLowerCase().replaceAll(' ', '-');
+
+  const coastersData = await fetchCoasters(parkName);
+
+  const coasters: NewCoaster[] = coastersData.map((coaster) => ({
+    name: coaster.name,
+    ridden: false,
+    opened: coaster.status.date.opened,
+    closed: coaster.status.date.closed || undefined,
+    latitude: parseFloat(coaster.coords.lat),
+    longitude: parseFloat(coaster.coords.lng),
+    rcdb: `https://rcdb.com${coaster.link}`,
+  }));
+
+  const parkData = {
+    id: parkId,
+    name: parkName,
+    country,
+    coasters,
+  };
+
   const outputPath = path.resolve(
     '.',
     'app',
     'roller-coasters',
     'scripts',
-    `${filename}.json`
+    `${parkId}.json`
   );
-  const output = JSON.stringify(coasters, null, 2);
+  const output = JSON.stringify(parkData, null, 2);
   fs.writeFileSync(outputPath, output);
 };
 
 const argv = yargs(hideBin(process.argv)).parseSync();
-const themeParks = argv._[0] as string;
-run(themeParks);
+const rcdbUrl = argv._[0] as string;
+run(rcdbUrl);
