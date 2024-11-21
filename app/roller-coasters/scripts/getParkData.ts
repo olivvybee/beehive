@@ -114,13 +114,12 @@ const run = async (rcdbUrl: string) => {
     coasters,
   };
 
-  const outputPath = path.resolve(
-    '.',
-    'app',
-    'roller-coasters',
-    'scripts',
-    `${parkId}.json`
-  );
+  const parksDir = path.resolve('.', 'parks');
+
+  if (!fs.existsSync(parksDir)) {
+    fs.mkdirSync(parksDir);
+  }
+  const outputPath = path.resolve('.', 'parks', `${parkId}.json`);
   const output = JSON.stringify(parkData, null, 2);
   fs.writeFileSync(outputPath, output);
 };

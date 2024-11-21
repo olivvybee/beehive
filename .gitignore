@@ -37,3 +37,4 @@ next-env.d.ts
 
 /public/atom.xml
 app/roller-coasters/scripts/*.json
+parks/
