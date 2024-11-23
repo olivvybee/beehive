@@ -26,8 +26,6 @@ const RollerCoasters = async () => {
   );
   const parks = await response.json();
 
-  console.log(JSON.stringify(parks, null, 2));
-
   return (
     <RollerCoastersMapContextProvider>
       <h2>Roller coaster map</h2>

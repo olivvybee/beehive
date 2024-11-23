@@ -1,0 +1,121 @@
+.coasterList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  gap: 16px;
+}
+
+.coasterListItem {
+  margin: 0;
+}
+
+.coasterListItem::before {
+  display: none;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size);
+  background: none;
+  border: none;
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.coasterListButton {
+  border: 1px solid var(--background-accent);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 12px;
+}
+
+.selected {
+  background: var(--background-accent);
+}
+
+.checkmarkContainer {
+  width: 21px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark {
+  color: var(--green);
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.inputItem {
+  background-color: var(--background-accent);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.apiKeySection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.apiKeyField {
+  font-size: var(--font-size);
+  background-color: var(--separator-color);
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.dateCheckboxSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.saveButton {
+  background: var(--background-accent);
+  width: 100%;
+  text-align: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.success {
+  background-color: var(--green);
+}
+
+.error {
+  background-color: var(--red);
+}
+
+@media screen and (max-width: 600px) {
+  .coasterList {
+    grid-template-columns: 1fr;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr;
+  }
+}

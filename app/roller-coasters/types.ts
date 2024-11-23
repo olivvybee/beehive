@@ -1,8 +1,10 @@
 import { LngLatLike } from 'maplibre-gl';
 
 export interface Coaster {
+  id: number;
   name: string;
   ridden: boolean;
+  riddenDate?: string;
   opened: string;
   closed?: string;
   latitude: number;
