@@ -17,12 +17,13 @@ interface EditorProps {
 }
 
 export const Editor = ({ coasters }: EditorProps) => {
-  const initialSelection = coasters
+  const previouslyRiddenCoasters = coasters
     .filter((coaster) => coaster.ridden)
     .map((coaster) => coaster.id);
 
-  const [selectedCoasters, setSelectedCoasters] =
-    useState<number[]>(initialSelection);
+  const [selectedCoasters, setSelectedCoasters] = useState<number[]>(
+    previouslyRiddenCoasters
+  );
 
   const toggleSelection = (coasterId: number) => {
     if (selectedCoasters.includes(coasterId)) {
@@ -39,7 +40,10 @@ export const Editor = ({ coasters }: EditorProps) => {
   const [result, setResult] = useState<Result>();
 
   const onSave = async () => {
-    const result = await saveChanges(selectedCoasters, includeDate, apiKey);
+    const newlyRidden = selectedCoasters.filter(
+      (id) => !previouslyRiddenCoasters.includes(id)
+    );
+    const result = await saveChanges(newlyRidden, includeDate, apiKey);
     setResult(result);
   };
 
