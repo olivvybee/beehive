@@ -96,6 +96,9 @@ export const Editor = ({ coasters }: EditorProps) => {
             value={apiKey}
             onChange={(e) => setApiKey(e.target.value)}
             className={styles.apiKeyField}
+            autoCapitalize="false"
+            autoComplete="false"
+            autoCorrect="false"
           />
         </div>
       </div>
