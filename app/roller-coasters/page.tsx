@@ -6,9 +6,9 @@ import { RollerCoastersMap } from './RollerCoastersMap';
 import { ParkChooser } from './ParkChooser/ParkChooser';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
 import { Key } from './Key/Key';
+import { getParks } from './api';
 
 import styles from './page.module.css';
-import { headers } from 'next/headers';
 
 export const metadata = buildMetadata({
   title: 'Roller coaster map',
@@ -16,15 +16,7 @@ export const metadata = buildMetadata({
 });
 
 const RollerCoasters = async () => {
-  const response = await fetch(
-    `${process.env.ROLLER_COASTER_TRACKER_API}/parks`,
-    {
-      headers: {
-        Accept: 'application/json',
-      },
-    }
-  );
-  const parks = await response.json();
+  const parks = await getParks();
 
   return (
     <RollerCoastersMapContextProvider>

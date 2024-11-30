@@ -1,18 +1,11 @@
 import { Link } from '@/components/Link';
-import { Park } from '../types';
+
+import { getParks } from '../api';
 
 import styles from './page.module.css';
 
 const CoasterUpdatePage = async () => {
-  const response = await fetch(
-    `${process.env.ROLLER_COASTER_TRACKER_API}/parks`,
-    {
-      headers: {
-        Accept: 'application/json',
-      },
-    }
-  );
-  const parks: Park[] = await response.json();
+  const parks = await getParks();
 
   return (
     <>

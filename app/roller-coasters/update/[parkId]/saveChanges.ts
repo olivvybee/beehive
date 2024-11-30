@@ -1,5 +1,7 @@
 'use server';
 
+import { revalidateTag } from 'next/cache';
+
 export interface Result {
   success: boolean;
   error?: string;
@@ -27,6 +29,8 @@ export const saveChanges = async (
       body: JSON.stringify(data),
     }
   );
+
+  revalidateTag('roller-coasters');
 
   if (!response.ok) {
     const text = await response.text();

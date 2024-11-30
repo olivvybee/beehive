@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation';
-import { Park } from '../../types';
+
+import { getPark } from '../../api';
+
 import { Editor } from './Editor';
 
 interface CoasterListPageProps {
@@ -10,25 +12,11 @@ interface CoasterListPageProps {
 
 const CoasterListPage = async ({ params }: CoasterListPageProps) => {
   const { parkId } = params;
-  const response = await fetch(
-    `${process.env.ROLLER_COASTER_TRACKER_API}/parks/${parkId}`,
-    {
-      headers: {
-        Accept: 'application/json',
-      },
-    }
-  );
+  const park = await getPark(parkId);
 
-  if (!response.ok) {
-    if (response.status === 404) {
-      return notFound();
-    }
-
-    const error = await response.text();
-    return <div>Error: {error}</div>;
+  if (!park) {
+    return notFound();
   }
-
-  const park: Park = await response.json();
 
   return (
     <>
