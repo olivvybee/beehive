@@ -12,6 +12,7 @@ import styles from './RollerCoastersMap.module.css';
 import { useContext } from 'react';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
 import { MarkerPin } from './MarkerPin';
+import { formatDate } from './utils/formatDate';
 
 const getMarkerColour = (coaster: Coaster) => {
   if (!coaster.ridden) {
@@ -54,9 +55,6 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       }}>
       {parks.flatMap((park) =>
         park.coasters.map((coaster) => {
-          const opened = coaster.opened.slice(0, 4);
-          const closed = coaster.closed?.slice(0, 4);
-
           const popup = new Popup();
 
           if (typeof window !== 'undefined') {
@@ -79,10 +77,19 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                 <tr><td>Ridden</td> <td>${
                   coaster.ridden ? 'Yes' : 'No'
                 }</td></tr>
-                <tr><td>Opened</td> <td>${opened}</td></tr>
+                ${
+                  coaster.riddenDate
+                    ? `<tr><td>Date ridden</td> <td>${formatDate(
+                        coaster.riddenDate
+                      )}</td></tr>`
+                    : ''
+                }
+                <tr><td>Opened</td> <td>${formatDate(coaster.opened)}</td></tr>
                 ${
                   coaster.closed
-                    ? `<tr><td>Closed</td> <td>${closed}</td></tr>`
+                    ? `<tr><td>Closed</td> <td>${formatDate(
+                        coaster.closed
+                      )}</td></tr>`
                     : ''
                 }
               </table>
