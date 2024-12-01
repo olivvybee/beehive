@@ -4,11 +4,7 @@ import { useState } from 'react';
 
 import { Coaster } from '../../types';
 import styles from './Editor.module.css';
-import {
-  IoCheckmarkCircle,
-  IoCloseCircle,
-  IoRemoveCircle,
-} from 'react-icons/io5';
+import { IoCheckmarkCircle, IoCloseCircle } from 'react-icons/io5';
 import classNames from 'classnames';
 import { Result, saveChanges } from './saveChanges';
 
@@ -45,6 +41,10 @@ export const Editor = ({ coasters }: EditorProps) => {
     );
     const result = await saveChanges(newlyRidden, includeDate, apiKey);
     setResult(result);
+
+    setTimeout(() => {
+      setResult(undefined);
+    }, 5000);
   };
 
   return (
