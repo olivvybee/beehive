@@ -39,9 +39,12 @@ const RollerCoasters = async () => {
 
       <p>
         For each coaster, I find its data on <a href="https://rcdb.com">RCDB</a>{' '}
-        and save its data in a JSON file for the theme park it resides in.
-        There's code to read all the files from those directories and parse the
-        JSON.
+        and save it in a{' '}
+        <a href="https://developers.cloudflare.com/d1/">
+          Cloudflare D1 database
+        </a>{' '}
+        along with data about the theme park it resides in. The page then loads
+        all the coasters from the database to display on the map.
       </p>
       <p>
         The map itself is rendered using a React wrapper around{' '}
