@@ -2,6 +2,8 @@ import { Link } from '@/components/Link';
 
 import { getParks } from '../api';
 
+import { RefreshCacheButton } from './RefreshCacheButton/RefreshCacheButton';
+
 import styles from './page.module.css';
 
 const CoasterUpdatePage = async () => {
@@ -22,6 +24,10 @@ const CoasterUpdatePage = async () => {
           </li>
         ))}
       </ul>
+
+      <hr />
+
+      <RefreshCacheButton />
     </>
   );
 };

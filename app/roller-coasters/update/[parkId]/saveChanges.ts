@@ -1,6 +1,6 @@
 'use server';
 
-import { revalidateTag } from 'next/cache';
+import { refreshCache } from '../../cache';
 
 export interface Result {
   success: boolean;
@@ -30,7 +30,7 @@ export const saveChanges = async (
     }
   );
 
-  revalidateTag('roller-coasters');
+  refreshCache();
 
   if (!response.ok) {
     const text = await response.text();

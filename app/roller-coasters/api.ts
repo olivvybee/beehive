@@ -1,4 +1,5 @@
 import { Park } from './types';
+import { REQUEST_TAG } from './constants';
 
 export const getParks = async (): Promise<Park[]> => {
   const response = await fetch(
@@ -8,7 +9,7 @@ export const getParks = async (): Promise<Park[]> => {
         Accept: 'application/json',
       },
       next: {
-        tags: ['roller-coasters'],
+        tags: [REQUEST_TAG],
       },
     }
   );
@@ -24,7 +25,7 @@ export const getPark = async (parkId: string): Promise<Park | undefined> => {
         Accept: 'application/json',
       },
       next: {
-        tags: ['roller-coasters'],
+        tags: [REQUEST_TAG],
       },
     }
   );

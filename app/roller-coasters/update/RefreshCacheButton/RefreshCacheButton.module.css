@@ -1,0 +1,14 @@
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size);
+  border: none;
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--background-accent);
+  width: 100%;
+  text-align: center;
+}
