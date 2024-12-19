@@ -12,6 +12,7 @@ import { buildMetadata } from '@/utils/metadata';
 
 import styles from './page.module.css';
 import { FEDI_URL } from '@/constants';
+import { ButtonGrid } from '@/components/ButtonGrid';
 
 export const metadata = buildMetadata({
   title: 'Links',
@@ -81,6 +82,12 @@ const LinksPage = () => (
         );
       })}
     </ul>
+
+    <hr className={styles.divider} />
+
+    <h2>Cool people and websites</h2>
+
+    <ButtonGrid />
   </>
 );
 

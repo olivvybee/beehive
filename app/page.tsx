@@ -3,7 +3,6 @@ import { InlineImage } from '@/components/InlineImage';
 
 import styles from './page.module.css';
 import { FEDI_URL, FEDI_USERNAME } from '@/constants';
-import { ButtonGrid } from '@/components/ButtonGrid';
 import { Abbr } from '@/components/Abbr';
 
 const Homepage = () => (
@@ -60,10 +59,6 @@ const Homepage = () => (
       . Other, more specific places are listed on the{' '}
       <Link href="/links">links page</Link>.
     </p>
-
-    <hr className={styles.divider} />
-
-    <ButtonGrid id="buttons" />
   </>
 );
 
