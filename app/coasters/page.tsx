@@ -51,8 +51,8 @@ const RollerCoasters = async () => {
         <a href="https://maplibre.org/maplibre-gl-js/docs/">
           <code>maplibre-gl</code>
         </a>
-        . Each of the JSON files is turned into a layer on the map, with a
-        coloured marker for each coaster.
+        . Each coaster from the database is turned into a marker on the map with
+        a popup containing the data.
       </p>
       <p>
         When you select a group or park, the minimum and maximum longitudes and
