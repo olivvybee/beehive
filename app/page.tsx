@@ -24,8 +24,7 @@ const Homepage = () => (
         <Abbr title='For example: "She updated her website", or "They updated their website"'>
           she/they
         </Abbr>
-        . I tend to refer to myself as a trans woman, although it's a bit more
-        complicated than that.
+        .
       </p>
     </InlineImage>
     <p>
