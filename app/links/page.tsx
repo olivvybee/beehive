@@ -4,9 +4,9 @@ import {
   IoLogoMastodon,
   IoNewspaper,
   IoLogoTwitch,
+  IoStorefront,
+  IoLogoYoutube,
 } from 'react-icons/io5';
-import { FaEtsy } from 'react-icons/fa6';
-import { SiKofi } from 'react-icons/si';
 
 import { buildMetadata } from '@/utils/metadata';
 
@@ -36,9 +36,9 @@ const links = [
     icon: IoLogoGithub,
   },
   {
-    name: 'Etsy store',
-    url: 'https://olivvycraft.etsy.com',
-    icon: FaEtsy,
+    name: 'Ko-fi store',
+    url: 'https://ko-fi.com/olivvybee/shop',
+    icon: IoStorefront,
   },
   {
     name: 'Twitch',
@@ -46,9 +46,9 @@ const links = [
     icon: IoLogoTwitch,
   },
   {
-    name: 'Buy me a coffee',
-    url: 'https://ko-fi.com/olivvybee',
-    icon: SiKofi,
+    name: 'YouTube',
+    url: 'https://youtube.com/@olivvybee',
+    icon: IoLogoYoutube,
   },
 ];
 
