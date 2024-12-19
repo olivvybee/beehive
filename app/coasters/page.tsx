@@ -62,7 +62,7 @@ const RollerCoasters = async () => {
       </p>
       <p>
         The code is available{' '}
-        <a href="https://github.com/olivvybee/beehive/tree/main/app/roller-coasters">
+        <a href="https://github.com/olivvybee/beehive/tree/main/app/coasters">
           on github
         </a>{' '}
         if you're interested in the fine details.

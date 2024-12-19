@@ -6,6 +6,11 @@ const nextConfig = {
       destination: '/blog/:year/:month/:day/:slug',
       permanent: true,
     },
+    {
+      source: '/roller-coasters',
+      destination: '/coasters',
+      permanent: true,
+    },
   ],
   logging: {
     fetches: {
