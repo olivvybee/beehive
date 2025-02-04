@@ -44,8 +44,13 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
     name: 'France',
     operators: [
       { id: 'sncf', name: 'SNCF', colour: 'rgb(129, 43, 109)' },
-      { id: 'disneyland-paris', name: 'Disneyland Paris', colour: 'rgb(0, 89, 252)' }
-    ]
+      {
+        id: 'disneyland-paris',
+        name: 'Disneyland Paris',
+        colour: 'rgb(0, 89, 252)',
+      },
+      { id: 'le-shuttle', name: 'LeShuttle', colour: 'rgb(181, 131, 254)' },
+    ],
   },
   {
     name: 'Spain',
