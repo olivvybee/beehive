@@ -24,7 +24,7 @@ const CoasterListPage = async ({ params }: CoasterListPageProps) => {
 
   return (
     <>
-      <Link href="/roller-coasters/update" className={styles.backLink}>
+      <Link href="/coasters/update" className={styles.backLink}>
         <IoChevronBack /> Back to park list
       </Link>
 
