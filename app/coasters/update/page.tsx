@@ -17,7 +17,7 @@ const CoasterUpdatePage = async () => {
         {parks.map((park) => (
           <li key={park.id} className={styles.parkListItem}>
             <Link
-              href={`/roller-coasters/update/${park.id}`}
+              href={`/coasters/update/${park.id}`}
               className={styles.parkLink}>
               {park.name}
             </Link>
