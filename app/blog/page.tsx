@@ -6,6 +6,7 @@ import { Post } from './types';
 import { getAllPosts } from './getAllPosts';
 
 import styles from './page.module.css';
+import { slugToUrl } from './utils';
 
 export const metadata = buildMetadata({
   title: 'Blog',
@@ -74,11 +75,6 @@ const BlogIndex = async () => {
       </div>
     </>
   );
-};
-
-const slugToUrl = (slug: string[]) => {
-  const [year, month, day, name] = slug;
-  return `/blog/${year}/${month}/${day}/${name}`;
 };
 
 export default BlogIndex;
