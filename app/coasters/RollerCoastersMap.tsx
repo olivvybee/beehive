@@ -1,18 +1,17 @@
 'use client';
 
+import { useContext } from 'react';
 import Map, { Marker } from 'react-map-gl/maplibre';
-import { Point, Popup } from 'maplibre-gl';
-
-import { Coaster, Park } from './types';
-import { getBounds } from './utils/getBounds';
-
+import { Popup } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-import styles from './RollerCoastersMap.module.css';
-import { useContext } from 'react';
+import { Coaster, Park } from './types';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
 import { MarkerPin } from './MarkerPin';
+import { getBounds } from './utils/getBounds';
 import { formatDate } from './utils/formatDate';
+
+import styles from './RollerCoastersMap.module.css';
 
 const getMarkerColour = (coaster: Coaster) => {
   if (!coaster.ridden) {
@@ -93,7 +92,9 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                     : ''
                 }
               </table>
-              <a href="${coaster.rcdb}" target="_blank">View on RCDB</a>
+              <a href="https://rcdb.com/${
+                coaster.id
+              }.htm" target="_blank">View on RCDB</a>
             </div>`);
           }
 
@@ -101,7 +102,7 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
 
           return (
             <Marker
-              key={`${park.name}-${coaster.name}`}
+              key={coaster.id}
               latitude={coaster.latitude}
               longitude={coaster.longitude}
               anchor="bottom"
@@ -114,20 +115,3 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
     </Map>
   );
 };
-
-/*
- park.coasters.map((coaster) => {
-          const popup = new Popup();
-          popup.setText('beans');
-
-          return (
-            <Marker
-              key={`${park.park.name}-${coaster.name}`}
-              latitude={coaster.location.lat}
-              longitude={coaster.location.lng}
-              color={coaster.ridden ? 'green' : 'red'}
-              popup={popup}
-            />
-          );
-        })
-        */
