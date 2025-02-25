@@ -7,8 +7,8 @@
     "build": "next build && npm run generate-rss",
     "start": "next start",
     "generate-rss": "tsx ./scripts/generateRSS.ts",
-    "get-park-data": "tsx ./app/roller-coasters/scripts/getParkData.ts",
-    "upload-park": "tsx ./app/roller-coasters/scripts/uploadPark.ts"
+    "get-park-data": "tsx ./app/coasters/scripts/getParkData.ts",
+    "upload-park": "tsx ./app/coasters/scripts/uploadPark.ts"
   },
   "dependencies": {
     "@types/node": "20.3.1",

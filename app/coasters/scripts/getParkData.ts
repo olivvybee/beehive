@@ -76,13 +76,13 @@ const fetchCoasters = async (themePark: string) => {
 };
 
 interface NewCoaster {
+  id: number;
   name: string;
   ridden: boolean;
   opened: string;
   closed: string | undefined;
   latitude: number;
   longitude: number;
-  rcdb: string;
 }
 
 const run = async (rcdbUrl: string) => {
@@ -98,13 +98,13 @@ const run = async (rcdbUrl: string) => {
   const coastersData = await fetchCoasters(parkName);
 
   const coasters: NewCoaster[] = coastersData.map((coaster) => ({
+    id: coaster.id,
     name: coaster.name,
     ridden: false,
     opened: coaster.status.date.opened,
     closed: coaster.status.date.closed || undefined,
     latitude: parseFloat(coaster.coords.lat),
     longitude: parseFloat(coaster.coords.lng),
-    rcdb: `https://rcdb.com${coaster.link}`,
   }));
 
   const parkData = {
