@@ -1,0 +1,125 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, auto) max-content 1fr;
+  padding: 0;
+  width: 100%;
+  column-gap: 8px;
+  row-gap: 16px;
+  align-items: center;
+}
+
+.listItem {
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: subgrid;
+  row-gap: 8px;
+  margin: 0;
+
+  &::before {
+    display: none;
+    padding: 0;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #777;
+    padding-bottom: 16px;
+  }
+}
+
+.clickable {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: subgrid;
+  cursor: pointer;
+  align-items: center;
+  text-align: left;
+}
+
+.expanderTriangle {
+  transform: rotate(0);
+  transition: transform 150ms ease-in-out;
+
+  &.open {
+    transform: rotate(90deg);
+  }
+}
+
+.parkName {
+  margin-right: 24px;
+}
+
+.progress {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  gap: 4px;
+  width: 100px;
+}
+
+.progressBar {
+  width: 100%;
+}
+
+.coasterList {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 2 / span 3;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.coasterListItem {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 3;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.coasterIcon {
+  justify-self: center;
+  vertical-align: middle;
+}
+
+.coasterDetails {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.date {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    grid-template-columns: repeat(3, auto) 1fr;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .parkName {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,10 @@
+.progressBar {
+  height: 8px;
+  border-radius: 8px;
+  border: 1px solid #777;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 8px;
+}

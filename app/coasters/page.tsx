@@ -1,15 +1,16 @@
 import { Suspense } from 'react';
 
 import { buildMetadata } from '@/utils/metadata';
+import { Tabs } from '@/components/Tabs/Tabs';
 
 import { RollerCoastersMap } from './RollerCoastersMap';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
 import { getParks } from './api';
-
-import styles from './page.module.css';
-import { Tabs } from '@/components/Tabs/Tabs';
 import { CoasterList } from './CoasterList';
 import { CoasterWithPark } from './types';
+import { CompletionStats } from './CompletionStats';
+
+import styles from './page.module.css';
 
 export const metadata = buildMetadata({
   title: 'Coaster credits',
@@ -45,6 +46,11 @@ const RollerCoasters = async () => {
               id: 'list',
               name: 'List',
               content: <CoasterList coasters={coasters} />,
+            },
+            {
+              id: 'completion',
+              name: 'Completion',
+              content: <CompletionStats parks={parks} />,
             },
             {
               id: 'map',
