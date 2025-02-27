@@ -1,5 +1,6 @@
 .coasterList {
   padding-left: 2.25rem;
+  font-size: 1rem;
 }
 
 .listEntry {
@@ -16,7 +17,7 @@
   &::before {
     content: '##.';
     position: absolute;
-    left: -2.5rem;
+    left: -2rem;
     color: #777;
   }
 }
@@ -26,7 +27,6 @@
 }
 
 .metadata {
-  font-size: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
