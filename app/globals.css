@@ -134,7 +134,8 @@ hr {
   background: var(--rainbow);
 }
 
-blockquote {
+blockquote,
+aside {
   position: relative;
   margin-bottom: var(--content-spacing);
   padding: 16px;
@@ -142,7 +143,8 @@ blockquote {
   background: var(--background-highlight);
 }
 
-blockquote::before {
+blockquote::before,
+aside::before {
   content: '';
   background: var(--rainbow-vertical);
   width: 8px;

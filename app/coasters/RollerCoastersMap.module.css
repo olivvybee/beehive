@@ -1,3 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & p {
+    margin: 0;
+  }
+}
+
 .popup {
   color: black;
 }
@@ -14,4 +24,24 @@
 .coasterDetails td:first-child {
   font-weight: bold;
   padding-right: 8px;
+}
+
+.keyAndParks {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  margin: 0;
+}
+
+.keyAndParks > div {
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .keyAndParks {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }

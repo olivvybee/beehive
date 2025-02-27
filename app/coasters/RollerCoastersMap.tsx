@@ -12,6 +12,8 @@ import { getBounds } from './utils/getBounds';
 import { formatDate } from './utils/formatDate';
 
 import styles from './RollerCoastersMap.module.css';
+import { Key } from './Key/Key';
+import { ParkChooser } from './ParkChooser/ParkChooser';
 
 const getMarkerColour = (coaster: Coaster) => {
   if (!coaster.ridden) {
@@ -41,35 +43,36 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
   }
 
   return (
-    <Map
-      id="rollerCoasterMap"
-      style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
-      mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
-      attributionControl={false}
-      initialViewState={{
-        bounds: initialBounds,
-        fitBoundsOptions: {
-          padding: 128,
-        },
-      }}>
-      {parks.flatMap((park) =>
-        park.coasters.map((coaster) => {
-          const popup = new Popup();
+    <div className={styles.wrapper}>
+      <Map
+        id="rollerCoasterMap"
+        style={{ width: '100%', height: 600, borderRadius: 6 }}
+        mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
+        attributionControl={false}
+        initialViewState={{
+          bounds: initialBounds,
+          fitBoundsOptions: {
+            padding: 128,
+          },
+        }}>
+        {parks.flatMap((park) =>
+          park.coasters.map((coaster) => {
+            const popup = new Popup();
 
-          if (typeof window !== 'undefined') {
-            popup.setOffset({
-              'top-left': [0, -5],
-              top: [0, -5],
-              'top-right': [0, -5],
-              right: [-10, -25],
-              'bottom-right': [0, -35],
-              bottom: [0, -35],
-              'bottom-left': [0, -35],
-              left: [10, -25],
-              center: [0, 0],
-            });
-            popup.setMaxWidth('50%');
-            popup.setHTML(`
+            if (typeof window !== 'undefined') {
+              popup.setOffset({
+                'top-left': [0, -5],
+                top: [0, -5],
+                'top-right': [0, -5],
+                right: [-10, -25],
+                'bottom-right': [0, -35],
+                bottom: [0, -35],
+                'bottom-left': [0, -35],
+                left: [10, -25],
+                center: [0, 0],
+              });
+              popup.setMaxWidth('50%');
+              popup.setHTML(`
             <div class="${styles.popup}">
               <span class="${styles.coasterName}">${coaster.name}</span>
               <table class="${styles.coasterDetails}">
@@ -96,22 +99,28 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                 coaster.id
               }.htm" target="_blank">View on RCDB</a>
             </div>`);
-          }
+            }
 
-          const markerColour = getMarkerColour(coaster);
+            const markerColour = getMarkerColour(coaster);
 
-          return (
-            <Marker
-              key={coaster.id}
-              latitude={coaster.latitude}
-              longitude={coaster.longitude}
-              anchor="bottom"
-              popup={popup}>
-              <MarkerPin colour={markerColour} />
-            </Marker>
-          );
-        })
-      )}
-    </Map>
+            return (
+              <Marker
+                key={coaster.id}
+                latitude={coaster.latitude}
+                longitude={coaster.longitude}
+                anchor="bottom"
+                popup={popup}>
+                <MarkerPin colour={markerColour} />
+              </Marker>
+            );
+          })
+        )}
+      </Map>
+
+      <div className={styles.keyAndParks}>
+        <Key />
+        <ParkChooser parks={parks} />
+      </div>
+    </div>
   );
 };

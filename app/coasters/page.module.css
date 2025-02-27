@@ -1,20 +1,5 @@
-.keyAndParks {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 16px;
-  margin: 0;
-  margin-bottom: 32px;
-}
-
-.keyAndParks > div {
-  padding: 16px;
-  border: 1px solid #999;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 600px) {
-  .keyAndParks {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }

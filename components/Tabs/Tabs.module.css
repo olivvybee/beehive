@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tabBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tab {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: #482d50;
+
+  &.active {
+    background-color: var(--background-color);
+    z-index: 2;
+    border-color: unset;
+    border-image: var(--rainbow) 1 1;
+  }
+}
