@@ -3,9 +3,7 @@ import { Suspense } from 'react';
 import { buildMetadata } from '@/utils/metadata';
 
 import { RollerCoastersMap } from './RollerCoastersMap';
-import { ParkChooser } from './ParkChooser/ParkChooser';
 import { RollerCoastersMapContextProvider } from './RollerCoastersMapContext';
-import { Key } from './Key/Key';
 import { getParks } from './api';
 
 import styles from './page.module.css';
@@ -14,8 +12,8 @@ import { CoasterList } from './CoasterList';
 import { CoasterWithPark } from './types';
 
 export const metadata = buildMetadata({
-  title: 'Roller coaster map',
-  description: "A map of all the roller coasters I've ridden.",
+  title: 'Coaster credits',
+  description: "Data about all the roller coasters I've ridden.",
 });
 
 const RollerCoasters = async () => {
