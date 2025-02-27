@@ -12,6 +12,10 @@ export interface Coaster {
   rcdb: string;
 }
 
+export type CoasterWithPark = Coaster & {
+  park: Park;
+};
+
 export interface Park {
   id: string;
   name: string;

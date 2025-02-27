@@ -1,5 +1,14 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
+}
+
+.totalCredits {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 16px;
 }

@@ -10,6 +10,8 @@ import { getParks } from './api';
 
 import styles from './page.module.css';
 import { Tabs } from '@/components/Tabs/Tabs';
+import { CoasterList } from './CoasterList';
+import { CoasterWithPark } from './types';
 
 export const metadata = buildMetadata({
   title: 'Roller coaster map',
@@ -18,10 +20,15 @@ export const metadata = buildMetadata({
 
 const RollerCoasters = async () => {
   const parks = await getParks();
+  const coasters: CoasterWithPark[] = parks.flatMap((park) =>
+    park.coasters.map((coaster) => ({ ...coaster, park }))
+  );
+
+  const totalCredits = coasters.filter((coaster) => coaster.ridden).length;
 
   return (
     <>
-      <h2>Roller coaster credits</h2>
+      <h2>Coaster credits</h2>
 
       <p>
         This is data about all the roller coasters I have ridden. I only include
@@ -30,8 +37,17 @@ const RollerCoasters = async () => {
       </p>
 
       <div className={styles.wrapper}>
+        <span className={styles.totalCredits}>
+          Total credits: {totalCredits}
+        </span>
+
         <Tabs
           tabs={[
+            {
+              id: 'list',
+              name: 'List',
+              content: <CoasterList coasters={coasters} />,
+            },
             {
               id: 'map',
               name: 'Map',

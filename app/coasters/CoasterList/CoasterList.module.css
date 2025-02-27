@@ -1,0 +1,53 @@
+.coasterList {
+  padding-left: 2.25rem;
+}
+
+.listEntry {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.noDate {
+  list-style-type: none;
+
+  &::before {
+    content: '##.';
+    position: absolute;
+    left: -2.5rem;
+    color: #777;
+  }
+}
+
+.link {
+  display: inline !important;
+}
+
+.metadata {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.parkName {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 600px) {
+  .listEntry {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .metadata {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
