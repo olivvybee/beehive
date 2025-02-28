@@ -40,9 +40,9 @@ export const ParkCompletion = ({ park }: ParkCompletionProps) => {
         />
 
         {coasterCount === riddenCount ? (
-          <IoCheckmarkCircle color="var(--green)" />
+          <IoCheckmarkCircle color="var(--green)" role="presentation" />
         ) : (
-          <IoEllipseOutline />
+          <IoEllipseOutline role="presentation" />
         )}
 
         <span className={styles.parkName}>{park.name}</span>
@@ -67,9 +67,13 @@ export const ParkCompletion = ({ park }: ParkCompletionProps) => {
                 <IoCheckmarkCircle
                   color="var(--green)"
                   className={styles.coasterIcon}
+                  aria-label="Ridden"
                 />
               ) : (
-                <IoEllipseOutline className={styles.coasterIcon} />
+                <IoEllipseOutline
+                  className={styles.coasterIcon}
+                  aria-label="Not ridden"
+                />
               )}
 
               {/* <div className={styles.coasterDetails}> */}
