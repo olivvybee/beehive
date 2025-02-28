@@ -97,17 +97,14 @@
   vertical-align: middle;
 }
 
-.coasterDetails {
+.coasterName {
   grid-column: span 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
 }
 
 .date {
   color: var(--text-secondary);
   font-style: italic;
+  grid-column: 2;
 }
 
 @media screen and (max-width: 600px) {
@@ -116,7 +113,7 @@
   }
 
   .progress {
-    width: 100%;
+    width: 80px;
   }
 
   .parkName {

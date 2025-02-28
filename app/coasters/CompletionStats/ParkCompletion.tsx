@@ -72,16 +72,19 @@ export const ParkCompletion = ({ park }: ParkCompletionProps) => {
                 <IoEllipseOutline className={styles.coasterIcon} />
               )}
 
-              <div className={styles.coasterDetails}>
+              {/* <div className={styles.coasterDetails}> */}
+              <span className={styles.coasterName}>
                 <a href={`https://rcdb.com/${coaster.id}.htm`}>
                   {coaster.name}
                 </a>
-                {coaster.riddenDate && (
-                  <span className={styles.date}>
-                    {formatDate(coaster.riddenDate, 'dd MMM yyyy')}
-                  </span>
-                )}
-              </div>
+              </span>
+
+              {coaster.riddenDate && (
+                <span className={styles.date}>
+                  {formatDate(coaster.riddenDate, 'dd MMM yyyy')}
+                </span>
+              )}
+              {/* </div> */}
             </li>
           ))}
         </ul>
