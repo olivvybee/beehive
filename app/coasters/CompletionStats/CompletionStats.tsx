@@ -1,3 +1,5 @@
+import _sortBy from 'lodash/sortBy';
+
 import { Park } from '../types';
 
 import styles from './CompletionStats.module.css';
@@ -7,17 +9,21 @@ export interface CompletionStatsProps {
   parks: Park[];
 }
 
-export const CompletionStats = ({ parks }: CompletionStatsProps) => (
-  <>
-    <p>
-      This is a display of how many coasters at each park I've ridden, only
-      counting those that were open the first time I visited.
-    </p>
+export const CompletionStats = ({ parks }: CompletionStatsProps) => {
+  const sortedParks = _sortBy(parks, ['name']);
 
-    <ul className={styles.list}>
-      {parks.map((park) => (
-        <ParkCompletion key={park.id} park={park} />
-      ))}
-    </ul>
-  </>
-);
+  return (
+    <>
+      <p>
+        This is a display of how many coasters at each park I've ridden, only
+        counting those that were open the first time I visited.
+      </p>
+
+      <ul className={styles.list}>
+        {sortedParks.map((park) => (
+          <ParkCompletion key={park.id} park={park} />
+        ))}
+      </ul>
+    </>
+  );
+};
