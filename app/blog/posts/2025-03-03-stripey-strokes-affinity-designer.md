@@ -6,7 +6,7 @@ description:
   Designer.'
 ---
 
-Yesterday I found myself wanting to make an image where a pride rainbow followed
+I found myself wanting to make an image where a pride rainbow followed
 a specific path. For reference, here's an idea of the kind of thing I wanted to
 make:
 
@@ -135,6 +135,8 @@ texture around so it looks correct!
 
 It looks great, but there are some limitations to this technique:
 
+- If you need to change the colours, you have to edit the texture image and
+  make a whole new brush. You can't edit the existing one.
 - The stroke caps cannot be rounded. Even if you choose the rounded option,
   they'll stay straight. It might be possible to fix this by adjusting the
   brush, but I don't know enough about brushes to know how.
