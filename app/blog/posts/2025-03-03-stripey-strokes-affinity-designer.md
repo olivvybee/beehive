@@ -6,8 +6,8 @@ description:
   Designer.'
 ---
 
-I found myself wanting to make an image where a pride rainbow followed
-a specific path. For reference, here's an idea of the kind of thing I wanted to
+I found myself wanting to make an image where a pride rainbow followed a
+specific path. For reference, here's an idea of the kind of thing I wanted to
 make:
 
 ![A curved shape that looks like part of an infinity symbol. It's made of a six-colour rainbow.](/img/2025-03/rainbow.png)
@@ -135,8 +135,8 @@ texture around so it looks correct!
 
 It looks great, but there are some limitations to this technique:
 
-- If you need to change the colours, you have to edit the texture image and
-  make a whole new brush. You can't edit the existing one.
+- If you need to change the colours, you have to edit the texture image and make
+  a whole new brush. You can't edit the existing one.
 - The stroke caps cannot be rounded. Even if you choose the rounded option,
   they'll stay straight. It might be possible to fix this by adjusting the
   brush, but I don't know enough about brushes to know how.
