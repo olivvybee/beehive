@@ -4,6 +4,7 @@ date: 2025-03-03T23:30:00Z
 description:
   'How to use rainbows and other stripey effects as a stroke in Affinity
   Designer.'
+hero: '/img/2025-03/hero.png'
 ---
 
 I found myself wanting to make an image where a pride rainbow followed a
@@ -140,7 +141,8 @@ It looks great, but there are some limitations to this technique:
 - The stroke caps cannot be rounded. Even if you choose the rounded option,
   they'll stay straight. It might be possible to fix this by adjusting the
   brush, but I don't know enough about brushes to know how.
-- It can look a bit funky if the path has very tight curves.
+- It can look a bit funky if the path has very tight curves. That means it
+  doesn't work very well for text.
 - You can't add arrow heads to the path.
 
 But I think this technique can still be used to great effect in a lot of cases!
