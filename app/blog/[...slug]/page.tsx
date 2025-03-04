@@ -79,7 +79,7 @@ export const generateMetadata = ({ params }: BlogPostProps): Metadata => {
       title: { absolute: title },
       description,
       publishedTime: date,
-      authors: ['Liv Asch'],
+      authors: ['Liv Flowers'],
       ...images,
     },
     twitter: {

@@ -17,12 +17,12 @@ const generate = async () => {
     favicon: `https://beehive.gay/favicon.ico`,
     updated: date,
     language: 'en-GB',
-    copyright: `© 2013-${date.getFullYear()} Liv Asch`,
+    copyright: `© 2013-${date.getFullYear()} Liv Flowers`,
     feedLinks: {
       atom: `https://beehive.gay/atom.xml`,
     },
     author: {
-      name: 'Liv Asch',
+      name: 'Liv Flowers',
       link: `https://beehive.gay`,
     },
   });

@@ -22,7 +22,7 @@ export const metadataTemplate: Metadata = {
   metadataBase: new URL('https://beehive.gay'),
   title: titleTemplate,
   description,
-  authors: [{ name: 'Liv Asch', url: 'https://beehive.gay' }],
+  authors: [{ name: 'Liv Flowers', url: 'https://beehive.gay' }],
   other: {
     'fediverse:creator': '@olivvybee@honeycomb.engineer',
   },
