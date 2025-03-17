@@ -31,8 +31,8 @@ export const CoasterList = ({ coasters }: CoasterListProps) => {
     <>
       <p>
         This list of every coaster I've ridden would ideally be in chronological
-        order, but I don't know the exact date I rode the first 50, so those are
-        listed in alphabetical order.
+        order, but I don't know the exact date I rode all of them, so those that
+        I don't know the date for are listed in alphabetical order.
       </p>
 
       <ol className={styles.coasterList}>
