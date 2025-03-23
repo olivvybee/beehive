@@ -50,6 +50,11 @@ const Homepage = () => (
       <Link href="/crafts">crafts page</Link>.
     </p>
     <p>
+      I also enjoy riding roller coasters and trains. I track data about these
+      on the <Link href="/coasters">coasters page</Link> and the{' '}
+      <Link href="/trains">trains page</Link>.
+    </p>
+    <p>
       The best place to find me to see what I'm up to or have a chat is on the
       fediverse, where I'm{' '}
       <a href={FEDI_URL} rel="me">
