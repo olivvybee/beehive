@@ -5,7 +5,7 @@ import Map, { Marker } from 'react-map-gl/maplibre';
 import { Popup } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-import { Coaster, Park } from './types';
+import { Park } from './types';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
 import { MarkerPin } from './MarkerPin';
 import { getBounds } from './utils/getBounds';
@@ -14,17 +14,6 @@ import { formatDate } from './utils/formatDate';
 import styles from './RollerCoastersMap.module.css';
 import { Key } from './Key/Key';
 import { ParkChooser } from './ParkChooser/ParkChooser';
-
-const getMarkerColour = (coaster: Coaster) => {
-  if (!coaster.ridden) {
-    return 'var(--red)';
-  }
-  if (coaster.closed) {
-    return 'var(--purple)';
-  }
-
-  return 'var(--green)';
-};
 
 interface RollerCoastersMapProps {
   parks: Park[];
@@ -56,23 +45,25 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
           },
         }}>
         {parks.flatMap((park) =>
-          park.coasters.map((coaster) => {
-            const popup = new Popup();
+          park.coasters
+            .filter((coaster) => coaster.latitude && coaster.longitude)
+            .map((coaster) => {
+              const popup = new Popup();
 
-            if (typeof window !== 'undefined') {
-              popup.setOffset({
-                'top-left': [0, -5],
-                top: [0, -5],
-                'top-right': [0, -5],
-                right: [-10, -25],
-                'bottom-right': [0, -35],
-                bottom: [0, -35],
-                'bottom-left': [0, -35],
-                left: [10, -25],
-                center: [0, 0],
-              });
-              popup.setMaxWidth('50%');
-              popup.setHTML(`
+              if (typeof window !== 'undefined') {
+                popup.setOffset({
+                  'top-left': [0, -5],
+                  top: [0, -5],
+                  'top-right': [0, -5],
+                  right: [-10, -25],
+                  'bottom-right': [0, -35],
+                  bottom: [0, -35],
+                  'bottom-left': [0, -35],
+                  left: [10, -25],
+                  center: [0, 0],
+                });
+                popup.setMaxWidth('50%');
+                popup.setHTML(`
             <div class="${styles.popup}">
               <span class="${styles.coasterName}">${coaster.name}</span>
               <table class="${styles.coasterDetails}">
@@ -86,11 +77,10 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                       )}</td></tr>`
                     : ''
                 }
-                <tr><td>Opened</td> <td>${formatDate(coaster.opened)}</td></tr>
                 ${
-                  coaster.closed
-                    ? `<tr><td>Closed</td> <td>${formatDate(
-                        coaster.closed
+                  coaster.opened
+                    ? `<tr><td>Opened</td> <td>${formatDate(
+                        coaster.opened
                       )}</td></tr>`
                     : ''
                 }
@@ -99,21 +89,23 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                 coaster.id
               }.htm" target="_blank">View on RCDB</a>
             </div>`);
-            }
+              }
 
-            const markerColour = getMarkerColour(coaster);
+              const markerColour = coaster.ridden
+                ? 'var(--green)'
+                : 'var(--red)';
 
-            return (
-              <Marker
-                key={coaster.id}
-                latitude={coaster.latitude}
-                longitude={coaster.longitude}
-                anchor="bottom"
-                popup={popup}>
-                <MarkerPin colour={markerColour} />
-              </Marker>
-            );
-          })
+              return (
+                <Marker
+                  key={coaster.id}
+                  latitude={coaster.latitude}
+                  longitude={coaster.longitude}
+                  anchor="bottom"
+                  popup={popup}>
+                  <MarkerPin colour={markerColour} />
+                </Marker>
+              );
+            })
         )}
       </Map>
 

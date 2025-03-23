@@ -6,7 +6,6 @@ export interface Coaster {
   ridden: boolean;
   riddenDate?: string;
   opened: string;
-  closed?: string;
   latitude: number;
   longitude: number;
   rcdb: string;

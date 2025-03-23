@@ -1,6 +1,6 @@
 'use client';
 
-import { refreshCache } from '../../cache';
+import { refreshCache } from '../cache';
 
 import styles from './RefreshCacheButton.module.css';
 

@@ -8,7 +8,6 @@ export const Key = () => (
     <ul className={styles.list}>
       <KeyItem colour="var(--red)">Not ridden</KeyItem>
       <KeyItem colour="var(--green)">Ridden</KeyItem>
-      <KeyItem colour="var(--purple)">Ridden, closed</KeyItem>
     </ul>
   </div>
 );

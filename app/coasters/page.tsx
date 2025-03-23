@@ -9,6 +9,7 @@ import { getParks } from './api';
 import { CoasterList } from './CoasterList';
 import { CoasterWithPark } from './types';
 import { CompletionStats } from './CompletionStats';
+import { RefreshCacheButton } from './RefreshCacheButton';
 
 import styles from './page.module.css';
 
@@ -63,6 +64,8 @@ const RollerCoasters = async () => {
             },
           ]}
         />
+
+        <RefreshCacheButton />
       </div>
     </>
   );
