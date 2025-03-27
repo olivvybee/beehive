@@ -5,9 +5,12 @@
 
 .groupName {
   margin-bottom: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #777;
 }
 
 .groupName .button {
+  font-weight: bold;
   font-size: 1rem;
 }
 

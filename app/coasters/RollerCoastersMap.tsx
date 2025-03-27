@@ -12,7 +12,6 @@ import { getBounds } from './utils/getBounds';
 import { formatDate } from './utils/formatDate';
 
 import styles from './RollerCoastersMap.module.css';
-import { Key } from './Key/Key';
 import { ParkChooser } from './ParkChooser/ParkChooser';
 
 interface RollerCoastersMapProps {
@@ -109,10 +108,7 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
         )}
       </Map>
 
-      <div className={styles.keyAndParks}>
-        <Key />
-        <ParkChooser parks={parks} />
-      </div>
+      <ParkChooser parks={parks} />
     </div>
   );
 };
