@@ -7,7 +7,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import { Park } from './types';
 import { rollerCoastersMapContext } from './RollerCoastersMapContext';
-import { MarkerPin } from './MarkerPin';
+import { CrossMarker, TickMarker } from './MarkerPin';
 import { getBounds } from './utils/getBounds';
 import { formatDate } from './utils/formatDate';
 
@@ -51,14 +51,14 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
 
               if (typeof window !== 'undefined') {
                 popup.setOffset({
-                  'top-left': [0, -5],
-                  top: [0, -5],
-                  'top-right': [0, -5],
-                  right: [-10, -25],
-                  'bottom-right': [0, -35],
-                  bottom: [0, -35],
-                  'bottom-left': [0, -35],
-                  left: [10, -25],
+                  'top-left': [0, -3],
+                  top: [0, -3],
+                  'top-right': [0, -3],
+                  right: [-20, -20],
+                  'bottom-right': [0, -40],
+                  bottom: [0, -40],
+                  'bottom-left': [0, -40],
+                  left: [20, -20],
                   center: [0, 0],
                 });
                 popup.setMaxWidth('50%');
@@ -90,10 +90,6 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
             </div>`);
               }
 
-              const markerColour = coaster.ridden
-                ? 'var(--green)'
-                : 'var(--red)';
-
               return (
                 <Marker
                   key={coaster.id}
@@ -101,7 +97,7 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
                   longitude={coaster.longitude}
                   anchor="bottom"
                   popup={popup}>
-                  <MarkerPin colour={markerColour} />
+                  {coaster.ridden ? <TickMarker /> : <CrossMarker />}
                 </Marker>
               );
             })
