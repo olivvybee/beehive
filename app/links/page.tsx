@@ -85,7 +85,7 @@ const LinksPage = () => (
 
     <hr className={styles.divider} />
 
-    <h2>Cool people and websites</h2>
+    <h2>Cool beings and places</h2>
 
     <ButtonGrid />
   </>
