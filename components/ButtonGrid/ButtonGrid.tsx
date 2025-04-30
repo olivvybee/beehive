@@ -71,6 +71,18 @@ const BUTTONS: Button[] = [
     href: 'https://symtrkl.gay',
     title: 'SymTrkl',
   },
+  {
+    src: 'https://liv.town/assets/img/livtown-button.gif',
+    alt: '"liv.town" on a pale purple background with animated rainbow confetti in the background.',
+    href: 'https://liv.town',
+    title: 'liv.town',
+  },
+  {
+    src: 'https://vulpinecitrus.info/vcinfo-online.png',
+    alt: '"VCInfo" surrounded by pixel art of foxes and a lemon.',
+    href: 'https://vulpinecitrus.info/',
+    title: 'Vulpine Citrus',
+  },
 ];
 
 interface ButtonGridProps {
