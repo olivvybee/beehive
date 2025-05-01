@@ -83,6 +83,12 @@ const BUTTONS: Button[] = [
     href: 'https://vulpinecitrus.info/',
     title: 'Vulpine Citrus',
   },
+  {
+    src: 'https://girlthi.ng/~thermia/img/88x31/thermia.gif',
+    alt: '"~thermia" surrounded by PCB traces. It\'s animated and lights up letter by letter.',
+    href: 'https://girlthi.ng/~thermia/',
+    title: 'thermia',
+  },
 ];
 
 interface ButtonGridProps {
