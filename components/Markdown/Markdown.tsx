@@ -2,8 +2,12 @@ import ReactMarkdown, { Options, Components } from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 
 import { CodeBlock } from '../CodeBlock';
+import { Abbr } from '../Abbr';
+import { Link } from '../Link';
 
 const components: Components = {
+  a: ({ href = '', ...props }) => <Link href={href} {...props} />,
+
   code: ({ node, children, className, inline, ...props }) => {
     if (inline) {
       return (
@@ -19,6 +23,12 @@ const components: Components = {
 
     return <CodeBlock language={language}>{String(children)}</CodeBlock>;
   },
+
+  abbr: ({ children, title = '', ...props }) => (
+    <Abbr title={title} {...props}>
+      {children}
+    </Abbr>
+  ),
 };
 
 export const Markdown = (options: Options) => (
