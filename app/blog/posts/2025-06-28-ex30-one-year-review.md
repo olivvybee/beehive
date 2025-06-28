@@ -63,9 +63,9 @@ desaturated blue (which probably looks grey in real life).
 
 #### Co-pilot standing by
 
-One of the driving aids available in the car is called "pilot assist", which
-unlike tesla's "autopilot" is not intended to be a self-driving mode. It's
-essentially adaptive cruise control with advanced lane keeping.
+One of the driving aids available in the car is called "pilot assist", which is
+not intended to be a self-driving mode (if such a thing were even possible).
+It's essentially adaptive cruise control with advanced lane keeping.
 
 When you set a cruise control speed, it'll maintain that speed while adjusting
 to the speed of the car in front, which is great for in traffic. It'll also
