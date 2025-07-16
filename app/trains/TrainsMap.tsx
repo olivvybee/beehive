@@ -58,7 +58,7 @@ export const TrainsMap = ({
     <Map
       id="trainMap"
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
-      mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
+      mapStyle={`https://api.protomaps.com/styles/v2/dark.json?key=${protomapsKey}`}
       attributionControl={false}
       onZoom={onZoom}
       initialViewState={{

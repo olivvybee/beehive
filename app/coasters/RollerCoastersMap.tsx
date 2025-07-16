@@ -35,7 +35,7 @@ export const RollerCoastersMap = ({ parks }: RollerCoastersMapProps) => {
       <Map
         id="rollerCoasterMap"
         style={{ width: '100%', height: 600, borderRadius: 6 }}
-        mapStyle={`https://api.protomaps.com/styles/v2/black.json?key=${protomapsKey}`}
+        mapStyle={`https://api.protomaps.com/styles/v2/dark.json?key=${protomapsKey}`}
         attributionControl={false}
         initialViewState={{
           bounds: initialBounds,
