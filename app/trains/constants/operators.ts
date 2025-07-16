@@ -24,6 +24,11 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         name: 'Exbury Gardens Railway',
         colour: 'rgb(59, 81, 159)',
       },
+      {
+        id: 'legoland-windsor',
+        name: 'Legoland Windsor',
+        colour: 'rgb(208, 15, 18)',
+      },
       { id: 'lner', name: 'LNER', colour: 'rgb(189, 44, 52)' },
       { id: 'northern', name: 'Northern', colour: 'rgb(64, 59, 163)' },
       { id: 'rhdr', name: 'RH&DR', colour: 'rgb(91, 130, 62)' },

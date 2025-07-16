@@ -1,0 +1,1971 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cost": "0",
+        "filtered ascend": "0",
+        "plain-ascend": "0",
+        "total-energy": "13068.819131174789",
+        "total-time": "54.16000000000001",
+        "track-length": "677",
+        "messages": [
+          [
+            "Longitude",
+            "Latitude",
+            "Elevation",
+            "Distance",
+            "CostPerKm",
+            "ElevCost",
+            "TurnCost",
+            "NodeCost",
+            "InitialCost",
+            "WayTags",
+            "NodeTags",
+            "Time",
+            "Energy"
+          ],
+          [
+            -648788.8097763062,
+            51463652.60960894,
+            null,
+            31,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648745.894432068,
+            51463568.15498193,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648735.1655960084,
+            51463487.95230273,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648770.034313202,
+            51463372.66070446,
+            null,
+            14,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648839.7717475892,
+            51463304.15396464,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648925.6024360658,
+            51463257.368814915,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649073.1239318849,
+            51463215.596319295,
+            null,
+            12,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649148.2257843019,
+            51463203.90001367,
+            null,
+            6,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649239.4208908082,
+            51463205.57091466,
+            null,
+            7,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649357.4380874635,
+            51463235.647121966,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649448.6331939698,
+            51463279.09049754,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649521.052837372,
+            51463335.90100319,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649580.0614356996,
+            51463397.72412017,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649636.3878250123,
+            51463499.64853558,
+            null,
+            12,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649649.7988700868,
+            51463601.572723314,
+            null,
+            12,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649628.3411979675,
+            51463723.54727173,
+            null,
+            14,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649542.5105094911,
+            51463837.16710572,
+            null,
+            14,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649295.7472801208,
+            51464052.70983695,
+            null,
+            30,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649048.9840507508,
+            51464298.3270571,
+            null,
+            33,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648965.8355712891,
+            51464366.83230446,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648896.098136902,
+            51464413.616316766,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648756.6232681276,
+            51464482.12139105,
+            null,
+            13,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648697.6146697999,
+            51464515.53846317,
+            null,
+            6,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648633.2416534424,
+            51464579.03083272,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648609.1017723085,
+            51464669.25667963,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648617.1483993531,
+            51464762.82403613,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648681.5214157106,
+            51464844.69531569,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648802.2208213806,
+            51464934.920637324,
+            null,
+            14,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648869.276046753,
+            51464990.058246054,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648906.8269729615,
+            51465063.57495404,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648906.8269729615,
+            51465162.153990254,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648874.6404647828,
+            51465240.6829006,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648804.9030303956,
+            51465297.49096427,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648719.0723419191,
+            51465354.298957184,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648587.6441001893,
+            51465381.03210587,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648432.0759773256,
+            51465386.0445695,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648284.5544815065,
+            51465360.98224585,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648147.761821747,
+            51465294.14931541,
+            null,
+            13,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648064.6133422853,
+            51465255.72033609,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647960.0071907043,
+            51465033.49995145,
+            null,
+            26,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647866.1298751832,
+            51464851.37867898,
+            null,
+            22,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647844.6722030641,
+            51464789.55753133,
+            null,
+            7,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647852.7188301088,
+            51464684.29430345,
+            null,
+            12,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647914.4096374513,
+            51464595.73933636,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -647986.8292808534,
+            51464533.91784237,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648086.0710144044,
+            51464490.47566139,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648212.1348381044,
+            51464468.75455536,
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648330.1520347596,
+            51464463.74199098,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648480.3557395936,
+            51464478.7796825,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648603.7373542787,
+            51464492.146515265,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648670.792579651,
+            51464480.450536825,
+            null,
+            5,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648764.6698951722,
+            51464448.7042945,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648866.5938377382,
+            51464406.93288938,
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648987.2932434083,
+            51464305.01050039,
+            null,
+            15,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649043.6196327211,
+            51464213.11306925,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649047.6429462433,
+            51464145.443024404,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -649010.0920200349,
+            51464051.87440198,
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ],
+          [
+            -648933.6490631105,
+            51463913.05862041,
+            null,
+            17,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            "",
+            null,
+            null
+          ]
+        ],
+        "name": "Legoland"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.6489336490631105,
+            51.463915089461054
+          ],
+          [
+            -0.6487888097763062,
+            51.46365260960894
+          ],
+          [
+            -0.648745894432068,
+            51.463568154981935
+          ],
+          [
+            -0.6487351655960084,
+            51.46348795230273
+          ],
+          [
+            -0.648770034313202,
+            51.463372660704465
+          ],
+          [
+            -0.6488397717475892,
+            51.463304153964636
+          ],
+          [
+            -0.6489256024360658,
+            51.463257368814915
+          ],
+          [
+            -0.6490731239318849,
+            51.463215596319294
+          ],
+          [
+            -0.6491482257843019,
+            51.46320390001367
+          ],
+          [
+            -0.6492394208908082,
+            51.46320557091466
+          ],
+          [
+            -0.6493574380874635,
+            51.46323564712196
+          ],
+          [
+            -0.6494486331939698,
+            51.46327909049754
+          ],
+          [
+            -0.6495210528373719,
+            51.46333590100319
+          ],
+          [
+            -0.6495800614356996,
+            51.46339772412017
+          ],
+          [
+            -0.6496363878250123,
+            51.46349964853558
+          ],
+          [
+            -0.6496497988700868,
+            51.46360157272331
+          ],
+          [
+            -0.6496283411979675,
+            51.46372354727173
+          ],
+          [
+            -0.6495425105094911,
+            51.463837167105716
+          ],
+          [
+            -0.6492957472801208,
+            51.464052709836956
+          ],
+          [
+            -0.6490489840507508,
+            51.4642983270571
+          ],
+          [
+            -0.6489658355712891,
+            51.464366832304464
+          ],
+          [
+            -0.648896098136902,
+            51.46441361631677
+          ],
+          [
+            -0.6487566232681276,
+            51.46448212139105
+          ],
+          [
+            -0.6486976146697999,
+            51.46451553846317
+          ],
+          [
+            -0.6486332416534424,
+            51.464579030832724
+          ],
+          [
+            -0.6486091017723085,
+            51.464669256679635
+          ],
+          [
+            -0.6486171483993531,
+            51.46476282403613
+          ],
+          [
+            -0.6486815214157106,
+            51.46484469531569
+          ],
+          [
+            -0.6488022208213806,
+            51.464934920637326
+          ],
+          [
+            -0.648869276046753,
+            51.46499005824605
+          ],
+          [
+            -0.6489068269729615,
+            51.46506357495404
+          ],
+          [
+            -0.6489068269729615,
+            51.465162153990256
+          ],
+          [
+            -0.6488746404647828,
+            51.4652406829006
+          ],
+          [
+            -0.6488049030303956,
+            51.46529749096427
+          ],
+          [
+            -0.6487190723419191,
+            51.46535429895718
+          ],
+          [
+            -0.6485876441001893,
+            51.465381032105874
+          ],
+          [
+            -0.6484320759773256,
+            51.4653860445695
+          ],
+          [
+            -0.6482845544815065,
+            51.46536098224585
+          ],
+          [
+            -0.6481477618217469,
+            51.46529414931541
+          ],
+          [
+            -0.6480646133422853,
+            51.46525572033609
+          ],
+          [
+            -0.6479600071907043,
+            51.46503349995145
+          ],
+          [
+            -0.6478661298751832,
+            51.46485137867898
+          ],
+          [
+            -0.6478446722030641,
+            51.464789557531326
+          ],
+          [
+            -0.6478527188301088,
+            51.464684294303446
+          ],
+          [
+            -0.6479144096374513,
+            51.46459573933635
+          ],
+          [
+            -0.6479868292808534,
+            51.464533917842374
+          ],
+          [
+            -0.6480860710144044,
+            51.46449047566139
+          ],
+          [
+            -0.6482121348381044,
+            51.46446875455536
+          ],
+          [
+            -0.6483301520347596,
+            51.46446374199098
+          ],
+          [
+            -0.6484803557395936,
+            51.4644787796825
+          ],
+          [
+            -0.6486037373542787,
+            51.46449214651526
+          ],
+          [
+            -0.648670792579651,
+            51.464480450536826
+          ],
+          [
+            -0.6487646698951722,
+            51.464448704294504
+          ],
+          [
+            -0.6488665938377381,
+            51.46440693288938
+          ],
+          [
+            -0.6489872932434083,
+            51.46430501050039
+          ],
+          [
+            -0.6490436196327211,
+            51.46421311306925
+          ],
+          [
+            -0.6490476429462433,
+            51.46414544302441
+          ],
+          [
+            -0.6490100920200349,
+            51.46405187440198
+          ],
+          [
+            -0.6489336490631105,
+            51.463913058620406
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "from",
+        "type": "from"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489336490631105,
+          51.463915089461054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via1",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6487888097763062,
+          51.46365260960894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via2",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.648745894432068,
+          51.463568154981935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via3",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6487351655960084,
+          51.46348795230273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via4",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.648770034313202,
+          51.463372660704465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via5",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6488397717475892,
+          51.463304153964636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via6",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489256024360658,
+          51.463257368814915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via7",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6490731239318849,
+          51.463215596319294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via8",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6491482257843019,
+          51.46320390001367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via9",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6492394208908082,
+          51.46320557091466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via10",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6493574380874635,
+          51.46323564712196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via11",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6494486331939698,
+          51.46327909049754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via12",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6495210528373719,
+          51.46333590100319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via13",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6495800614356996,
+          51.46339772412017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via14",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6496363878250123,
+          51.46349964853558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via15",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6496497988700868,
+          51.46360157272331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via16",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6496283411979675,
+          51.46372354727173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via17",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6495425105094911,
+          51.463837167105716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via18",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6492957472801208,
+          51.464052709836956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via19",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6490489840507508,
+          51.4642983270571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via20",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489658355712891,
+          51.464366832304464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via21",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.648896098136902,
+          51.46441361631677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via22",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6487566232681276,
+          51.46448212139105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via23",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486976146697999,
+          51.46451553846317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via24",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486332416534424,
+          51.464579030832724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via25",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486091017723085,
+          51.464669256679635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via26",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486171483993531,
+          51.46476282403613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via27",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486815214157106,
+          51.46484469531569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via28",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6488022208213806,
+          51.464934920637326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via29",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.648869276046753,
+          51.46499005824605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via30",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489068269729615,
+          51.46506357495404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via31",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489068269729615,
+          51.465162153990256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via32",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6488746404647828,
+          51.4652406829006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via33",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6488049030303956,
+          51.46529749096427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via34",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6487190723419191,
+          51.46535429895718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via35",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6485876441001893,
+          51.465381032105874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via36",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6484320759773256,
+          51.4653860445695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via37",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6482845544815065,
+          51.46536098224585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via38",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6481477618217469,
+          51.46529414931541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via39",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6480646133422853,
+          51.46525572033609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via40",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6479600071907043,
+          51.46503349995145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via41",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6478661298751832,
+          51.46485137867898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via42",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6478446722030641,
+          51.464789557531326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via43",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6478527188301088,
+          51.464684294303446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via44",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6479144096374513,
+          51.46459573933635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via45",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6479868292808534,
+          51.464533917842374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via46",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6480860710144044,
+          51.46449047566139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via47",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6482121348381044,
+          51.46446875455536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via48",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6483301520347596,
+          51.46446374199098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via49",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6484803557395936,
+          51.4644787796825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via50",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6486037373542787,
+          51.46449214651526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via51",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.648670792579651,
+          51.464480450536826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via52",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6487646698951722,
+          51.464448704294504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via53",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6488665938377381,
+          51.46440693288938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via54",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489872932434083,
+          51.46430501050039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via55",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6490436196327211,
+          51.46421311306925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via56",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6490476429462433,
+          51.46414544302441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "via57",
+        "type": "via"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6490100920200349,
+          51.46405187440198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "to",
+        "type": "to"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6489336490631105,
+          51.463913058620406
+        ]
+      }
+    }
+  ]
+}
