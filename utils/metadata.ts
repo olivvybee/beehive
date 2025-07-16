@@ -1,3 +1,4 @@
+import { FEDI_USERNAME } from '@/constants';
 import { Metadata } from 'next';
 
 type OpenGraph = NonNullable<Metadata['openGraph']>;
@@ -24,7 +25,7 @@ export const metadataTemplate: Metadata = {
   description,
   authors: [{ name: 'Liv Flowers', url: 'https://beehive.gay' }],
   other: {
-    'fediverse:creator': '@olivvybee@honeycomb.engineer',
+    'fediverse:creator': FEDI_USERNAME,
   },
   openGraph: {
     ...baseOpenGraph,
