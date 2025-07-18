@@ -5,12 +5,6 @@
     "title": "beehive.gay"
   },
   {
-    "src": "https://theresnotime.co.uk/button.png",
-    "alt": "A fox and the text \"TheresNoTime\" on a subtle non-binary flag background.",
-    "href": "https://theresnotime.co.uk",
-    "title": "TheresNoTime (Sammy)"
-  },
-  {
     "src": "/buttons/honeycomb-engineer.png",
     "alt": "A rainbow beehive and the text \"honeycomb.engineer\".",
     "href": "https://honeycomb.engineer",
@@ -21,6 +15,12 @@
     "alt": "A ring with a gradient made from the trans and non-binary flags, next to the text \"anarres family\" in a sci-fi style font.",
     "href": "https://anarres.family",
     "title": "anarres.family"
+  },
+  {
+    "src": "https://theresnotime.co.uk/button.png",
+    "alt": "A fox and the text \"TheresNoTime\" on a subtle non-binary flag background.",
+    "href": "https://theresnotime.co.uk",
+    "title": "TheresNoTime (Sammy)"
   },
   {
     "src": "https://k4m1.net/button.gif",
