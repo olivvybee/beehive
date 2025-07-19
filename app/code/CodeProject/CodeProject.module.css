@@ -35,3 +35,16 @@ p.projectDescription {
   align-items: center;
   gap: 16px;
 }
+
+@media screen and (max-width: 600px) {
+  .projectImage {
+    width: 48px;
+    height: 48px;
+  }
+
+  .projectLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

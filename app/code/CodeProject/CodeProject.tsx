@@ -25,7 +25,7 @@ export const CodeProject = ({
       {imageUrl ? (
         <img src={imageUrl} alt="" className={styles.projectImage} />
       ) : (
-        <Icon size={64} />
+        <Icon size="100%" />
       )}
     </div>
 
