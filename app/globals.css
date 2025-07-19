@@ -141,22 +141,13 @@ hr {
 
 blockquote,
 aside {
-  position: relative;
   margin-bottom: var(--content-spacing);
   padding: 16px;
   padding-left: 32px;
   background: var(--background-highlight);
-}
-
-blockquote::before,
-aside::before {
-  content: '';
-  background: var(--rainbow-vertical);
-  width: 8px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  border-image: var(--rainbow-vertical) 1 1;
+  border-left-width: 8px;
+  border-left-style: solid;
 }
 
 ul {
