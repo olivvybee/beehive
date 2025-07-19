@@ -26,6 +26,11 @@
   border-color: transparent;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--text-color);
+}
+
 .divider {
   margin: 64px 0;
 }

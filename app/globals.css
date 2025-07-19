@@ -74,7 +74,7 @@ body {
 a {
   color: var(--purple);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: none;
   border-width: 0;
   border-bottom-width: 1px;
   border-style: solid;
@@ -83,7 +83,10 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--green);
+  color: transparent;
+  background-image: var(--rainbow);
+  background-clip: text;
+  transition: color 0.2s;
   border-color: unset;
   border-image: var(--rainbow) 1 1;
 }
