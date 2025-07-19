@@ -15,11 +15,6 @@
   row-gap: 8px;
   margin: 0;
 
-  &::before {
-    display: none;
-    padding: 0;
-  }
-
   &:not(:last-child) {
     border-bottom: 1px solid #777;
     padding-bottom: 16px;
@@ -86,10 +81,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-
-  &::before {
-    display: none;
-  }
 }
 
 .coasterIcon {

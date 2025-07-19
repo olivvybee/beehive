@@ -161,25 +161,11 @@ aside::before {
 
 ul {
   padding-left: 1.25rem;
-  list-style-type: none;
   margin-bottom: var(--content-spacing);
 }
 
 li {
-  position: relative;
   margin-bottom: calc(var(--content-spacing) / 2);
-}
-
-ul li::before {
-  margin-bottom: var(--content-spacing);
-  content: '';
-  position: absolute;
-  left: -1.25rem;
-  top: calc((var(--font-size) * var(--line-height) * 0.5) - 5px);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--rainbow-vertical);
 }
 
 ol {

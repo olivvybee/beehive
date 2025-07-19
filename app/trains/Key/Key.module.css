@@ -14,10 +14,6 @@
   font-size: 0.9rem;
 }
 
-.item::before {
-  display: none;
-}
-
 .item {
   display: flex;
   flex-direction: row;
