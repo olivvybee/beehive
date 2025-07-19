@@ -1,0 +1,37 @@
+.codeProject {
+  background-color: var(--background-highlight);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectImage {
+  flex-shrink: 0;
+  margin: 0;
+  width: 64px;
+  height: 64px;
+}
+
+.projectName {
+  margin: 0;
+}
+
+p.projectDescription {
+  margin: 0;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
