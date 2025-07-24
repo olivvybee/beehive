@@ -175,6 +175,10 @@ li li:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
+li p {
+  margin-bottom: var(--content-spacing);
+}
+
 abbr {
   text-decoration: none;
   transition: border-color 0.2s;
