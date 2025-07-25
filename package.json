@@ -9,7 +9,8 @@
     "generate-rss": "tsx ./scripts/generateRSS.ts",
     "strip-exif": "tsx ./scripts/stripExif.ts",
     "get-park-data": "tsx ./app/coasters/scripts/getParkData.ts",
-    "upload-park": "tsx ./app/coasters/scripts/uploadPark.ts"
+    "upload-park": "tsx ./app/coasters/scripts/uploadPark.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@types/node": "20.3.1",
