@@ -10,7 +10,8 @@
     "strip-exif": "tsx ./scripts/stripExif.ts",
     "get-park-data": "tsx ./app/coasters/scripts/getParkData.ts",
     "upload-park": "tsx ./app/coasters/scripts/uploadPark.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "new": "tsx ./scripts/newPost.ts"
   },
   "dependencies": {
     "@types/react": "18.2.12",
