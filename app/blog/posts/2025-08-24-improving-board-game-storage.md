@@ -13,7 +13,7 @@ big their game's box is.
 When I started my board game collection, I stored them on a spare shelf on a
 bookcase I already had, because I only had a handful of games. But when the
 collection outgrew that shelf, I followed the trend and bought a kallax for
-them. Eventually my collection spread out to fill a 4x4 kallax.
+them. Eventually my collection spread out to fill a 3x4 kallax.
 
 ![A white shelving unit divided into square sections, each containing around 4 board games.](/img/2025-08/kallax.jpeg)
 
@@ -64,7 +64,7 @@ So I moved my collection onto the billy instead!
 
 Besides being bigger in general, there's also less wasted space, because there
 are only small horizontal gaps at the end of each of the 6 shelves, rather than
-one in each of 16 cubes.
+one in each of 12 cubes.
 
 I've also been able to set the height of each shelf to be appropriate for the
 games, rather than being stuck with the square cubbies from the kallax.
