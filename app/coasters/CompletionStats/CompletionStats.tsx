@@ -13,17 +13,10 @@ export const CompletionStats = ({ parks }: CompletionStatsProps) => {
   const sortedParks = _sortBy(parks, ['name']);
 
   return (
-    <>
-      <p>
-        This is a display of how many coasters at each park I've ridden, only
-        counting those that were open the first time I visited.
-      </p>
-
-      <ul className={styles.list}>
-        {sortedParks.map((park) => (
-          <ParkCompletion key={park.id} park={park} />
-        ))}
-      </ul>
-    </>
+    <ul className={styles.list}>
+      {sortedParks.map((park) => (
+        <ParkCompletion key={park.id} park={park} />
+      ))}
+    </ul>
   );
 };
