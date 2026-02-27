@@ -4,15 +4,15 @@ import { Metadata } from 'next';
 type OpenGraph = NonNullable<Metadata['openGraph']>;
 
 const titleTemplate = {
-  template: "%s - Liv's Beehive",
-  default: "Liv's Beehive",
+  template: "%s - abby's beehive",
+  default: "abby's beehive",
 };
 
 const description =
   'The personal site of a bee who happens to be a software engineer.';
 
 export const baseOpenGraph: OpenGraph = {
-  siteName: "Liv's Beehive",
+  siteName: "abby's beehive",
   locale: 'en-GB',
   type: 'website',
   images: [{ url: '/apple-icon.png' }],
@@ -23,7 +23,7 @@ export const metadataTemplate: Metadata = {
   metadataBase: new URL('https://beehive.gay'),
   title: titleTemplate,
   description,
-  authors: [{ name: 'Liv Flowers', url: 'https://beehive.gay' }],
+  authors: [{ name: 'abby flowers', url: 'https://beehive.gay' }],
   other: {
     'fediverse:creator': FEDI_USERNAME,
   },

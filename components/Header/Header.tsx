@@ -15,7 +15,7 @@ export const Header = () => (
             width={48}
             alt=""
           />
-          Liv's Beehive
+          abby's beehive
         </h1>
       </Link>
 

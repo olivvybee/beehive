@@ -11,18 +11,18 @@ const generate = async () => {
   const date = new Date();
 
   const feed = new Feed({
-    title: "Liv's Beehive",
+    title: "abby's beehive",
     id: 'https://beehive.gay',
     link: 'https://beehive.gay',
     favicon: `https://beehive.gay/favicon.ico`,
     updated: date,
     language: 'en-GB',
-    copyright: `© 2013-${date.getFullYear()} Liv Flowers`,
+    copyright: `© 2013-${date.getFullYear()} abby flowers`,
     feedLinks: {
       atom: `https://beehive.gay/atom.xml`,
     },
     author: {
-      name: 'Liv Flowers',
+      name: 'abby flowers',
       link: `https://beehive.gay`,
     },
   });

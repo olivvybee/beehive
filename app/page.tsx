@@ -9,20 +9,20 @@ const Homepage = () => (
   <>
     <InlineImage
       src="/img/avatar.jpg"
-      alt="A photo of Liv, who is white and has chin length pink and purple hair, a septum piercing, and a nose ring. She's wearing a purple dress covered in bees."
+      alt="A photo of abby, who is white and has chin length pink and purple hair, a septum piercing, and a nose ring. She's wearing a purple dress covered in bees."
       imageWidth={128}
       imageHeight={128}
       imageClassName={styles.avatar}
       align="center">
       <p>
-        Hi, I'm Liv, and welcome to my beehive! Around the internet, I'm known
+        Hi, I'm abby, and welcome to my beehive! Around the internet, I'm known
         as olivvybee.
       </p>
       <p>
         I'm <a href="https://new.lgbtqia.wiki/wiki/Agender">agender</a> and my
         pronouns are{' '}
-        <Abbr title='For example: "She updated her website", or "They updated their website"'>
-          she/they
+        <Abbr title='For example: "She updated her website"'>
+          she/her
         </Abbr>
         .
       </p>
