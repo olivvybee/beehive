@@ -27,7 +27,7 @@ export const PresetChooser = ({ routes }: PresetChooserProps) => {
 
   return (
     <div className={styles.presetChooser}>
-      <h3 className={styles.heading}>Interesting views</h3>
+      <h3 className={styles.heading}>Areas</h3>
 
       <ul className={styles.grid}>
         {GROUPED_OPERATORS.map((group) => (
