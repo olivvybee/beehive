@@ -70,6 +70,12 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
       { id: 'tmb', name: 'TMB', colour: 'rgb(187, 39, 37)' },
     ],
   },
+  {
+    name: 'USA',
+    operators: [
+      {id: 'wdw', name: 'Walt Disney World', colour: 'rgb(0, 89, 252)'}
+    ]
+  }
 ];
 
 export const ALL_OPERATORS = GROUPED_OPERATORS.flatMap(

@@ -1,0 +1,803 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-03-11T10:27:38Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/43287326",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism",
+        "wikipedia": "en:Walt Disney World Railroad"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5850479,
+            28.4213446
+          ],
+          [
+            -81.5849943,
+            28.421459
+          ],
+          [
+            -81.58495,
+            28.4215416
+          ],
+          [
+            -81.5848843,
+            28.4216348
+          ],
+          [
+            -81.5847904,
+            28.4217421
+          ],
+          [
+            -81.5846939,
+            28.4218424
+          ],
+          [
+            -81.5845624,
+            28.4219426
+          ],
+          [
+            -81.5843894,
+            28.4220558
+          ],
+          [
+            -81.5841936,
+            28.422182
+          ],
+          [
+            -81.5839884,
+            28.4222941
+          ],
+          [
+            -81.5837336,
+            28.4224108
+          ],
+          [
+            -81.5834976,
+            28.4224993
+          ],
+          [
+            -81.5833226,
+            28.422542
+          ],
+          [
+            -81.5831771,
+            28.4225665
+          ],
+          [
+            -81.5830229,
+            28.422576
+          ],
+          [
+            -81.5828753,
+            28.4225783
+          ],
+          [
+            -81.5801462,
+            28.422583
+          ],
+          [
+            -81.579996,
+            28.4225748
+          ],
+          [
+            -81.5798444,
+            28.4225571
+          ],
+          [
+            -81.5797278,
+            28.4225359
+          ],
+          [
+            -81.5796097,
+            28.422504
+          ],
+          [
+            -81.5794904,
+            28.4224604
+          ],
+          [
+            -81.5793965,
+            28.4224191
+          ],
+          [
+            -81.5792785,
+            28.422359
+          ],
+          [
+            -81.579194,
+            28.4223118
+          ],
+          [
+            -81.5791055,
+            28.4222481
+          ],
+          [
+            -81.5790103,
+            28.4221691
+          ],
+          [
+            -81.5789164,
+            28.422083
+          ],
+          [
+            -81.5788319,
+            28.4219957
+          ],
+          [
+            -81.5787541,
+            28.421899
+          ],
+          [
+            -81.5786643,
+            28.4217834
+          ],
+          [
+            -81.5786173,
+            28.4217055
+          ],
+          [
+            -81.5785382,
+            28.4215782
+          ],
+          [
+            -81.5782691,
+            28.4211279
+          ],
+          [
+            -81.5782351,
+            28.421071
+          ],
+          [
+            -81.5781399,
+            28.4208893
+          ],
+          [
+            -81.5780594,
+            28.4207478
+          ],
+          [
+            -81.5780031,
+            28.4206133
+          ],
+          [
+            -81.5779463,
+            28.4204753
+          ]
+        ]
+      },
+      "id": "way/43287326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/113495866",
+        "bridge": "yes",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5851957,
+            28.4209463
+          ],
+          [
+            -81.5850479,
+            28.4213446
+          ]
+        ]
+      },
+      "id": "way/113495866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/113937625",
+        "bridge": "yes",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5793373,
+            28.4166819
+          ],
+          [
+            -81.5794032,
+            28.4166538
+          ]
+        ]
+      },
+      "id": "way/113937625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/121516755",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5794032,
+            28.4166538
+          ],
+          [
+            -81.5795185,
+            28.4165995
+          ],
+          [
+            -81.5796687,
+            28.4165406
+          ],
+          [
+            -81.5798538,
+            28.4164828
+          ],
+          [
+            -81.5800308,
+            28.4164415
+          ],
+          [
+            -81.5801931,
+            28.4164132
+          ],
+          [
+            -81.5803366,
+            28.4163967
+          ],
+          [
+            -81.5804855,
+            28.4163884
+          ],
+          [
+            -81.5811922,
+            28.4163896
+          ],
+          [
+            -81.5833179,
+            28.4163825
+          ],
+          [
+            -81.5834735,
+            28.4163955
+          ],
+          [
+            -81.5836237,
+            28.4164167
+          ],
+          [
+            -81.5837403,
+            28.4164462
+          ],
+          [
+            -81.5838785,
+            28.4164898
+          ],
+          [
+            -81.5840112,
+            28.4165429
+          ],
+          [
+            -81.5841319,
+            28.4166078
+          ],
+          [
+            -81.5842526,
+            28.4166868
+          ],
+          [
+            -81.5843666,
+            28.4167765
+          ],
+          [
+            -81.5844484,
+            28.4168555
+          ],
+          [
+            -81.5845421,
+            28.4169688
+          ]
+        ]
+      },
+      "id": "way/121516755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/154914593",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5851581,
+            28.4198839
+          ],
+          [
+            -81.5851742,
+            28.4200711
+          ],
+          [
+            -81.5851767,
+            28.4201109
+          ],
+          [
+            -81.5852236,
+            28.4203303
+          ],
+          [
+            -81.5852464,
+            28.4204848
+          ],
+          [
+            -81.5852531,
+            28.4206299
+          ],
+          [
+            -81.5852424,
+            28.420749
+          ],
+          [
+            -81.5852223,
+            28.4208492
+          ],
+          [
+            -81.5851957,
+            28.4209463
+          ]
+        ]
+      },
+      "id": "way/154914593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/154914596",
+        "bridge": "yes",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.585114,
+            28.4193659
+          ],
+          [
+            -81.5851369,
+            28.419635
+          ],
+          [
+            -81.5851581,
+            28.4198839
+          ]
+        ]
+      },
+      "id": "way/154914596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/297695275",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "-1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "tunnel": "yes",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5850657,
+            28.4189431
+          ],
+          [
+            -81.585114,
+            28.4193659
+          ]
+        ]
+      },
+      "id": "way/297695275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/670336870",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "wikipedia": "en:Walt Disney World Railroad"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5778115,
+            28.419421
+          ],
+          [
+            -81.5778125,
+            28.4193271
+          ]
+        ]
+      },
+      "id": "way/670336870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/698228640",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism",
+        "wikipedia": "en:Walt Disney World Railroad"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5778134,
+            28.4192538
+          ],
+          [
+            -81.5778167,
+            28.4190093
+          ],
+          [
+            -81.577822,
+            28.4188606
+          ],
+          [
+            -81.5778381,
+            28.4187344
+          ],
+          [
+            -81.577865,
+            28.4186129
+          ],
+          [
+            -81.5779092,
+            28.4184749
+          ],
+          [
+            -81.5779468,
+            28.4183653
+          ],
+          [
+            -81.5780031,
+            28.4182567
+          ],
+          [
+            -81.5780661,
+            28.418127
+          ],
+          [
+            -81.5783223,
+            28.4176469
+          ],
+          [
+            -81.5784188,
+            28.4174842
+          ],
+          [
+            -81.5785154,
+            28.4173591
+          ],
+          [
+            -81.578616,
+            28.4172341
+          ],
+          [
+            -81.5787407,
+            28.4171067
+          ],
+          [
+            -81.5788695,
+            28.41699
+          ],
+          [
+            -81.5790049,
+            28.416885
+          ],
+          [
+            -81.5791202,
+            28.4168024
+          ],
+          [
+            -81.5792436,
+            28.4167281
+          ],
+          [
+            -81.5793373,
+            28.4166819
+          ]
+        ]
+      },
+      "id": "way/698228640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699037733",
+        "bridge": "yes",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5845421,
+            28.4169688
+          ],
+          [
+            -81.584604,
+            28.4170477
+          ]
+        ]
+      },
+      "id": "way/699037733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699037734",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.584604,
+            28.4170477
+          ],
+          [
+            -81.5846617,
+            28.4171374
+          ],
+          [
+            -81.5847261,
+            28.41724
+          ],
+          [
+            -81.5847663,
+            28.4173367
+          ],
+          [
+            -81.5847998,
+            28.4174417
+          ],
+          [
+            -81.5848253,
+            28.417562
+          ],
+          [
+            -81.584836,
+            28.4176813
+          ]
+        ]
+      },
+      "id": "way/699037734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699037735",
+        "covered": "yes",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.584836,
+            28.4176813
+          ],
+          [
+            -81.5848374,
+            28.417919
+          ]
+        ]
+      },
+      "id": "way/699037735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/699037736",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5848374,
+            28.417919
+          ],
+          [
+            -81.5848427,
+            28.4180161
+          ],
+          [
+            -81.5848575,
+            28.4181376
+          ],
+          [
+            -81.5848964,
+            28.4182827
+          ],
+          [
+            -81.5849617,
+            28.4184919
+          ],
+          [
+            -81.585001,
+            28.4185988
+          ],
+          [
+            -81.5850318,
+            28.4187144
+          ],
+          [
+            -81.585056,
+            28.4188347
+          ],
+          [
+            -81.5850657,
+            28.4189431
+          ]
+        ]
+      },
+      "id": "way/699037736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1064229711",
+        "electrified": "no",
+        "gauge": "914",
+        "layer": "-1",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "tunnel": "yes",
+        "usage": "tourism",
+        "wikipedia": "en:Walt Disney World Railroad"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5779463,
+            28.4204753
+          ],
+          [
+            -81.5779231,
+            28.4203869
+          ],
+          [
+            -81.5778948,
+            28.4202616
+          ],
+          [
+            -81.5778527,
+            28.4199977
+          ],
+          [
+            -81.577824,
+            28.4197665
+          ],
+          [
+            -81.5778235,
+            28.4196624
+          ]
+        ]
+      },
+      "id": "way/1064229711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1064229712",
+        "electrified": "no",
+        "gauge": "914",
+        "name": "Walt Disney World Railroad",
+        "oneway": "yes",
+        "railway": "narrow_gauge",
+        "usage": "tourism",
+        "wikipedia": "en:Walt Disney World Railroad"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.5778235,
+            28.4196624
+          ],
+          [
+            -81.5778138,
+            28.4194964
+          ],
+          [
+            -81.5778115,
+            28.419421
+          ]
+        ]
+      },
+      "id": "way/1064229712"
+    }
+  ]
+}
