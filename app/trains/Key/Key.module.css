@@ -56,6 +56,10 @@
   color: #999999;
 }
 
+.operatorsCheckbox:not(:last-child) {
+  margin-bottom: 24px;
+}
+ 
 .stationsCheckboxes {
   display: flex;
   flex-direction: column;

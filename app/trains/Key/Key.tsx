@@ -11,8 +11,12 @@ import { trainsMapContext } from '../TrainsMapContext';
 import styles from './Key.module.css';
 
 export const Key = () => {
-  const { selectedOperator, setSelectedOperator } =
-    useContext(trainsMapContext);
+  const {
+    selectedOperator,
+    setSelectedOperator,
+    showOperators,
+    setShowOperators,
+  } = useContext(trainsMapContext);
 
   const onClickOperator = (operator: Operator) => {
     if (selectedOperator?.id === operator.id) {
@@ -26,25 +30,42 @@ export const Key = () => {
     <div className={styles.key}>
       <h3 className={styles.heading}>Operators</h3>
 
-      <ul className={styles.grid}>
-        {ALL_OPERATORS.map((operator) => (
-          <OperatorsKeyItem
-            key={operator.id}
-            operator={operator}
-            isDimmed={!!selectedOperator && operator.id !== selectedOperator.id}
-            onClick={() => onClickOperator(operator)}
-          />
-        ))}
-      </ul>
+      <div
+        className={classNames(styles.operatorsCheckbox, styles.checkboxItem)}>
+        <input
+          id="show-operators"
+          type="checkbox"
+          checked={showOperators}
+          onChange={(e) => setShowOperators(e.target.checked)}
+        />
+        <label htmlFor="show-operators">Show operators</label>
+      </div>
 
-      <p className={styles.helperText}>
-        Click an operator to show just that operator's routes. Click again to
-        show all routes. Copy the permalink url (
-        <span className={styles.permalink}>
-          <FaLink />
-        </span>
-        ) to link to a specific operator map.
-      </p>
+      {showOperators && (
+        <>
+          <ul className={styles.grid}>
+            {ALL_OPERATORS.map((operator) => (
+              <OperatorsKeyItem
+                key={operator.id}
+                operator={operator}
+                isDimmed={
+                  !!selectedOperator && operator.id !== selectedOperator.id
+                }
+                onClick={() => onClickOperator(operator)}
+              />
+            ))}
+          </ul>
+
+          <p className={styles.helperText}>
+            Click an operator to show just that operator's routes. Click again
+            to show all routes. Copy the permalink url (
+            <span className={styles.permalink}>
+              <FaLink />
+            </span>
+            ) to link to a specific operator map.
+          </p>
+        </>
+      )}
     </div>
   );
 };

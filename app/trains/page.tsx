@@ -34,8 +34,8 @@ const Trains = () => {
       <TrainsMap routes={routes} />
 
       <div className={styles.keyAndPresets}>
-        <Key />
         <PresetChooser routes={routes} />
+        <Key />
       </div>
     </TrainsMapContextProvider>
   );

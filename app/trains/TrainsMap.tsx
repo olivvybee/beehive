@@ -19,13 +19,10 @@ interface TrainsMapProps {
   useOperatorColours?: boolean;
 }
 
-const DEFAULT_COLOUR = 'rgb(255, 255, 255)';
+const DEFAULT_COLOUR = '#8b73ed';
 
-export const TrainsMap = ({
-  routes,
-  useOperatorColours = true,
-}: TrainsMapProps) => {
-  const { selectedOperator } = useContext(trainsMapContext);
+export const TrainsMap = ({ routes }: TrainsMapProps) => {
+  const { selectedOperator, showOperators } = useContext(trainsMapContext);
   const { trainMap } = useMap();
 
   const visibleRoutes = selectedOperator
@@ -72,7 +69,7 @@ export const TrainsMap = ({
           <Layer
             type="line"
             paint={{
-              'line-color': useOperatorColours
+              'line-color': showOperators
                 ? route.operator.colour
                 : DEFAULT_COLOUR,
               'line-width': 2,

@@ -1,6 +1,6 @@
 .keyAndPresets {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 32px;
   margin: 32px 0;
 }
