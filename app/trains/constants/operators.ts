@@ -73,7 +73,8 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
   {
     name: 'USA',
     operators: [
-      {id: 'wdw', name: 'Walt Disney World', colour: 'rgb(0, 89, 252)'}
+      { id: 'wdw', name: 'Walt Disney World', colour: 'rgb(0, 89, 252)' },
+      { id: 'busch-gardens-tampa', name: 'Busch Gardens Tampa', colour: 'rgb(185, 215, 116)' }
     ]
   }
 ];
