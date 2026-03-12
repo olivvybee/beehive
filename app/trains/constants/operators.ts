@@ -40,9 +40,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
     name: 'London',
     operators: [
       { id: 'dlr', name: 'DLR', colour: 'rgb(77, 169, 167)' },
-
-      { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(105, 80, 161)' },
-
+      { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(96, 57, 158)' },
       {
         id: 'overground',
         name: 'London Overground',
@@ -74,13 +72,17 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
     name: 'USA',
     operators: [
       { id: 'wdw', name: 'Walt Disney World', colour: 'rgb(0, 89, 252)' },
-      { id: 'busch-gardens-tampa', name: 'Busch Gardens Tampa', colour: 'rgb(185, 215, 116)' }
-    ]
-  }
+      {
+        id: 'busch-gardens-tampa',
+        name: 'Busch Gardens Tampa',
+        colour: 'rgb(185, 215, 116)',
+      },
+    ],
+  },
 ];
 
 export const ALL_OPERATORS = GROUPED_OPERATORS.flatMap(
-  (group) => group.operators
+  (group) => group.operators,
 ).toSorted((a, b) => {
   if (a.name < b.name) {
     return -1;
