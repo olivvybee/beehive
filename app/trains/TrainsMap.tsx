@@ -7,10 +7,12 @@ import Map, {
   Layer,
   ViewStateChangeEvent,
 } from 'react-map-gl/maplibre';
+import { LayerSpecification, SourceSpecification } from 'maplibre-gl';
 
 import { Route } from './Route';
 import { getBounds } from './utils/getBounds';
 import { trainsMapContext } from './TrainsMapContext';
+import mapStyle from './mapStyle.json';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -51,11 +53,23 @@ export const TrainsMap = ({ routes }: TrainsMapProps) => {
     return <div>Error: No Protomaps API key present in environment</div>;
   }
 
+  const tilesUrl = `https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=${protomapsKey}`
+
   return (
     <Map
       id="trainMap"
       style={{ width: '100%', height: 600, marginTop: 32, marginBottom: 32 }}
-      mapStyle={`https://api.protomaps.com/styles/v2/dark.json?key=${protomapsKey}`}
+      mapStyle={{
+        ...mapStyle,
+        version: 8,
+        sources: {
+          protomaps: {
+            ...mapStyle.sources.protomaps,
+            tiles: [tilesUrl]
+          } as SourceSpecification
+        },
+        layers: mapStyle.layers as LayerSpecification[]
+      }}
       attributionControl={false}
       onZoom={onZoom}
       initialViewState={{
@@ -72,7 +86,7 @@ export const TrainsMap = ({ routes }: TrainsMapProps) => {
               'line-color': showOperators
                 ? route.operator.colour
                 : DEFAULT_COLOUR,
-              'line-width': 2,
+              'line-width': 3,
               'line-opacity': 0.8,
             }}
           />
