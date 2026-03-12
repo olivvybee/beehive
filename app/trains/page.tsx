@@ -25,11 +25,6 @@ const Trains = () => {
         This is a hopefully fairly up to date map of all the train routes I have
         taken (and can remember).
       </p>
-      <p>
-        It doesn't include the London Underground because I have no hope of
-        knowing which parts of the network I have used and where the tracks are
-        on a map.
-      </p>
 
       <TrainsMap routes={routes} />
 

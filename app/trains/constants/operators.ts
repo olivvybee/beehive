@@ -46,6 +46,11 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         name: 'London Overground',
         colour: 'rgb(246, 128, 39)',
       },
+      {
+        id: 'tfl-victoria',
+        name: 'Victoria Line',
+        colour: 'rgb(3, 155, 229)',
+      },
     ],
   },
   {
