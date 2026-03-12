@@ -44,16 +44,18 @@ export const TrainsMap = ({ routes }: TrainsMapProps) => {
   };
 
   useEffect(() => {
-    const bounds = getBounds(visibleRoutes);
-    trainMap?.fitBounds(bounds, { padding: 64 });
-  }, [visibleRoutes]);
+    if (selectedOperator) {
+      const bounds = getBounds(visibleRoutes);
+      trainMap?.fitBounds(bounds, { padding: 64 });
+    }
+  }, [visibleRoutes, selectedOperator]);
 
   const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
   if (!protomapsKey) {
     return <div>Error: No Protomaps API key present in environment</div>;
   }
 
-  const tilesUrl = `https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=${protomapsKey}`
+  const tilesUrl = `https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=${protomapsKey}`;
 
   return (
     <Map
@@ -65,10 +67,10 @@ export const TrainsMap = ({ routes }: TrainsMapProps) => {
         sources: {
           protomaps: {
             ...mapStyle.sources.protomaps,
-            tiles: [tilesUrl]
-          } as SourceSpecification
+            tiles: [tilesUrl],
+          } as SourceSpecification,
         },
-        layers: mapStyle.layers as LayerSpecification[]
+        layers: mapStyle.layers as LayerSpecification[],
       }}
       attributionControl={false}
       onZoom={onZoom}

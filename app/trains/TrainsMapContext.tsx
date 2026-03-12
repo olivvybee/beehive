@@ -32,7 +32,14 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
     Operator | undefined
   >(initialOperator);
 
-  const [showOperators, setShowOperators] = useState(!!selectedOperator);
+  const [showOperators, setShowOperatorsState] = useState(!!selectedOperator);
+
+  const setShowOperators = (newValue: boolean) => {
+    if (!newValue) {
+      setSelectedOperator(undefined);
+    }
+    setShowOperatorsState(newValue);
+  };
 
   return (
     <trainsMapContext.Provider

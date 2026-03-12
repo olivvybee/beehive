@@ -1,10 +1,12 @@
 'use client';
 
+import { useContext } from 'react';
 import { useMap } from 'react-map-gl/maplibre';
 
 import { Route } from '../Route';
 import { getBounds } from '../utils/getBounds';
 import { GROUPED_OPERATORS, GroupedOperators } from '../constants/operators';
+import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './PresetChooser.module.css';
 
@@ -14,12 +16,15 @@ interface PresetChooserProps {
 
 export const PresetChooser = ({ routes }: PresetChooserProps) => {
   const { trainMap } = useMap();
+  const { setSelectedOperator } = useContext(trainsMapContext);
 
   const onClickPreset = (preset: GroupedOperators) => {
+    setSelectedOperator(undefined);
+
     const matchingRoutes = routes.filter((route) =>
       preset.operators
         .map((operator) => operator.id)
-        .includes(route.operator.id)
+        .includes(route.operator.id),
     );
     const bounds = getBounds(matchingRoutes);
     trainMap?.fitBounds(bounds, { padding: 128 });
