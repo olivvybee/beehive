@@ -42,14 +42,24 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
       { id: 'dlr', name: 'DLR', colour: 'rgb(77, 169, 167)' },
       { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(96, 57, 158)' },
       {
-        id: 'overground',
-        name: 'London Overground',
-        colour: 'rgb(246, 128, 39)',
-      },
-      {
         id: 'tfl-victoria',
         name: 'Victoria Line',
         colour: 'rgb(3, 155, 229)',
+      },
+      {
+        id: 'mildmay',
+        name: 'Mildmay Line',
+        colour: 'rgb(0, 119, 173)',
+      },
+      {
+        id: 'weaver',
+        name: 'Weaver Line',
+        colour: 'rgb(130, 58, 98)',
+      },
+      {
+        id: 'windrush',
+        name: 'Windrush Line',
+        colour: 'rgb(237, 27, 0)',
       },
     ],
   },
