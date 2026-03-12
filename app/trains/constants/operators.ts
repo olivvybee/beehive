@@ -47,6 +47,11 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         colour: 'rgb(3, 155, 229)',
       },
       {
+        id: 'tfl-circle',
+        name: 'Circle Line',
+        colour: 'rgb(255, 200, 10)' 
+      },
+      {
         id: 'mildmay',
         name: 'Mildmay Line',
         colour: 'rgb(0, 119, 173)',
