@@ -28,7 +28,7 @@ export const Key = () => {
 
   return (
     <div className={styles.key}>
-      <h3 className={styles.heading}>Operators</h3>
+      <h3 className={styles.heading}>Operators & lines</h3>
 
       <div
         className={classNames(styles.operatorsCheckbox, styles.checkboxItem)}>
@@ -38,7 +38,7 @@ export const Key = () => {
           checked={showOperators}
           onChange={(e) => setShowOperators(e.target.checked)}
         />
-        <label htmlFor="show-operators">Show operators</label>
+        <label htmlFor="show-operators">Show colours on map</label>
       </div>
 
       {showOperators && (
