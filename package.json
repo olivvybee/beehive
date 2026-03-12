@@ -36,6 +36,7 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/geojson": "^7946.0.14",
     "@types/lodash": "^4.17.13",
     "@types/marked": "^5.0.0",

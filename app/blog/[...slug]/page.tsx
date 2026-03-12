@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import removeMarkdown from 'remove-markdown';
 
 import { baseOpenGraph } from '@/utils/metadata';
 import { Markdown } from '@/components/Markdown';
@@ -8,7 +9,7 @@ import { getPostBySlug } from '../getPost';
 
 import './postElements.css';
 import styles from './page.module.css';
-import removeMarkdown from 'remove-markdown';
+import Human from './human.svg'
 
 interface BlogPostProps {
   params: {
@@ -41,6 +42,12 @@ const BlogPost = ({ params }: BlogPostProps) => {
       <div>
         <Markdown>{content}</Markdown>
       </div>
+
+      <footer>
+        <div className={styles.human}>
+          <Human height={64} role='img' aria-describedby='human-desc' />
+        </div>
+      </footer>
     </article>
   );
 };
