@@ -39,7 +39,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
   {
     name: 'London',
     operators: [
-      { id: 'dlr', name: 'DLR', colour: 'rgb(77, 169, 167)' },
+      { id: 'dlr', name: 'DLR', colour: 'rgb(0, 175, 173)' },
       { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(96, 57, 158)' },
       {
         id: 'tfl-victoria',
