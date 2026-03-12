@@ -82,12 +82,6 @@ const LinksPage = () => (
         );
       })}
     </ul>
-
-    <hr className={styles.divider} />
-
-    <h2>Cool beings and places</h2>
-
-    <ButtonGrid />
   </>
 );
 
