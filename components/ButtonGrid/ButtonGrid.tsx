@@ -16,24 +16,18 @@ interface ButtonGridProps {
   id?: string;
 }
 
-export const ButtonGrid = ({ id }: ButtonGridProps) => (
-  <div id={id} className={styles.buttonGrid}>
-    <div className={styles.horizontalButtons}>
-      {buttons
-        .filter((button) => !button.vertical)
-        .map((button) => (
-          <ButtonGridItem key={button.title} button={button} />
-        ))}
+export const ButtonGrid = ({ id }: ButtonGridProps) => {
+  const horizontalButtons = buttons.filter((button) => !button.vertical);
+  const verticalButtons = buttons.filter((button) => button.vertical);
+
+  return (
+    <div id={id} className={styles.buttonGrid}>
+      {[...horizontalButtons, ...verticalButtons].map((button) => (
+        <ButtonGridItem key={button.title} button={button} />
+      ))}
     </div>
-    <div className={styles.verticalButtons}>
-      {buttons
-        .filter((button) => button.vertical)
-        .map((button) => (
-          <ButtonGridItem key={button.title} button={button} />
-        ))}
-    </div>
-  </div>
-);
+  );
+};
 
 interface ButtonGridItemProps {
   button: Button;
