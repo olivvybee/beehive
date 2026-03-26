@@ -49,12 +49,12 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
       {
         id: 'tfl-circle',
         name: 'Circle Line',
-        colour: 'rgb(255, 200, 10)' 
+        colour: 'rgb(255, 200, 10)',
       },
       {
         id: 'tfl-jubilee',
         name: 'Jubilee Line',
-        colour: 'rgb(131, 141, 147)'
+        colour: 'rgb(131, 141, 147)',
       },
       {
         id: 'mildmay',
@@ -83,6 +83,18 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         colour: 'rgb(0, 89, 252)',
       },
       { id: 'le-shuttle', name: 'LeShuttle', colour: 'rgb(181, 131, 254)' },
+    ],
+  },
+  {
+    name: 'Paris',
+    operators: [
+      { id: 'rer-a', name: 'RER A', colour: 'rgb(227, 5, 28)' },
+      { id: 'rer-b', name: 'RER B', colour: 'rgb(82, 145, 206)' },
+      {
+        id: 'paris-metro',
+        name: 'Métro de Paris',
+        colour: 'rgb(246, 208, 70)',
+      },
     ],
   },
   {
