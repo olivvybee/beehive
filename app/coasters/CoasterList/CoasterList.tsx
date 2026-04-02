@@ -41,17 +41,19 @@ export const CoasterList = ({ coasters }: CoasterListProps) => {
             key={coaster.id}
             className={classNames({ [styles.noDate]: !coaster.riddenDate })}>
             <div className={styles.listEntry}>
-              <span>
-                <a
-                  className={styles.link}
-                  href={`https://rcdb.com/${coaster.id}.htm`}>
-                  {coaster.name}
-                </a>
-              </span>
+              <div className={styles.names}>
+                <span>
+                  <a
+                    className={styles.link}
+                    href={`https://rcdb.com/${coaster.id}.htm`}>
+                    {coaster.name}
+                  </a>
+                </span>
+
+                <span className={styles.parkName}>{coaster.park.name}</span>
+              </div>
 
               <div className={styles.metadata}>
-                <span className={styles.parkName}>{coaster.park.name}</span>
-
                 {coaster.riddenDate && (
                   <span>{formatDate(coaster.riddenDate, 'dd MMM yyyy')}</span>
                 )}

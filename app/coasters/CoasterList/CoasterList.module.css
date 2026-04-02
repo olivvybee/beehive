@@ -7,7 +7,6 @@
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   gap: 8px;
 }
 
@@ -26,9 +25,10 @@
   display: inline !important;
 }
 
-.metadata {
+.names {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
@@ -41,13 +41,10 @@
 @media screen and (max-width: 600px) {
   .listEntry {
     flex-direction: column;
-    align-items: stretch;
   }
-}
 
-@media screen and (max-width: 400px) {
-  .metadata {
+  .names {
     flex-direction: column;
     align-items: flex-start;
   }
-}
+} 
