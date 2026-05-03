@@ -10,7 +10,11 @@ import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './Key.module.css';
 
-export const Key = () => {
+interface KeyProps {
+  visibleOperators: Operator[];
+}
+
+export const Key = ({ visibleOperators }: KeyProps) => {
   const {
     selectedOperator,
     setSelectedOperator,
@@ -44,7 +48,7 @@ export const Key = () => {
       {showOperators && (
         <>
           <ul className={styles.grid}>
-            {ALL_OPERATORS.map((operator) => (
+            {visibleOperators.map((operator) => (
               <OperatorsKeyItem
                 key={operator.id}
                 operator={operator}

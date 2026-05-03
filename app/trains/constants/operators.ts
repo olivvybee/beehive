@@ -42,9 +42,9 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
       { id: 'dlr', name: 'DLR', colour: 'rgb(0, 175, 173)' },
       { id: 'elizabeth', name: 'Elizabeth Line', colour: 'rgb(96, 57, 158)' },
       {
-        id: 'tfl-victoria',
-        name: 'Victoria Line',
-        colour: 'rgb(3, 155, 229)',
+        id: 'tfl-bakerloo',
+        name: 'Bakerloo Line',
+        colour: 'rgb(178, 99, 0)',
       },
       {
         id: 'tfl-circle',
@@ -52,14 +52,44 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         colour: 'rgb(255, 200, 10)',
       },
       {
+        id: 'tfl-district',
+        name: 'District Line',
+        colour: 'rgb(0, 125, 50)',
+      },
+      {
+        id: 'tfl-hammersmith-city',
+        name: 'Hammersmith & City Line',
+        colour: 'rgb(245, 137, 166)',
+      },
+      {
         id: 'tfl-jubilee',
         name: 'Jubilee Line',
         colour: 'rgb(131, 141, 147)',
       },
       {
+        id: 'tfl-metropolitan',
+        name: 'Metropolitan Line',
+        colour: 'rgb(155, 0, 88)',
+      },
+      {
         id: 'tfl-northern',
         name: 'Northern Line',
         colour: 'rgb(0, 0, 0)',
+      },
+      {
+        id: 'tfl-piccadilly',
+        name: 'Piccadilly Line',
+        colour: 'rgb(0, 25, 168)',
+      },
+      {
+        id: 'tfl-victoria',
+        name: 'Victoria Line',
+        colour: 'rgb(3, 155, 229)',
+      },
+      {
+        id: 'tfl-waterloo-city',
+        name: 'Waterloo & City Line',
+        colour: 'rgb(118, 208, 189)',
       },
       {
         id: 'mildmay',

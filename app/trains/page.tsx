@@ -8,6 +8,7 @@ import { PresetChooser } from './PresetChooser/PresetChooser';
 
 import styles from './page.module.css';
 import { Suspense } from 'react';
+import { ALL_OPERATORS } from './constants/operators';
 
 export const metadata = buildMetadata({
   title: 'Train map',
@@ -16,6 +17,9 @@ export const metadata = buildMetadata({
 
 const Trains = () => {
   const routes = loadRoutes();
+  const visibleOperators = ALL_OPERATORS.filter((operator) =>
+    routes.some((route) => route.operator.id === operator.id),
+  );
 
   return (
     <TrainsMapContextProvider>
@@ -30,7 +34,7 @@ const Trains = () => {
 
       <div className={styles.keyAndPresets}>
         <PresetChooser routes={routes} />
-        <Key />
+        <Key visibleOperators={visibleOperators} />
       </div>
     </TrainsMapContextProvider>
   );
