@@ -34,6 +34,11 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
       { id: 'rhdr', name: 'RH&DR', colour: 'rgb(91, 130, 62)' },
       { id: 'southern', name: 'Southern', colour: 'rgb(56, 120, 95)' },
       { id: 'thameslink', name: 'Thameslink', colour: 'rgb(207, 49, 131)' },
+      {
+        id: 'net',
+        name: 'Nottingham Express Transit',
+        colour: 'rgb(29,73,69)',
+      },
     ],
   },
   {
