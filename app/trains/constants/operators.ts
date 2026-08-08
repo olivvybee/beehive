@@ -40,6 +40,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         colour: 'rgb(29,73,69)',
       },
       { id: 'spa-valley', name: 'Spa Valley Railway', colour: 'rgb(0, 90, 0)' },
+      { id: 'southeastern', name: 'Southeastern', colour: 'rgb(30, 30, 80)' },
     ],
   },
   {
