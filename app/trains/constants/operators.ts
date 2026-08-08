@@ -39,6 +39,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         name: 'Nottingham Express Transit',
         colour: 'rgb(29,73,69)',
       },
+      { id: 'spa-valley', name: 'Spa Valley Railway', colour: 'rgb(0, 90, 0)' },
     ],
   },
   {
