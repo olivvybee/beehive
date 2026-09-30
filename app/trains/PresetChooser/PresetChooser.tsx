@@ -5,7 +5,11 @@ import { useMap } from 'react-map-gl/maplibre';
 
 import { Route } from '../Route';
 import { getBounds } from '../utils/getBounds';
-import { GROUPED_OPERATORS, GroupedOperators } from '../constants/operators';
+import {
+  GROUPED_OPERATORS,
+  GroupedOperators,
+  Operator,
+} from '../constants/operators';
 import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './PresetChooser.module.css';
@@ -16,46 +20,46 @@ interface PresetChooserProps {
 
 export const PresetChooser = ({ routes }: PresetChooserProps) => {
   const { trainMap } = useMap();
-  const { setSelectedOperator } = useContext(trainsMapContext);
+  const { setSelectedOperatorIds } = useContext(trainsMapContext);
 
-  const onClickPreset = (preset: GroupedOperators) => {
-    setSelectedOperator(undefined);
+  const onClickPreset = (operators: Operator[]) => {
+    setSelectedOperatorIds(operators.map((operator) => operator.id));
 
     const matchingRoutes = routes.filter((route) =>
-      preset.operators
-        .map((operator) => operator.id)
-        .includes(route.operator.id),
+      operators.some((operator) => operator.id === route.operator.id),
     );
+
     const bounds = getBounds(matchingRoutes);
     trainMap?.fitBounds(bounds, { padding: 128 });
   };
 
   return (
     <div className={styles.presetChooser}>
-      <h3 className={styles.heading}>Areas</h3>
-
-      <ul className={styles.grid}>
-        {GROUPED_OPERATORS.map((group) => (
-          <PresetItem
-            key={group.name}
-            preset={group}
-            onClick={() => onClickPreset(group)}
-          />
-        ))}
-      </ul>
+      <div className={styles.section}>
+        <h3 className={styles.heading}>Areas</h3>
+        <ul className={styles.grid}>
+          {GROUPED_OPERATORS.map((group) => (
+            <PresetItem
+              key={group.name}
+              name={group.name}
+              onClick={() => onClickPreset(group.operators)}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
 
 interface PresetItemProps {
-  preset: GroupedOperators;
+  name: string;
   onClick: () => void;
 }
 
-export const PresetItem = ({ preset, onClick }: PresetItemProps) => (
+export const PresetItem = ({ name, onClick }: PresetItemProps) => (
   <li className={styles.item}>
     <button className={styles.button} onClick={onClick}>
-      {preset.name}
+      {name}
     </button>
   </li>
 );

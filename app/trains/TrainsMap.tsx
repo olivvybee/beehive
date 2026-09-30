@@ -24,12 +24,15 @@ interface TrainsMapProps {
 const DEFAULT_COLOUR = '#8b73ed';
 
 export const TrainsMap = ({ routes }: TrainsMapProps) => {
-  const { selectedOperator, showOperators } = useContext(trainsMapContext);
+  const { selectedOperatorIds, showOperators } = useContext(trainsMapContext);
   const { trainMap } = useMap();
 
-  const visibleRoutes = selectedOperator
-    ? routes.filter((route) => route.operator.id === selectedOperator.id)
-    : routes;
+  const visibleRoutes =
+    selectedOperatorIds.length > 0
+      ? routes.filter((route) =>
+          selectedOperatorIds.includes(route.operator.id),
+        )
+      : routes;
 
   const initialBounds = getBounds(routes);
 
@@ -44,11 +47,11 @@ export const TrainsMap = ({ routes }: TrainsMapProps) => {
   };
 
   useEffect(() => {
-    if (selectedOperator) {
+    if (selectedOperatorIds.length > 0) {
       const bounds = getBounds(visibleRoutes);
       trainMap?.fitBounds(bounds, { padding: 64 });
     }
-  }, [visibleRoutes, selectedOperator]);
+  }, [visibleRoutes, selectedOperatorIds]);
 
   const protomapsKey = process.env.NEXT_PUBLIC_PROTOMAPS_API_KEY;
   if (!protomapsKey) {

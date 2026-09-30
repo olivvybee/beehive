@@ -16,17 +16,21 @@ interface KeyProps {
 
 export const Key = ({ visibleOperators }: KeyProps) => {
   const {
-    selectedOperator,
-    setSelectedOperator,
+    selectedOperatorIds,
+    setSelectedOperatorIds,
     showOperators,
     setShowOperators,
   } = useContext(trainsMapContext);
 
   const onClickOperator = (operator: Operator) => {
-    if (selectedOperator?.id === operator.id) {
-      setSelectedOperator(undefined);
+    if (selectedOperatorIds.includes(operator.id)) {
+      setSelectedOperatorIds(
+        selectedOperatorIds.filter(
+          (selectedOperatorId) => selectedOperatorId !== operator.id,
+        ),
+      );
     } else {
-      setSelectedOperator(operator);
+      setSelectedOperatorIds([...selectedOperatorIds, operator.id]);
     }
   };
 
@@ -52,9 +56,7 @@ export const Key = ({ visibleOperators }: KeyProps) => {
               <OperatorsKeyItem
                 key={operator.id}
                 operator={operator}
-                isDimmed={
-                  !!selectedOperator && operator.id !== selectedOperator.id
-                }
+                isDimmed={!selectedOperatorIds.includes(operator.id)}
                 onClick={() => onClickOperator(operator)}
               />
             ))}

@@ -1,3 +1,9 @@
+.presetChooser {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .heading {
   font-size: 1.1rem;
   margin-bottom: 16px;

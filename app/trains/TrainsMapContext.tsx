@@ -3,40 +3,48 @@
 import { createContext, PropsWithChildren, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { MapProvider } from 'react-map-gl/maplibre';
-
-import { Operator, ALL_OPERATORS } from './constants/operators';
+import { GROUPED_OPERATORS } from './constants/operators';
 
 interface TrainsMapContext {
-  selectedOperator?: Operator;
-  setSelectedOperator: (operator: Operator | undefined) => void;
+  selectedOperatorIds: string[];
+  setSelectedOperatorIds: (operatorIds: string[]) => void;
+  clearSelectedOperators: () => void;
   showOperators: boolean;
   setShowOperators: (value: boolean) => void;
 }
 
 export const trainsMapContext = createContext<TrainsMapContext>({
-  selectedOperator: undefined,
-  setSelectedOperator: () => {},
+  selectedOperatorIds: [],
+  setSelectedOperatorIds: () => {},
+  clearSelectedOperators: () => {},
   showOperators: false,
   setShowOperators: () => {},
 });
+
+const ALL_OPERATOR_IDS = GROUPED_OPERATORS.flatMap(
+  (group) => group.operators,
+).map((operator) => operator.id);
 
 export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
   const queryParams = useSearchParams();
 
   const initialOperatorId = queryParams.get('operator');
-  const initialOperator = ALL_OPERATORS.find(
-    (operator) => operator.id === initialOperatorId,
+
+  const [selectedOperatorIds, setSelectedOperatorIds] = useState<string[]>(
+    initialOperatorId ? [initialOperatorId] : ALL_OPERATOR_IDS,
   );
 
-  const [selectedOperator, setSelectedOperator] = useState<
-    Operator | undefined
-  >(initialOperator);
+  const clearSelectedOperators = () => {
+    setSelectedOperatorIds(ALL_OPERATOR_IDS);
+  };
 
-  const [showOperators, setShowOperatorsState] = useState(!!selectedOperator);
+  const [showOperators, setShowOperatorsState] = useState(
+    selectedOperatorIds.length > 0,
+  );
 
   const setShowOperators = (newValue: boolean) => {
     if (!newValue) {
-      setSelectedOperator(undefined);
+      clearSelectedOperators();
     }
     setShowOperatorsState(newValue);
   };
@@ -44,8 +52,9 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
   return (
     <trainsMapContext.Provider
       value={{
-        selectedOperator,
-        setSelectedOperator,
+        selectedOperatorIds,
+        setSelectedOperatorIds,
+        clearSelectedOperators,
         showOperators,
         setShowOperators,
       }}>
