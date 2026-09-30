@@ -9,16 +9,16 @@ interface TrainsMapContext {
   selectedOperatorIds: string[];
   setSelectedOperatorIds: (operatorIds: string[]) => void;
   clearSelectedOperators: () => void;
-  showOperators: boolean;
-  setShowOperators: (value: boolean) => void;
+  showOperatorColours: boolean;
+  setShowOperatorColours: (value: boolean) => void;
 }
 
 export const trainsMapContext = createContext<TrainsMapContext>({
   selectedOperatorIds: [],
   setSelectedOperatorIds: () => {},
   clearSelectedOperators: () => {},
-  showOperators: false,
-  setShowOperators: () => {},
+  showOperatorColours: false,
+  setShowOperatorColours: () => {},
 });
 
 const ALL_OPERATOR_IDS = GROUPED_OPERATORS.flatMap(
@@ -38,16 +38,9 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
     setSelectedOperatorIds(ALL_OPERATOR_IDS);
   };
 
-  const [showOperators, setShowOperatorsState] = useState(
+  const [showOperatorColours, setShowOperatorColours] = useState(
     selectedOperatorIds.length > 0,
   );
-
-  const setShowOperators = (newValue: boolean) => {
-    if (!newValue) {
-      clearSelectedOperators();
-    }
-    setShowOperatorsState(newValue);
-  };
 
   return (
     <trainsMapContext.Provider
@@ -55,8 +48,8 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
         selectedOperatorIds,
         setSelectedOperatorIds,
         clearSelectedOperators,
-        showOperators,
-        setShowOperators,
+        showOperatorColours,
+        setShowOperatorColours,
       }}>
       <MapProvider>{children}</MapProvider>
     </trainsMapContext.Provider>
