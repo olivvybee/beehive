@@ -61,12 +61,12 @@ export const Key = ({ visibleOperators }: KeyProps) => {
       </ul>
 
       <p className={styles.helperText}>
-        Click an operator to show just that operator's routes. Click again to
-        show all routes. Copy the permalink url (
+        Click an operator to select, and click again to deselect. Only selected
+        operators will appear on the map. Copy the permalink url (
         <span className={styles.permalink}>
           <FaLink />
         </span>
-        ) to link to a specific operator map.
+        ) to link to a filter for the specific operator.
       </p>
     </div>
   );
