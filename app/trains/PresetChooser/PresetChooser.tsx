@@ -13,6 +13,7 @@ import {
 import { trainsMapContext } from '../TrainsMapContext';
 
 import styles from './PresetChooser.module.css';
+import { TRAM_OPERATORS } from './PresetChooser.constants';
 
 interface PresetChooserProps {
   routes: Route[];
@@ -45,6 +46,16 @@ export const PresetChooser = ({ routes }: PresetChooserProps) => {
               onClick={() => onClickPreset(group.operators)}
             />
           ))}
+        </ul>
+      </div>
+
+      <div className={styles.section}>
+        <h3 className={styles.heading}>Filters</h3>
+        <ul className={styles.grid}>
+          <PresetItem
+            name="Trams"
+            onClick={() => onClickPreset(TRAM_OPERATORS)}
+          />
         </ul>
       </div>
     </div>

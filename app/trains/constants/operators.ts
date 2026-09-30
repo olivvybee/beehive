@@ -2,6 +2,7 @@ export interface Operator {
   id: string;
   name: string;
   colour: string;
+  isTram?: true;
 }
 
 export interface GroupedOperators {
@@ -18,7 +19,12 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         name: 'Bluebell Railway',
         colour: 'rgb(155, 177, 235)',
       },
-      { id: 'edi-trams', name: 'Edinburgh Trams', colour: 'rgb(128, 35, 27)' },
+      {
+        id: 'edi-trams',
+        name: 'Edinburgh Trams',
+        colour: 'rgb(128, 35, 27)',
+        isTram: true,
+      },
       {
         id: 'exbury',
         name: 'Exbury Gardens Railway',
@@ -38,6 +44,7 @@ export const GROUPED_OPERATORS: GroupedOperators[] = [
         id: 'net',
         name: 'Nottingham Express Transit',
         colour: 'rgb(29,73,69)',
+        isTram: true,
       },
       { id: 'spa-valley', name: 'Spa Valley Railway', colour: 'rgb(0, 90, 0)' },
       { id: 'southeastern', name: 'Southeastern', colour: 'rgb(30, 30, 80)' },
