@@ -18,6 +18,7 @@ export const Key = ({ visibleOperators }: KeyProps) => {
   const {
     selectedOperatorIds,
     setSelectedOperatorIds,
+    clearSelectedOperators,
     showOperatorColours,
     setShowOperatorColours,
   } = useContext(trainsMapContext);
@@ -38,15 +39,23 @@ export const Key = ({ visibleOperators }: KeyProps) => {
     <div className={styles.key}>
       <h3 className={styles.heading}>Operators & lines</h3>
 
-      <div
-        className={classNames(styles.operatorsCheckbox, styles.checkboxItem)}>
-        <input
-          id="show-operators"
-          type="checkbox"
-          checked={showOperatorColours}
-          onChange={(e) => setShowOperatorColours(e.target.checked)}
-        />
-        <label htmlFor="show-operators">Show colours on map</label>
+      <div className={styles.controls}>
+        <button
+          onClick={clearSelectedOperators}
+          className={classNames(styles.button, styles.resetButton)}>
+          Reset filters
+        </button>
+
+        <div
+          className={classNames(styles.operatorsCheckbox, styles.checkboxItem)}>
+          <input
+            id="show-operators"
+            type="checkbox"
+            checked={showOperatorColours}
+            onChange={(e) => setShowOperatorColours(e.target.checked)}
+          />
+          <label htmlFor="show-operators">Show colours on map</label>
+        </div>
       </div>
 
       <ul className={styles.grid}>
