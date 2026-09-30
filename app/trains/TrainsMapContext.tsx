@@ -38,9 +38,7 @@ export const TrainsMapContextProvider = ({ children }: PropsWithChildren) => {
     setSelectedOperatorIds(ALL_OPERATOR_IDS);
   };
 
-  const [showOperatorColours, setShowOperatorColours] = useState(
-    selectedOperatorIds.length > 0,
-  );
+  const [showOperatorColours, setShowOperatorColours] = useState(false);
 
   return (
     <trainsMapContext.Provider
