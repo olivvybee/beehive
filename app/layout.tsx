@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { LayoutProps } from '@/.next/types/app/layout';
 
 import './globals.css';
@@ -6,6 +7,7 @@ import styles from './layout.module.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { metadataTemplate } from '@/utils/metadata';
+import { GoatCounter } from '@/components/GoatCounter/GoatCounter';
 
 export const metadata = metadataTemplate;
 
@@ -19,6 +21,10 @@ const RootLayout = ({ children }: LayoutProps) => (
       </main>
 
       <Footer />
+
+      <Suspense fallback={null}>
+        <GoatCounter />
+      </Suspense>
     </body>
   </html>
 );
