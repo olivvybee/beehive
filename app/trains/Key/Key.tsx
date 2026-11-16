@@ -24,14 +24,14 @@ export const Key = ({ visibleOperators }: KeyProps) => {
   } = useContext(trainsMapContext);
 
   const onClickOperator = (operator: Operator) => {
-    if (selectedOperatorIds.includes(operator.id)) {
-      setSelectedOperatorIds(
-        selectedOperatorIds.filter(
-          (selectedOperatorId) => selectedOperatorId !== operator.id,
-        ),
-      );
+    const isSelected = selectedOperatorIds.includes(operator.id);
+
+    // If the operator is currently the only one selected, clear the selection.
+    // Otherwise make it the only selection.
+    if (selectedOperatorIds.length === 1 && isSelected) {
+      clearSelectedOperators();
     } else {
-      setSelectedOperatorIds([...selectedOperatorIds, operator.id]);
+      setSelectedOperatorIds([operator.id]);
     }
   };
 
