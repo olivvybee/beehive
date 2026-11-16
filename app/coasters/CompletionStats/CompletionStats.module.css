@@ -1,6 +1,6 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(2, auto) max-content 1fr;
+  grid-template-columns: repeat(2, auto) 1fr auto;
   padding: 0;
   width: 100%;
   column-gap: 8px;
@@ -57,7 +57,7 @@
   text-align: center;
   font-size: 0.8rem;
   gap: 4px;
-  width: 100px;
+  width: 120px;
 }
 
 .progressBar {
@@ -99,10 +99,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .list {
-    grid-template-columns: repeat(3, auto) 1fr;
-  }
-
   .progress {
     width: 80px;
   }
