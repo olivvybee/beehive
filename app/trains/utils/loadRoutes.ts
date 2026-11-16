@@ -1,10 +1,11 @@
+import path from 'path';
 import fs from 'fs';
 import { FeatureCollection } from 'geojson';
 
 import { Route } from '../Route';
 import { ALL_OPERATORS, OTHER_OPERATOR } from '../constants/operators';
 
-const ROUTES_DIR = './app/trains/routes';
+const ROUTES_DIR = path.resolve('.', 'app', 'trains', 'routes');
 
 export const loadRoutes = (): Route[] => {
   const operatorDirs = fs
